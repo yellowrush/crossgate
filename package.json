@@ -1,0 +1,18 @@
+{
+  "name": "crossgate",
+  "version": "0.0.1",
+  "description": "crossgate game",
+  "authors": {
+    "name": "tom huang",
+    "email": "huangchon@gmail.com"
+  },
+  "repository": "yellowrush/crossgate",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
