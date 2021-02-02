@@ -4,6 +4,7 @@ heroImage: https://v1.vuepress.vuejs.org/hero.png
 tagline: test
 actionText: Quick Start →
 actionLink: /guide/
+
 features:
 - title: Feature 1 Title
   details: Feature 1 Description

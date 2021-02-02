@@ -8,8 +8,8 @@
   },
   "repository": "yellowrush/crossgate",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
     "deploy": "./deploy.sh"
   },
   "license": "MIT",

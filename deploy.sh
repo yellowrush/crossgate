@@ -7,7 +7,7 @@ set -e
 yarn build
 
 # 进入生成的文件夹
-cd src/.vuepress/dist
+cd docs/.vuepress/dist
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
@@ -15,11 +15,10 @@ cd src/.vuepress/dist
 git init
 git add -A
 git commit -m 'deploy'
+git remote -v
 
 # 如果发布到 https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+git push -f git@github.com:crossgate-x/crossgate-x.github.io.git
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:yellowrush/crossgate.git master:gh-pages
-
 cd -
