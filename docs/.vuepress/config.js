@@ -5,7 +5,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: '魔力全书',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -35,22 +35,14 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: '关于我们',
+        link: '/about/',
       },
-      {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
     ],
     sidebar: {
-      '/guide/': [
+      '/about/': [
         {
-          title: 'Guide',
+          title: '关于我们',
           collapsable: false,
           children: [
             '',

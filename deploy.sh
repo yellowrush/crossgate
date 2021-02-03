@@ -18,7 +18,7 @@ git commit -m 'deploy'
 git remote -v
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f git@github.com:crossgate-x/crossgate-x.github.io.git
+git push -f git@github.com:crossgate-x/crossgate-x.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 cd -
