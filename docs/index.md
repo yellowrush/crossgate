@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://user-images.githubusercontent.com/78347270/106619987-7cf6cd80-65b4-11eb-8e00-2571a35549e2.gif
+heroImage: https://user-images.githubusercontent.com/78347270/106699233-d519e800-6625-11eb-83fc-6466733512a4.png
 tagline: 希望能成为魔力玩家的百科全书📚
 
 actionText: 开始搞事！
