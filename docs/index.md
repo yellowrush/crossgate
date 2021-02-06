@@ -3,7 +3,13 @@ home: true
 heroImage: https://user-images.githubusercontent.com/78347270/106699233-d519e800-6625-11eb-83fc-6466733512a4.png
 tagline: 希望能成为魔力玩家的百科全书📚
 
-actionText: 开始搞事！
+meta:
+  - name: description
+    content: 魔力玩家的百科全书
+  - name: keywords
+    content: 魔力宝贝 百科全书 魔力宝贝道具 魔力宝贝任务
+
+actionText: 搜索
 actionLink: /
 
 features:
