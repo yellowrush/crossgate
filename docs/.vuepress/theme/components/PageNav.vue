@@ -17,7 +17,7 @@
           rel="noopener noreferrer"
         >
           {{ prev.title || prev.path }}
-
+          
           <OutboundLink />
         </a>
 

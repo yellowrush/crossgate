@@ -1,6 +1,6 @@
 module.exports = {
   base: '/',
-  title: '魔力全书',
+  title: '魔力玩家的百科全书 - 魔力全书',
   description: '魔力玩家的百科全书',
   head: [
     ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "apple-touch-icon.png"}],
@@ -10,10 +10,14 @@ module.exports = {
     ['link', { rel: "shortcut icon", href: "favicon.ico"}],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' }],
   ],
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-  ]
+  ],
+  themeConfig: {
+    logo: 'https://user-images.githubusercontent.com/78347270/106699233-d519e800-6625-11eb-83fc-6466733512a4.png'
+  }
 }

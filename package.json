@@ -14,6 +14,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "vue-typical": "^1.4.0",
     "vuepress": "^1.5.3",
     "vuepress-theme-succinct": "^1.7.2"
   }

@@ -4,36 +4,12 @@
     :aria-labelledby="data.heroText !== null ? 'main-title' : null"
   >
     <header class="hero">
-      <img
-        v-if="data.heroImage"
-        :src="$withBase(data.heroImage)"
-        :alt="data.heroAlt || 'hero'"
-      >
-
-      <h1
-        v-if="data.heroText !== null"
-        id="main-title"
-      >
-        {{ data.heroText || $title || 'Hello' }}
-      </h1>
-
-      <p
-        v-if="data.tagline !== null"
-        class="description"
-      >
-        {{ data.tagline || $description || 'Welcome to your VuePress site' }}
-      </p>
-
-      <p
-        v-if="data.actionText && data.actionLink"
-        class="action"
-      >
-        <NavLink
-          class="action-button"
-          :item="actionLink"
-        />
-      </p>
+      <Bat />
     </header>
+
+    <div class="description" v-if="data.description !== null">
+      <p>{{ data.description || '我该说点啥呢...' }}</p>
+    </div>
 
     <div
       v-if="data.features && data.features.length"
@@ -62,22 +38,27 @@
 
 <script>
 import NavLink from '@theme/components/NavLink.vue'
+import Bat from '@theme/components/Bat.vue'
 
 export default {
   name: 'Home',
 
-  components: { NavLink },
+  components: {
+    NavLink,
+    Bat,
+  },
 
   computed: {
     data () {
       return this.$page.frontmatter
     },
 
-    actionLink () {
-      return {
-        link: this.data.actionLink,
-        text: this.data.actionText
-      }
+    isAlgoliaSearch () {
+      return this.algolia && this.algolia.apiKey && this.algolia.indexName
+    },
+    
+    algolia () {
+      return this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {}
     }
   }
 }
@@ -93,34 +74,9 @@ export default {
   margin 0px auto
   display block
   .hero
-    text-align center
-    img
-      max-width: 100%
-      max-height 280px
-      display block
-      margin 3rem auto 1.5rem
-    h1
-      font-size 3rem
-    h1, .description, .action
-      margin 1.8rem auto
-    .description
-      max-width 40rem
-      font-size 1.6rem
-      line-height 1.3
-      text $descriptionColorDefault var(--descriptionColor)
-    .action-button
-      display inline-block
-      font-size 1.2rem
-      text $bodyBgColorDefault var(--bodyBgColor)
-      bgColor $accentColorDefault var(--accentColor)
-      padding 0.6rem 1.4rem
-      border-radius 40px
-      transition background-color .1s ease
-      box-sizing border-box
-      border-bottom 1px solid
-      borderBottomColor $actionBtnBorderColorDefault var(--actionBtnBorderColor)
-      &:hover
-        bgColor $actionBtnHoverBorderColorDefault var(--actionBtnHoverBorderColor)
+    height 130px
+    text-align left
+    margin-top: 2.5rem;
   .features
     border-top 1px solid
     borderTopColor $borderColorDefault var(--borderColor)

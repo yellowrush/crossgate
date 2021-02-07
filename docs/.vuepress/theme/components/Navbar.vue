@@ -13,11 +13,11 @@
         :alt="$siteTitle"
       >
       <span
-        v-if="$siteTitle"
+        v-if="$page.title"
         ref="siteName"
         class="site-name"
         :class="{ 'can-hide': $site.themeConfig.logo }"
-      >{{ $siteTitle }}</span>
+      >{{ $page.title }}</span>
     </RouterLink>
 
     <div
@@ -25,22 +25,23 @@
       :style="linksWrapMaxWidth ? {
         'max-width': linksWrapMaxWidth + 'px'
       } : {}"
-    >
+    > 
       <AlgoliaSearchBox
         v-if="isAlgoliaSearch"
         :options="algolia"
       />
       <SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false" />
+
       <NavLinks class="can-hide" />
     </div>
   </header>
 </template>
 
 <script>
-import AlgoliaSearchBox from '@AlgoliaSearchBox'
-import SearchBox from '@SearchBox'
 import SidebarButton from '@theme/components/SidebarButton.vue'
 import NavLinks from '@theme/components/NavLinks.vue'
+import AlgoliaSearchBox from '@AlgoliaSearchBox'
+import SearchBox from '@SearchBox'
 
 export default {
   name: 'Navbar',
@@ -105,12 +106,12 @@ $navbar-horizontal-padding = 1.5rem
   a, span, img
     display inline-block
   .logo
-    height $navbarHeight - 1.4rem
-    min-width $navbarHeight - 1.4rem
-    margin-right 0.8rem
-    vertical-align top
+    height $navbarHeight - 2rem
+    min-width $navbarHeight - 2rem
+    margin-right 0.2rem
+    vertical-align middle
   .site-name
-    font-size 1.3rem
+    font-size 1rem
     font-weight 600
     text $textColorDefault var(--textColor)
     position relative

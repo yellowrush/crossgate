@@ -846,6 +846,11 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@camwiegert/typical@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@camwiegert/typical/-/typical-0.1.1.tgz#c75d3b658e2f542d113c3e266389794c7dc45d6d"
+  integrity sha512-4xAtH3F3uJ8boe9IPahdYFCBELmyOBwHGAn0rDO6C1rx0TuZb5f4UqfuiOQF7YiMJGCOsUIW7LyucMNnVQYsRg==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -2417,6 +2422,11 @@ core-js-compat@^3.6.5, core-js-compat@^3.8.0:
   dependencies:
     browserslist "^4.16.1"
     semver "7.0.0"
+
+core-js@^2.6.5:
+  version "2.6.12"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
+  integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
 core-js@^3.6.4, core-js@^3.6.5:
   version "3.8.3"
@@ -7543,6 +7553,15 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
+
+vue-typical@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/vue-typical/-/vue-typical-1.4.0.tgz#4c80ba0889a6e6bfafc9dcba4cb641abe3f4de63"
+  integrity sha512-viQ8n+0LsE8k5+P/kMbAqGXUCqVDWN0VYEhMkg/qxrqfi8win8Cfi8qlk8v+GnVymBVVOtGRZAPJw6ZIFzAF1A==
+  dependencies:
+    "@camwiegert/typical" "^0.1.1"
+    core-js "^2.6.5"
+    vue "^2.6.10"
 
 vue@^2.6.10:
   version "2.6.12"
