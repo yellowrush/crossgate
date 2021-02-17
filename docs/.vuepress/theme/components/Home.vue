@@ -3,14 +3,6 @@
     class="home"
     :aria-labelledby="data.heroText !== null ? 'main-title' : null"
   >
-    <header class="hero">
-      <Bat />
-    </header>
-
-    <div class="description" v-if="data.description !== null">
-      <p>{{ data.description || '我该说点啥呢...' }}</p>
-    </div>
-
     <div
       v-if="data.features && data.features.length"
       class="features"
@@ -31,7 +23,8 @@
       v-if="data.footer"
       class="footer"
     >
-      {{ data.footer }}
+      <p> {{ data.footer }} </p>
+      <p> {{ data.copyright }} </p>
     </div>
   </main>
 </template>
@@ -100,8 +93,10 @@ export default {
     p
       text $textMutedColorDefault var(--textMutedColor)
   .footer
-    padding 2.5rem
+    display flex
+    justify-content space-between
     border-top 1px solid
+    font-size .8rem
     borderTopColor $borderColorDefault var(--borderColor)
     text-align center
     text $textMutedColorDefault var(--textMutedColor)
@@ -113,6 +108,10 @@ export default {
     .feature
       max-width 100%
       padding 0 2.5rem
+    .footer
+      flex-direction column
+      p
+        margin-bottom 0
 
 @media (max-width: $MQMobileNarrow)
   .home

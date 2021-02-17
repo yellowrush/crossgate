@@ -10,12 +10,15 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
+    "svgo": "vuepress svgo docs",
     "deploy": "./deploy.sh"
   },
   "license": "MIT",
   "devDependencies": {
+    "@goy/vuepress-plugin-svg-icons": "^4.2.3",
     "vue-typical": "^1.4.0",
     "vuepress": "^1.5.3",
+    "vuepress-plugin-comment": "^0.7.3",
     "vuepress-theme-succinct": "^1.7.2"
   }
 }

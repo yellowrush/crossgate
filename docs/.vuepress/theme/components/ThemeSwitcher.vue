@@ -1,7 +1,7 @@
 <template>
   <a role="button" style="font-size: 1rem; cursor: pointer;" @click.prevent="switchTheme()" :aria-label="'Switch to ' + nextTheme + ' mode'" class="nav-link">
-    <span key="dark" v-if="theme === 'dark'">🌞</span>
-    <span key="light" v-else>🌙</span>
+    <span key="dark" v-if="theme === 'dark'"><vp-icon class="icon" name="day" /></span>
+    <span key="light" v-else><vp-icon class="icon" name="night" /></span>
   </a>
 </template>
 
