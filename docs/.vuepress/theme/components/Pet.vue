@@ -109,6 +109,7 @@ export default {
     cursor pointer
     border 1px solid var(--borderColor)
     border-radius 5px
+    user-select none
     &:hover
       border-color var(--accentColor)
   .addtions 
