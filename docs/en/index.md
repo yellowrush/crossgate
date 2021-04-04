@@ -1,5 +1,16 @@
 ---
 home: true
+title: 'Crossgate Book'
+lang: en-US
+
+footer: Crossgate Book © 2021 make with ❤️
+copyright:  All Rights Reserved - Square Enix
+---
+
+
+
+---
+home: true
 heroImage: https://user-images.githubusercontent.com/78347270/106699233-d519e800-6625-11eb-83fc-6466733512a4.png
 tagline: Hope to be an encyclopedia for Crossgate players📚
 

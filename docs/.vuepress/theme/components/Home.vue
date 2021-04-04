@@ -17,6 +17,8 @@
       </div>
     </div>
 
+    <Pet />
+
     <Content class="theme-default-content custom" />
 
     <div
@@ -31,14 +33,14 @@
 
 <script>
 import NavLink from '@theme/components/NavLink.vue'
-import Bat from '@theme/components/Bat.vue'
+import Pet from '@theme/components/Pet.vue'
 
 export default {
   name: 'Home',
 
   components: {
     NavLink,
-    Bat,
+    Pet,
   },
 
   computed: {
