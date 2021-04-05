@@ -36,7 +36,7 @@ export default {
     transform translate(-50%, -50%)
     line-height 0.8
     color #fff
-    font-size xx-small
+    font-size small
     font-weight bold
     text-shadow 0 0 1px #000
 
