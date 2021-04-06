@@ -78,6 +78,7 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .abilities
+  width 100%
   display block
   list-style none 
   margin 0
@@ -91,6 +92,7 @@ export default {
     span
       display inline-block
       width 18px
+      height 18px
       text-align center
       margin 0 5px
       border 1px solid var(--borderColor)
@@ -103,4 +105,20 @@ export default {
   color #ffeb3b
   &.dark
     color var(--borderColor)
+
+  
+@media (max-width: $MQMobileNarrow)
+  .abilities
+    font-size 1.2rem
+    li
+      line-height 2.5rem
+      span
+        display inline-block
+        width 2.5rem
+        height 2.5rem
+      .stars
+        flex 1 0 0
+        white-space nowrap
+  .icon
+    font-size 12vw
 </style>

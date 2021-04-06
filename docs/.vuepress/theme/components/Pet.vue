@@ -141,9 +141,13 @@ export default {
   &:hover
     border-color var(--accentColor)
 
-@media (max-width: $MQMobile)
+@media (max-width: $MQMobileNarrow)
   .pet
     display block
+  .pet-image
+    .name
+      font-size 1.2rem
+      line-height 2.2
       
 .words
   position relative
