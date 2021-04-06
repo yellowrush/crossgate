@@ -1,26 +1,30 @@
 <template>
   <div class="pet">
-    <div class="pet-image">
-      <div class="image" @click="onClickBat(type)">
-        <img :src="imageSrc" :alt="pet.name">
+    <div class="pet-image" @click="onClickPet(type)">
+      <p class="name">{{ pet.name }}</p>
+      <div class="image">
+        <img :src="pet.images[type]" :alt="pet.name">
       </div>
-      <div class="addtions">
-        <PetRace :name="pet.race" />
-        <PetLevel class="item" :type="pet.type" :level="pet.level" />
+      <div class="image-addtion">
+        <PetRace class="spacing" :name="pet.race" />
+        <PetLevel class="spacing" :type="pet.type" :level="pet.level" />
       </div>
     </div>
+    <PetAbility />
   </div>
 </template>
 
 <script>
 import PetLevel from './PetLevel.vue';
 import PetRace from './PetRace.vue';
+import PetAbility from './PetAbility.vue';
 
 export default {
   name: 'Pet',
   components: {
     PetLevel,
     PetRace,
+    PetAbility,
   },
   props:{
     pet: {
@@ -30,8 +34,17 @@ export default {
         name: '小蝙蝠',
         level: 2,
         type: 'normal',
-        image: 'https://user-images.githubusercontent.com/78347270/106621653-1c689000-65b6-11eb-9c27-0f3499743e4c.gif',
-        race: '飛'
+        images: {
+          default: 'https://user-images.githubusercontent.com/78347270/106621653-1c689000-65b6-11eb-9c27-0f3499743e4c.gif',
+          magic: 'https://user-images.githubusercontent.com/78347270/107145585-fe1fdd00-6985-11eb-91c4-619998a7663d.gif',
+          run: 'https://user-images.githubusercontent.com/78347270/107145731-d9783500-6986-11eb-95f3-1d015e649bac.gif',
+          hurt: 'https://user-images.githubusercontent.com/78347270/107145730-d8df9e80-6986-11eb-87ff-c6e0248dbdc6.gif',
+          walk: 'https://user-images.githubusercontent.com/78347270/107147022-10524900-698f-11eb-8613-fd80f211e390.gif',
+          attack: 'https://user-images.githubusercontent.com/78347270/107147009-f6b10180-698e-11eb-91c0-e028f25b10f3.gif',
+          defend: 'https://user-images.githubusercontent.com/78347270/107148413-3c24fd00-6996-11eb-9ae8-f5d7c94c7f02.gif',
+        },
+        race: '飛',
+        
       }),
     },
     size: {
@@ -43,6 +56,7 @@ export default {
     return {
       type: 'default',
       types: ['default', 'magic', 'run', 'hurt', 'walk', 'attack', 'defend'],
+      trigger: true,
       sentences: {
         'default': '我该说点啥呢...💬',
         'magic': '我就放个火焰魔法给你看吧！🔥🔥🔥',
@@ -52,7 +66,6 @@ export default {
         'attack': '哒哒哒~ 2333暴击⚔️',
         'defend': '🛡️圣盾防御🛡️',
       },
-      trigger: true,
     };
   },
 
@@ -79,7 +92,7 @@ export default {
   },
 
   methods: {
-    onClickBat(type) {
+    onClickPet(type) {
       const filtered = this.types.filter((t) => t !== type);
       this.type = filtered[Math.floor(Math.random() * filtered.length)];
       this.trigger = false;
@@ -96,37 +109,41 @@ export default {
 
 .pet
   position relative
-  display flex
+  display inline-block
   margin 1rem 0
-
 .pet-image
+  position relative
+  border 1px solid var(--borderColor)
+  border-radius 5px
+  cursor pointer
+  .name
+    text-align center
+    font-size .8rem
+    margin 0
+    border-bottom 1px solid var(--borderColor)
   .image
     display flex
     align-items center
     justify-content center
-    height 100px
-    width 100px
-    cursor pointer
-    border 1px solid var(--borderColor)
-    border-radius 5px
+    height 110px
+    width 110px
     user-select none
-    &:hover
-      border-color var(--accentColor)
-  .addtions 
-    width 100%
-    display flex 
+    margin 0 auto
+  .image-addtion
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    display flex
     justify-content flex-end
-    font-size .7rem
-    margin-top 10px
-    .item
-      margin-left 5px
-
   img
     object-fit contain
+  &:hover
+    border-color var(--accentColor)
 
 @media (max-width: $MQMobile)
   .pet
-    display flex
+    display block
       
 .words
   position relative
@@ -151,4 +168,7 @@ export default {
     border-right:10px solid $accentColorDefault; 
   &:hover
     bgColor $actionBtnHoverBorderColorDefault var(--actionBtnHoverBorderColor)
+
+.spacing
+  margin 0 .2rem .3rem 0
 </style>
