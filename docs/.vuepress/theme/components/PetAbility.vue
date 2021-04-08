@@ -78,7 +78,6 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .abilities
-  width 100%
   display block
   list-style none 
   margin 0
@@ -87,8 +86,8 @@ export default {
   li
     display flex
     justify-items center
-    margin .2rem 0
     line-height 18px
+    margin-top .5rem
     span
       display inline-block
       width 18px
@@ -99,7 +98,8 @@ export default {
       border-radius 5px
       transform translateY(-1px)
     .stars
-      display inline-block
+      display inline-flex
+      justify-items space-between
 .icon
   font-size 1rem
   color #ffeb3b
@@ -110,6 +110,8 @@ export default {
 @media (max-width: $MQMobileNarrow)
   .abilities
     font-size 1.2rem
+    display flex
+    flex-direction column
     li
       line-height 2.5rem
       span
@@ -118,7 +120,8 @@ export default {
         height 2.5rem
       .stars
         flex 1 0 0
+        height 42px
         white-space nowrap
   .icon
-    font-size 12vw
+    font-size 200%
 </style>

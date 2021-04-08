@@ -1,16 +1,17 @@
 <template>
   <div class="pet">
     <div class="pet-image" @click="onClickPet(type)">
-      <p class="name">{{ pet.name }}</p>
-      <div class="image">
-        <img :src="pet.images[type]" :alt="pet.name">
-      </div>
-      <div class="image-addtion">
+      <div class="name">
+        <span>{{ pet.name }}</span>
         <PetRace class="spacing" :name="pet.race" />
         <PetLevel class="spacing" :type="pet.type" :level="pet.level" />
       </div>
+      <div class="image">
+        <img :src="pet.images[type]" :alt="pet.name">
+      </div>
     </div>
-    <PetAbility />
+    <PetAbility class="pet-ability" />
+    <PetAttribute class="pet-attribute" />
   </div>
 </template>
 
@@ -18,6 +19,7 @@
 import PetLevel from './PetLevel.vue';
 import PetRace from './PetRace.vue';
 import PetAbility from './PetAbility.vue';
+import PetAttribute from './PetAttribute.vue';
 
 export default {
   name: 'Pet',
@@ -25,6 +27,7 @@ export default {
     PetLevel,
     PetRace,
     PetAbility,
+    PetAttribute,
   },
   props:{
     pet: {
@@ -108,19 +111,29 @@ export default {
 @require '../styles/fallback'
 
 .pet
+  width 100%
   position relative
-  display inline-block
+  display inline-flex
   margin 1rem 0
 .pet-image
+  flex 0 0 160px
+  margin-right 1rem
   position relative
   border 1px solid var(--borderColor)
   border-radius 5px
   cursor pointer
   .name
-    text-align center
+    display flex
+    justify-items center
     font-size .8rem
+    height 1.5rem
+    padding .2rem .2rem .2rem .4rem
     margin 0
     border-bottom 1px solid var(--borderColor)
+    span
+      flex 1 0 0
+      text-align left
+      line-height 1.8
   .image
     display flex
     align-items center
@@ -129,50 +142,30 @@ export default {
     width 110px
     user-select none
     margin 0 auto
-  .image-addtion
-    position absolute
-    bottom 0
-    left 0
-    right 0
-    display flex
-    justify-content flex-end
   img
     object-fit contain
   &:hover
     border-color var(--accentColor)
 
+.pet-ability
+  margin-right 1rem
+
 @media (max-width: $MQMobileNarrow)
   .pet
     display block
   .pet-image
+    width 100%
+    margin 0
     .name
-      font-size 1.2rem
-      line-height 2.2
-      
-.words
-  position relative
-  white-space nowrap
-  margin-left 1rem
-  height auto
-  font-size 1rem
-  text $bodyBgColorDefault var(--bodyBgColor)
-  bgColor $accentColorDefault var(--accentColor)
-  padding 1rem 1rem
-  border-radius 15px
-  transition background-color .1s ease
-  box-sizing border-box
-  &::before
-    content ''
-    position: absolute;
-    right: 100%;
-    top: 50%;
-    transform translateY(-50%)
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent; 
-    border-right:10px solid $accentColorDefault; 
-  &:hover
-    bgColor $actionBtnHoverBorderColorDefault var(--actionBtnHoverBorderColor)
-
+      height 2rem
+      font-size 1.1rem
+      line-height 1
+      padding .4rem .4rem .4rem .8rem
+    .image
+      height 200px
+      width 100%
+      img
+        transform: scale(1.5);
 .spacing
-  margin 0 .2rem .3rem 0
+  margin-left .2rem
 </style>

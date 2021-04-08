@@ -1,5 +1,5 @@
 <template>
-  <img style="height: 20px" :src="imageUrl" :alt="imageAlt" />
+  <img class="level" :src="imageUrl" :alt="imageAlt" />
 </template>
 
 <script>
