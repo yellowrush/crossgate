@@ -16,9 +16,9 @@
         <p>{{ feature.details }}</p>
       </div>
     </div>
-
+    <!-- 
     <Pet />
-
+    -->
     <Content class="theme-default-content custom" />
 
     <div
