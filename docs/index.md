@@ -14,6 +14,11 @@ copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 - [游戏下载以及安装](guides/install)
 - [游戏进入服务器失败, DNS设定解决方法](guides/dns)
 
+### 🗚 文字乱码
+
+- [游戏程序乱码解决方法](guides/locale)
+- [游戏内输入法乱码解决方法](guides/input)
+
 ### 📜 游戏任务
 
 - [被历史抹去的禁地](tasks/1) [⚠️无法触发BOSS战]
