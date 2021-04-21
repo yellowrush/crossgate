@@ -35,6 +35,9 @@ module.exports = {
     */
   ],
   themeConfig: {
-    logo: 'https://user-images.githubusercontent.com/78347270/106699233-d519e800-6625-11eb-83fc-6466733512a4.png'
-  }
+    logo: 'https://user-images.githubusercontent.com/78347270/106699233-d519e800-6625-11eb-83fc-6466733512a4.png',
+    nav: [
+      { text: '宠物大全', link: '/pets' },
+    ]
+  },
 }

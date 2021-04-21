@@ -1,22 +1,22 @@
 <template>
   <ul class="attributes">
-    <li>
+    <li class="text">
       属性
     </li>
-    <li>
-      <span class="earth">地</span>
+    <li class="earth">
+      <span>地</span>
       <div class="progress earth" :style="{ width: earth + '%' }" />
     </li>
-    <li>
-      <span class="water">水</span>
+    <li class="water">
+      <span>水</span>
       <div class="progress water" :style="{ width: water + '%' }" />
     </li>
-    <li>
-      <span class="wind">风</span>
+    <li class="wind">
+      <span>风</span>
       <div class="progress wind" :style="{ width: wind + '%' }" />
     </li>
-    <li>
-      <span class="fire">火</span>
+    <li class="fire">
+      <span>火</span>
       <div class="progress fire" :style="{ width: fire + '%' }" />
     </li>
   </ul>
@@ -28,19 +28,19 @@ export default {
   props:{
     earth: {
       type: Number,
-      default: 3,
+      default: 6,
     },
     water: {
       type: Number,
-      default: 8,
+      default: 4,
     },
     wind: {
       type: Number,
-      default: 1,
+      default: 0,
     },
     fire: {
       type: Number,
-      default: 5,
+      default: 0,
     },
   },
 };
@@ -54,30 +54,31 @@ export default {
   font-size .6rem
   li
     position relative
-    width 160px
+    width 150px
     display flex
     align-items center
     line-height 18px
     margin .5rem 0
-    span 
+    background var(--codeBgColor)
+    span
       width 16px
       height 16px
-      background red
+      background white
       padding .2rem
       text-align center
       border-radius 50%
     div.progress
       flex 1 0 0
-      height 5px
-      border-bottom-right-radius 3px
-      border-top-right-radius 3px
-  .earth
-    background #009688
-  .water
-    background #2196f3
-  .wind
-    background #ffeb3b
-    color #2f3037
-  .fire
-    background #f44336
+      height 16px
+      border-bottom-right-radius 8px
+      border-top-right-radius 8px
+    &.earth span
+      background #009688
+    &.water span
+      background #2196f3
+    &.wind span
+      background #ffeb3b
+      color #2f3037
+    &.fire span
+      background #f44336
 </style>

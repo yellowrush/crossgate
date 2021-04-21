@@ -1,17 +1,13 @@
 <template>
   <div class="pet">
-    <div class="pet-image" @click="onClickPet(type)">
+    <RouterLink :to="url" class="pet-image">
       <div class="name">
         <span>{{ pet.name }}</span>
-        <PetRace class="spacing" :name="pet.race" />
-        <PetLevel class="spacing" :type="pet.type" :level="pet.level" />
       </div>
       <div class="image">
         <img :src="pet.images[type]" :alt="pet.name">
       </div>
-    </div>
-    <PetAbility class="pet-ability" />
-    <PetAttribute class="pet-attribute" />
+    </RouterLink>
   </div>
 </template>
 
@@ -53,6 +49,10 @@ export default {
     size: {
       type: String,
       default: 'normal',
+    },
+    url: {
+      type: String,
+      default: '',
     },
   },
   data() {
@@ -102,6 +102,7 @@ export default {
       setTimeout(() => {
         this.trigger = true;
       }, 0);
+      this.$router.push(this.url);
     },
   }
 }
@@ -116,13 +117,14 @@ export default {
   display inline-flex
   margin 1rem 0
 .pet-image
-  flex 0 0 160px
+  flex 0 0 120px
   margin-right 1rem
   position relative
   border 1px solid var(--borderColor)
   border-radius 5px
   cursor pointer
   .name
+    color var(--textColor)
     display flex
     justify-items center
     font-size .8rem
@@ -132,7 +134,7 @@ export default {
     border-bottom 1px solid var(--borderColor)
     span
       flex 1 0 0
-      text-align left
+      text-align center
       line-height 1.8
   .image
     display flex
@@ -146,7 +148,8 @@ export default {
     object-fit contain
   &:hover
     border-color var(--accentColor)
-
+    .name
+      border-color var(--accentColor)
 .pet-ability
   margin-right 1rem
 
