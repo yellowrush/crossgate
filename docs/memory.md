@@ -1,6 +1,6 @@
 ---
 home: true
-title: '魔力全书'
+title: '小明的回忆'
 lang: zh-CN
 
 footer: 魔力全书 © 2021 make with ❤️

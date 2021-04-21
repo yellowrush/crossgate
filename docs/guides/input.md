@@ -1,5 +1,5 @@
 ---
-title: '魔力全书'
+title: '输入法选择'
 lang: zh-CN
 ---
 

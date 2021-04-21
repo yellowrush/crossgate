@@ -1,5 +1,5 @@
 ---
-title: '魔力全书'
+title: '偷渡学习乱射'
 lang: zh-CN
 ---
 

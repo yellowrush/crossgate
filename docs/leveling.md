@@ -1,5 +1,5 @@
 ---
-title: '魔力全书'
+title: '练级地点'
 lang: zh-CN
 
 ---

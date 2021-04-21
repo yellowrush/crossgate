@@ -17,7 +17,7 @@
         ref="siteName"
         class="site-name"
         :class="{ 'can-hide': $site.themeConfig.logo }"
-      >{{ $page.title }}</span>
+      >魔力全书</span>
     </RouterLink>
 
     <div
