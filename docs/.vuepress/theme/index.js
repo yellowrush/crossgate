@@ -4,6 +4,9 @@ module.exports = {
     ['@vuepress/pwa', {
       serviceWorker: true,
       updatePopup: true
+    }],
+    ['@vuepress/search', {
+      searchMaxSuggestions: 10
     }]
   ]
 }
