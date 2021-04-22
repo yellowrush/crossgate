@@ -9,6 +9,10 @@ copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 
 ## 魔力宝贝：永恒初心 :cloud:
 
+### :sassy_man: 游戏账号
+
+- [账号注册以及登录，创建游戏账号](guides/register)
+
 ### :book: 游戏安装
 
 - [游戏下载以及安装](guides/install)
