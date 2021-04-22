@@ -11,14 +11,6 @@
       >{{ editLinkText }}</a>
       <OutboundLink />
     </div>
-
-    <div
-      v-if="lastUpdated"
-      class="last-updated"
-    >
-      <span class="prefix">{{ lastUpdatedText }}:</span>
-      <span class="time">{{ lastUpdated }}</span>
-    </div>
   </footer>
 </template>
 
