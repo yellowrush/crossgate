@@ -5,6 +5,8 @@ lang: zh-CN
 
 # ✒️ 输入法选择
 
+<Valine />
+
 #### 这里简单推荐可以自动转为繁体字的输入法
 
 - [搜狗输入法](https://pinyin.sogou.com/) - 感觉还不错，我目前自己在用，系统兼容比较多winOS / MacOs / Linux

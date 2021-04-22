@@ -5,6 +5,8 @@ lang: zh-CN
 
 # 🎮 游戏安装
 
+<Valine />
+
 ::: tip 🚥温馨提示
 
 安装内容为windows10系统展示，其他系统可行性未知

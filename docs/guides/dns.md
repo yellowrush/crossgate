@@ -5,6 +5,9 @@ lang: zh-CN
 
 # 🌐 DNS设定方法
 
+<Valine />
+
+
 - 登入游戏服务器失败的情况下, 可以参考DNS设定方法解决
 
 ::: danger 🚨设定警告

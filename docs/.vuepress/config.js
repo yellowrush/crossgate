@@ -19,6 +19,7 @@ module.exports = {
     ['@goy/svg-icons', {
       svgsDir: 'svgs',
     }],
+    ['@vuepress/last-updated'],
     /*
     [
       'vuepress-plugin-comment',

@@ -20,5 +20,9 @@
     "vuepress": "^1.5.3",
     "vuepress-plugin-comment": "^0.7.3",
     "vuepress-theme-succinct": "^1.7.2"
+  },
+  "dependencies": {
+    "leancloud-storage": "^4.10.1",
+    "valine": "^1.4.14"
   }
 }
