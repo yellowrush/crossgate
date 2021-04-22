@@ -48,7 +48,7 @@ import Sidebar from '@theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '../util'
 
 export default {
-  name: 'Layout',
+  name: 'Pet',
 
   components: {
     Page,

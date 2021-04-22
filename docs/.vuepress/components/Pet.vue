@@ -136,6 +136,7 @@ export default {
       flex 1 0 0
       text-align center
       line-height 1.8
+      text-decoration none !important
   .image
     display flex
     align-items center
@@ -155,15 +156,16 @@ export default {
 
 @media (max-width: $MQMobileNarrow)
   .pet
-    display block
+    width 100%
+    display flex
+    margin-bottom 1rem
   .pet-image
     width 100%
-    margin 0
+    flex 0 0 auto
     .name
-      height 2rem
       font-size 1.1rem
-      line-height 1
-      padding .4rem .4rem .4rem .8rem
+      line-height 2
+      height 2rem
     .image
       height 200px
       width 100%

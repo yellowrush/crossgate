@@ -1,1 +1,7 @@
-<Pet url="pets/1" />
+---
+title: '魔力全书'
+lang: zh-CN
+
+---
+
+<Pet url="pets/046" />
