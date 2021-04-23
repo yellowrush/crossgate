@@ -35,24 +35,26 @@ export default {
 };
 </script>
 <style lang="stylus" scoped>
-  .post
-    display flex
-    align-items center
-    .post-date
-      flex 0 0 110px
-      height 20px
-      text-align center
-      font-size 12px
-      border-radius 5px
-      border 1px solid var(--borderColor)
-      margin-right .5rem
-    .post-title
-      flex 1 0 0
-      white-space nowrap
-      overflow hidden
-      text-overflow ellipsis
-      margin-right .5rem
+.post
+  display flex
+  align-items center
+  margin-bottom .8rem
+  .post-date
+    flex 0 0 110px
+    text-align center
+    font-size 12px
+    border-radius 5px
+    border 1px solid var(--borderColor)
+    margin-right .5rem
+  .post-title
+    flex 1 0 0
+    white-space nowrap
+    overflow hidden
+    text-overflow ellipsis
+    margin-right .5rem
   &.new
     .post-date
       border-color var(--accentColor)
+
+    
 </style>
