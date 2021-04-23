@@ -42,4 +42,10 @@ module.exports = {
       { text: '💸 道具商城', link: '/items' }
     ]
   },
+  markdown: {
+    externalLinks: {
+      target: '_blank',
+      rel: 'noopener noreferrer',
+    },
+  },
 }
