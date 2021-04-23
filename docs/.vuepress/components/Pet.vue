@@ -1,5 +1,5 @@
 <template>
-  <div class="pet">
+  <div :class="['pet', { 'is-big': size === 'big' }, { 'is-large': size === 'large' }]">
     <RouterLink :to="url" class="pet-image">
       <div class="name">
         <span>{{ pet.name }}</span>
@@ -42,8 +42,7 @@ export default {
           attack: 'https://user-images.githubusercontent.com/78347270/107147009-f6b10180-698e-11eb-91c0-e028f25b10f3.gif',
           defend: 'https://user-images.githubusercontent.com/78347270/107148413-3c24fd00-6996-11eb-9ae8-f5d7c94c7f02.gif',
         },
-        race: '飛',
-        
+        race: '飞',
       }),
     },
     size: {
@@ -52,7 +51,7 @@ export default {
     },
     url: {
       type: String,
-      default: '',
+      default: 'pets/046',
     },
   },
   data() {
@@ -112,13 +111,23 @@ export default {
 @require '../styles/fallback'
 
 .pet
-  width 100%
+  width calc(20% - .9rem)
+  height 150px
   position relative
   display inline-flex
-  margin 1rem 0
+  margin .5rem .3rem
+  &.is-big
+    .image
+      width 160px
+  &.is-large
+    .image
+      position absolute
+      left 50%
+      transform translateX(-50%)
+      width 200px
+
 .pet-image
-  flex 0 0 120px
-  margin-right 1rem
+  flex 0 0 100%
   position relative
   border 1px solid var(--borderColor)
   border-radius 5px
@@ -141,6 +150,9 @@ export default {
     display flex
     align-items center
     justify-content center
+    position absolute
+    left 50%
+    transform translateX(-50%)
     height 110px
     width 110px
     user-select none
@@ -156,9 +168,10 @@ export default {
 
 @media (max-width: $MQMobileNarrow)
   .pet
-    width 100%
+    width: 100%
+    height 270px
     display flex
-    margin-bottom 1rem
+    margin 0 0 1rem
   .pet-image
     width 100%
     flex 0 0 auto
