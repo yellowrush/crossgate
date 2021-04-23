@@ -398,12 +398,12 @@ lang: zh-CN
 
 <Pet
   :pet="{
-    num: '11514',
-    name: '佛魯斯奇美拉',
+    num: '?',
+    name: '奇美拉',
     level: -1,
     type: 'normal',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859813-a0bb0880-a46b-11eb-908c-421a99db8da4.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115859820-a284cc00-a46b-11eb-9d33-d15929c3f464.gif',
     },
     race: '飞',
   }"
@@ -413,11 +413,25 @@ lang: zh-CN
 <Pet
   :pet="{
     num: '?',
-    name: '奇美拉',
+    name: '艾克尼奇美拉',
     level: -1,
     type: 'normal',
     images: {
       default: 'https://user-images.githubusercontent.com/78347270/115866362-88032080-a474-11eb-8bd7-fb49c55e6c64.gif',
+    },
+    race: '飞',
+  }"
+  size="large"
+/>
+
+<Pet
+  :pet="{
+    num: '11514',
+    name: '佛魯斯奇美拉',
+    level: -1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115859813-a0bb0880-a46b-11eb-908c-421a99db8da4.gif',
     },
     race: '飞',
   }"
@@ -449,20 +463,5 @@ lang: zh-CN
     },
     race: '飞',
   }"
-  size="large"
-/>
-
-<Pet
-  :pet="{
-    num: '1047',
-    name: '改造迷你蝙蝠',
-    level: -1,
-    type: 'normal',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859824-a3b5f900-a46b-11eb-95e9-e159343f45c0.gif',
-    },
-    race: '飞',
-  }"
-  size="large"
 />
 
