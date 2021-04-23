@@ -1,7 +1,7 @@
 <template>
-  <a href="#" @click="onOpenPopup">
+  <RouterLink :to="url">
     <slot />
-  </a>
+  </RouterLink >
 </template>
 
 <script>
