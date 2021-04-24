@@ -1746,3 +1746,271 @@ lang: zh-CN
     race: '植',
   }"
 />
+
+## 特殊系 
+
+<Pet
+  :pet="{
+    num: '094',
+    name: '史莱姆',
+    level: 1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957955-3c1dad80-a540-11eb-9587-fc25cfbf7d27.gif',
+    },
+    race: '特',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '095',
+    name: '液态史莱姆',
+    level: 2,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957967-3f189e00-a540-11eb-9d67-f9f5f7c1d3c3.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '096',
+    name: '果冻史莱姆',
+    level: 3,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957963-3e800780-a540-11eb-918c-82853091bb0b.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '097',
+    name: '布丁史莱姆',
+    level: 3,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957945-3a53ea00-a540-11eb-8ca0-70ba4d5ff56a.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '098',
+    name: '火精',
+    level: 6,
+    type: 'gold',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957952-3c1dad80-a540-11eb-8c12-7f158a1f09cb.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '099',
+    name: '风精',
+    level: 6,
+    type: 'gold',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957953-3c1dad80-a540-11eb-94c5-5be87b8550a3.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '100',
+    name: '水精',
+    level: 6,
+    type: 'gold',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957939-3922bd00-a540-11eb-812b-b0f9f76db5a4.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '101',
+    name: '地精',
+    level: 6,
+    type: 'gold',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957949-3aec8080-a540-11eb-9b84-54733fd5a52d.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '102',
+    name: '顽皮炸弹',
+    level: 1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957971-4049cb00-a540-11eb-95de-bcfe657d6e09.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '103',
+    name: '宝贝炸弹',
+    level: 2,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957961-3de77100-a540-11eb-9f92-3b7142e1aa13.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '104',
+    name: '大炸弹',
+    level: 2,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957950-3b851700-a540-11eb-8278-2651ab6db457.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '105',
+    name: '漂浮炸弹',
+    level: 1,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957958-3d4eda80-a540-11eb-96a4-891265d4628d.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '106',
+    name: '丸子炸弹',
+    level: 7,
+    type: 'gold',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957934-3758f980-a540-11eb-9a42-d64197bc1b5e.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '107',
+    name: '幻影',
+    level: 6,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957938-388a2680-a540-11eb-8561-5d68a5420772.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '108',
+    name: '旋律影子',
+    level: 6,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957972-40e26180-a540-11eb-891f-374840cc8151.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '109',
+    name: '暗影',
+    level: 6,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957978-42138e80-a540-11eb-8d07-860abcde56b9.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '110',
+    name: '阴影',
+    level: 6,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957959-3d4eda80-a540-11eb-9fb0-6f52c9d437ee.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '191',
+    name: '绿烟',
+    level: 4,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957974-40e26180-a540-11eb-8193-9a374507a70a.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '192',
+    name: '烟雾',
+    level: 4,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957969-3fb13480-a540-11eb-9bec-2d19c7bb2ef0.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '193',
+    name: '烟罗',
+    level: 5,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957957-3cb64400-a540-11eb-82c9-23ca5b7dd2d7.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '194',
+    name: '棉球',
+    level: 5,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957977-417af800-a540-11eb-86bb-dba594a130fe.gif',
+    },
+    race: '特',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '1110',
+    name: '改造阴影',
+    level: -1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957959-3d4eda80-a540-11eb-9fb0-6f52c9d437ee.gif',
+    },
+    race: '特',
+  }"
+/>
