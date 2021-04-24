@@ -2014,3 +2014,367 @@ lang: zh-CN
     race: '特',
   }"
 />
+
+## 金属系 🤖
+
+<Pet
+  :pet="{
+    num: '111',
+    name: '血腥之刃',
+    level: 6,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958452-8f90fb00-a542-11eb-961b-f53abecdd433.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '112',
+    name: '杀龙之刃',
+    level: 5,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958456-90c22800-a542-11eb-80b9-fcc702004f29.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '113',
+    name: '火焰之刃',
+    level: 5,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958446-8dc73780-a542-11eb-9494-5700e9f32a69.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '114',
+    name: '烈风之刃',
+    level: 6,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958477-961f7280-a542-11eb-86aa-9f6d62698eab.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '115',
+    name: '吓人箱',
+    level: 2,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958627-22319a00-a543-11eb-95f5-fa1c1f9059c4.gif',
+    },
+    race: '金',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '116',
+    name: '兔耳吓人箱',
+    level: 2,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958640-31184c80-a543-11eb-9793-bd06e36e80ff.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '117',
+    name: '红魔吓人箱',
+    level: 3,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958674-5dcc6400-a543-11eb-9825-86425a0bd077.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '118',
+    name: '蓝魔吓人箱',
+    level: 3,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958671-5c9b3700-a543-11eb-9b03-6ef9f94f5a39.gif',
+    },
+    race: '金',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '119',
+    name: '蓝魔吓人箱',
+    level: 3,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958673-5dcc6400-a543-11eb-9b1b-bbc7d3e03691.gif',
+    },
+    race: '金',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '120',
+    name: '纯白吓人箱',
+    level: 7,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958672-5d33cd80-a543-11eb-882f-593ce080fc0e.gif',
+    },
+    race: '金',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '121',
+    name: '冰怪',
+    level: 4,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958453-8f90fb00-a542-11eb-814d-976105a5df79.gif',
+    },
+    race: '金',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '122',
+    name: '石怪',
+    level: 4,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958451-8ef86480-a542-11eb-9a4b-90defbb2ddbe.gif',
+    },
+    race: '金',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '123',
+    name: '银怪',
+    level: 5,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958484-97e93600-a542-11eb-9f03-018fe0cae4cd.gif',
+    },
+    race: '金',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '124',
+    name: '金怪',
+    level: 5,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958472-9455af00-a542-11eb-814d-961b7816f00a.gif',
+    },
+    race: '金',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '125',
+    name: '恶魔螃蟹',
+    level: 2,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958476-9586dc00-a542-11eb-8877-1828211a339b.gif',
+    },
+    race: '金',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '126',
+    name: '水晶螃蟹',
+    level: 2,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958445-8d2ea100-a542-11eb-8a67-f90004d0fc3e.gif',
+    },
+    race: '金',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '127',
+    name: '铁剪螃蟹',
+    level: 3,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958481-96b80900-a542-11eb-9399-db4651ed32fe.gif',
+    },
+    race: '金',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '127',
+    name: '铁剪螃蟹',
+    level: 3,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958481-96b80900-a542-11eb-9399-db4651ed32fe.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '128',
+    name: '黄金螃蟹',
+    level: 3,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958486-97e93600-a542-11eb-91d2-1f54b59911bc.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '195',
+    name: '盾',
+    level: 6,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958486-97e93600-a542-11eb-91d2-1f54b59911bc.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '195',
+    name: '盾',
+    level: 6,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958473-94ee4580-a542-11eb-8481-7417592e429f.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '196',
+    name: '潜盾',
+    level: 5,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958495-9a4b9000-a542-11eb-9442-42e83f4d5b42.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '197',
+    name: '强盾',
+    level: 5,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958487-9881cc80-a542-11eb-8a60-eae024bc202e.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '198',
+    name: '神盾',
+    level: 6,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958479-96b80900-a542-11eb-9c8d-dd31da720727.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '199',
+    name: '岩怪',
+    level: 4,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958470-93bd1880-a542-11eb-972c-318a914b67fe.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '200',
+    name: '爆岩',
+    level: 3,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958470-93bd1880-a542-11eb-972c-318a914b67fe.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '201',
+    name: '熔岩',
+    level: 4,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958492-99b2f980-a542-11eb-8928-ceca283e05ca.gif',
+    },
+    race: '金',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '202',
+    name: '影岩',
+    level: 3,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958494-9a4b9000-a542-11eb-88a1-214dc8fd0d2c.gif',
+    },
+    race: '金',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '1108',
+    name: '改造旋律影子',
+    level: -1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115958461-91f35500-a542-11eb-8357-c891177678e6.gif',
+    },
+    race: '金',
+  }"
+/>
+
