@@ -2907,4 +2907,60 @@ lang: zh-CN
   }"
 />
 
+## 邪魔系 🐙
 
+<Pet
+  :pet="{
+    num: '9001',
+    name: '大地牛头怪',
+    level: -1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115960387-126a8380-a54c-11eb-811b-fb5cd96d87f8.gif',
+    },
+    race: '邪魔',
+  }"
+  size="big"
+/>
+
+<Pet
+  :pet="{
+    num: '9002',
+    name: '火焰牛头怪',
+    level: -1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115960388-13031a00-a54c-11eb-86c4-c719196da7ba.gif',
+    },
+    race: '邪魔',
+  }"
+  size="big"
+/>
+
+<Pet
+  :pet="{
+    num: '9003',
+    name: '寒冰牛头怪',
+    level: -1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115960389-13031a00-a54c-11eb-90f3-99f5f4372520.gif',
+    },
+    race: '邪魔',
+  }"
+  size="big"
+/>
+
+<Pet
+  :pet="{
+    num: '9001',
+    name: '烈风牛头怪',
+    level: -1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115960386-11d1ed00-a54c-11eb-9724-c5d7aae41211.gif',
+    },
+    race: '邪魔',
+  }"
+  size="big"
+/>
