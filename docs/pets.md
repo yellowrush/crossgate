@@ -1162,3 +1162,294 @@ lang: zh-CN
 />
 
 
+
+## 昆虫系 🦗
+
+<Pet
+  :pet="{
+    num: '057',
+    name: '蓝蝎',
+    level: 5,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956348-22c43380-a537-11eb-877a-8b7b48930390.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '058',
+    name: '红蝎',
+    level: 4,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956326-1dff7f80-a537-11eb-8d66-c1e3efe42a5a.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '059',
+    name: '黄蝎',
+    level: 5,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956329-1e981600-a537-11eb-880b-ae535108c7a7.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '060',
+    name: '杀手蝎',
+    level: 4,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956323-1cce5280-a537-11eb-8113-0c54d8b4b15f.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '061',
+    name: '杀人蜂',
+    level: 4,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956321-1c35bc00-a537-11eb-9f7d-145506379c3b.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '062',
+    name: '异针蜂',
+    level: 3,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956320-1b9d2580-a537-11eb-97a1-85308f3a11d7.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '063',
+    name: '虎头蜂',
+    level: 4,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956335-1fc94300-a537-11eb-82a4-ba27f02e85b6.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '064',
+    name: '黄蜂',
+    level: 2,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956342-20fa7000-a537-11eb-8fa0-9a90121d3365.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '065',
+    name: '死亡蜂',
+    level: 4,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956324-1d66e900-a537-11eb-8c0c-eaaee7e44939.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '066',
+    name: '螳螂',
+    level: 5,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956332-1f30ac80-a537-11eb-98c7-9d47e736c1a1.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '067',
+    name: '杀人螳螂',
+    level: 6,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956322-1c35bc00-a537-11eb-94c1-e3137be662b7.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '068',
+    name: '赤目螳螂',
+    level: 6,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956333-1f30ac80-a537-11eb-8f1b-a1f07f2adb61.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '069',
+    name: '死灰螳螂',
+    level: 6,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956325-1d66e900-a537-11eb-9614-2e6edeb49028.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '070',
+    name: '致命螳螂',
+    level: 5,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956338-20fa7000-a537-11eb-8458-75876ee37ce8.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '071',
+    name: '土蜘蛛',
+    level: 2,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956315-1a6bf880-a537-11eb-9a8a-03ca261a1821.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '072',
+    name: '水蜘蛛',
+    level: 3,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956314-19d36200-a537-11eb-9146-f7981ea60219.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '073',
+    name: '火蜘蛛',
+    level: 2,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956317-1b048f00-a537-11eb-8cfb-5ede1a85a6d4.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '074',
+    name: '火蜘蛛',
+    level: 3,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956318-1b048f00-a537-11eb-90a8-ec90217a0e47.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '183',
+    name: '甲虫',
+    level: 4,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956319-1b9d2580-a537-11eb-8237-2831d3f729ee.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '184',
+    name: '掘地虫',
+    level: 5,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956339-20fa7000-a537-11eb-9807-134a1d7ad0a9.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '185',
+    name: '楸型虫',
+    level: 4,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956346-222b9d00-a537-11eb-99c4-ca98bece351f.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '186',
+    name: '楸型虫',
+    level: 5,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956336-2061d980-a537-11eb-963c-ec951181c2fa.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '1059',
+    name: '改造黄蝎',
+    level: -1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956344-21930680-a537-11eb-9ca9-e719409801f5.gif',
+    },
+    race: '昆',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '1072',
+    name: '改造水蜘蛛',
+    level: -1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115956316-1a6bf880-a537-11eb-966e-5aacd14040a7.gif',
+    },
+    race: '昆',
+  }"
+/>
