@@ -9,6 +9,8 @@ lang: zh-CN
 
 <Valine />
 
+> 特别鸣谢 ❤️ @糖有莎（1142760222）
+
 ## 野兽系 🦖
 <Pet
   :pet="{
@@ -21,6 +23,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="/pets/001"
 />
 
 <Pet
@@ -185,7 +188,7 @@ lang: zh-CN
     level: 1,
     type: 'normal',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937678-6be29c00-a4d3-11eb-8dbf-e28571541dc0.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115937649-66855180-a4d3-11eb-8b9b-86fe18544cee.gif',
     },
     race: '兽',
   }"
@@ -603,12 +606,12 @@ lang: zh-CN
 
 <Pet
   :pet="{
-    num: '167',
-    name: '镰刀魔',
-    level: 6,
+    num: '171',
+    name: '牙骨',
+    level: 3,
     type: 'normal',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115939444-13ae9880-a4d9-11eb-8125-9fcc052353c2.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115939451-1610f280-a4d9-11eb-9bb9-be8dbcd7cd3e.gif',
     },
     race: '不死',
   }"
@@ -652,26 +655,16 @@ lang: zh-CN
     race: '不死',
   }"
 />
+
+
 <Pet
   :pet="{
-    num: '171',
-    name: '牙骨',
-    level: 3,
+    num: '167',
+    name: '镰刀魔',
+    level: 6,
     type: 'normal',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115939451-1610f280-a4d9-11eb-9bb9-be8dbcd7cd3e.gif',
-    },
-    race: '不死',
-  }"
-/>
-<Pet
-  :pet="{
-    num: '172',
-    name: '颚牙',
-    level: 4,
-    type: 'sliver',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115939440-127d6b80-a4d9-11eb-8f06-18993b873da9.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115939444-13ae9880-a4d9-11eb-8125-9fcc052353c2.gif',
     },
     race: '不死',
   }"
@@ -684,6 +677,18 @@ lang: zh-CN
     type: 'normal',
     images: {
       default: 'https://user-images.githubusercontent.com/78347270/115939453-16a98900-a4d9-11eb-925c-44a27c201a12.gif',
+    },
+    race: '不死',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '172',
+    name: '颚牙',
+    level: 4,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115939440-127d6b80-a4d9-11eb-8f06-18993b873da9.gif',
     },
     race: '不死',
   }"

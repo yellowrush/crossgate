@@ -1,10 +1,11 @@
 <template>
   <ul class="abilities">
     <li>
-      总档次：105
+      <label>总档次</label> 
+      <strong>105</strong>
     </li>
     <li>
-      体
+      <label>体力</label> 
       <span>11</span>
       <div class="stars">
         <vp-icon class="icon" name="star" />
@@ -15,7 +16,7 @@
       </div>
     </li>
     <li>
-      力
+      <label>力量</label> 
       <span>26</span>
       <div class="stars">
         <vp-icon class="icon" name="star" />
@@ -26,7 +27,7 @@
       </div>
     </li>
     <li>
-      防
+      <label>防御</label> 
       <span>16</span>
       <div class="stars">
         <vp-icon class="icon" name="star" />
@@ -37,7 +38,7 @@
       </div>
     </li>
     <li>
-      敏
+      <label>敏捷</label> 
       <span>31</span>
       <div class="stars">
         <vp-icon class="icon" name="star" />
@@ -48,7 +49,7 @@
       </div>
     </li>
     <li>
-      魔
+      <label>魔法</label> 
       <span>21</span>
       <div class="stars">
         <vp-icon class="icon" name="star" />
@@ -78,31 +79,33 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .abilities
-  display block
+  display flex
+  justify-content center
+  flex-direction column
   list-style none 
   margin 0
   padding 0
-  font-size .6rem
+  font-size 1rem
+  margin-top .5rem
   li
     display flex
     justify-items center
-    line-height 18px
-    margin-top .5rem
+    margin .5rem 0
     span
       display inline-block
       width 18px
       height 18px
       text-align center
       margin 0 5px
-      border 1px solid var(--borderColor)
-      border-radius 5px
-      transform translateY(-1px)
+    strong
+      color var(--accentColor)
     .stars
       display inline-flex
       justify-items space-between
+
 .icon
-  font-size 1rem
-  color #ffeb3b
+  font-size 1.2rem
+  color var(--accentColor)
   &.dark
     color var(--borderColor)
 
