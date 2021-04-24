@@ -203,5 +203,5 @@ lang: zh-CN
 
 :::
 
-
-特别鸣谢 @chairoikoguma 👍  - 参考[链接](https://chairoikoguma.github.io/)
+------------------
+特别鸣谢 @chairoikoguma 👍 - 参考[链接](https://chairoikoguma.github.io/)
