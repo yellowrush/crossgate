@@ -1453,3 +1453,296 @@ lang: zh-CN
     race: '昆',
   }"
 />
+
+## 植物系 🌵
+
+<Pet
+  :pet="{
+    num: '075',
+    name: '树精',
+    level: 2,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957208-070f5c00-a53c-11eb-964d-cd69fbd47e9b.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '076',
+    name: '死亡树精',
+    level: 4,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957202-05459880-a53c-11eb-9a64-fd63c4dbe23a.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '077',
+    name: '黄金树精',
+    level: 7,
+    type: 'gold',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957224-0b3b7980-a53c-11eb-82ad-572a3eb0a51e.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '078',
+    name: '黄金树精',
+    level: 4,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957221-0a0a4c80-a53c-11eb-8f9d-1f53e2324739.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '079',
+    name: '冰冷树精',
+    level: 3,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957200-04ad0200-a53c-11eb-8643-fa00ab16c9c8.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '080',
+    name: '沼泽树精',
+    level: 4,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957207-0676c580-a53c-11eb-82df-8357073815d6.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '081',
+    name: '妖草',
+    level: 2,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957205-0676c580-a53c-11eb-98cc-4649521d5ba4.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '082',
+    name: '曼陀罗草',
+    level: 3,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957398-1fcc4180-a53d-11eb-90af-bba5921199dc.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '083',
+    name: '妖花',
+    level: 2,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957436-6457dd00-a53d-11eb-9153-e72dae912857.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '084',
+    name: '人魔草',
+    level: 3,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957195-024aa800-a53c-11eb-9a95-d5107b47d00e.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '085',
+    name: '绿色口臭鬼',
+    level: 4,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957209-07a7f280-a53c-11eb-9cfb-525bf5e99594.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '086',
+    name: '黄色口臭鬼',
+    level: 4,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957223-0b3b7980-a53c-11eb-89e2-28f069fbce8a.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '087',
+    name: '蓝色口臭鬼',
+    level: 5,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957230-0d053d00-a53c-11eb-9fdc-aee2313320a9.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '088',
+    name: '红色口臭鬼',
+    level: 5,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957203-05de2f00-a53c-11eb-8458-357c6771ee19.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '089',
+    name: '凶暴仙人掌',
+    level: 3,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957197-04146b80-a53c-11eb-8a0d-b1621289191a.gif',
+    },
+    race: '植',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '090',
+    name: '武术仙人掌',
+    level: 4,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957213-08408900-a53c-11eb-820d-5639a03dfd65.gif',
+    },
+    race: '植',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '091',
+    name: '兔耳仙人掌',
+    level: 4,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957211-08408900-a53c-11eb-8551-2e4ed43be711.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '092',
+    name: '火焰舞者',
+    level: 5,
+    type: 'gold',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957199-04146b80-a53c-11eb-8d32-d2bb96ced53c.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '187',
+    name: '翠绿菇',
+    level: 5,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957226-0bd41000-a53c-11eb-8701-84a44a046e72.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '188',
+    name: '水蓝菇',
+    level: 4,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957206-0676c580-a53c-11eb-80ef-d7d51ab5f9a8.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '189',
+    name: '粉红菇',
+    level: 4,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957220-0a0a4c80-a53c-11eb-862f-b5f972e4648d.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '190',
+    name: '星菇',
+    level: 5,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957217-0971b600-a53c-11eb-91a2-648e4c8d0aa6.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '1075',
+    name: '改造树精',
+    level: -1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957218-0971b600-a53c-11eb-94f8-522e071d457a.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '1085',
+    name: '改造绿色口臭鬼',
+    level: -1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957209-07a7f280-a53c-11eb-9cfb-525bf5e99594.gif',
+    },
+    race: '植',
+  }"
+/>
