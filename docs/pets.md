@@ -24,12 +24,13 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/007"
 />
 
 <Pet
   :pet="{
     num: '009',
-    name: '北極熊',
+    name: '北极熊',
     level: 5,
     type: 'normal',
     images: {
@@ -37,6 +38,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/009"
 />
 
 <Pet
@@ -50,6 +52,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/008"
 />
 
 <Pet
@@ -63,12 +66,13 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/010"
 />
 
 <Pet
   :pet="{
     num: '011',
-    name: '貓熊',
+    name: '猫熊',
     level: 7,
     type: 'gold',
     images: {
@@ -76,6 +80,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/011"
 />
 <Pet
   :pet="{
@@ -92,7 +97,7 @@ lang: zh-CN
 <Pet
   :pet="{
     num: '018',
-    name: '地獄看門犬',
+    name: '地狱看门犬',
     level: 4,
     type: 'normal',
     images: {
@@ -116,7 +121,7 @@ lang: zh-CN
 <Pet
   :pet="{
     num: '021',
-    name: '地獄妖犬',
+    name: '地狱妖犬',
     level: 5,
     type: 'sliver',
     images: {
@@ -140,8 +145,8 @@ lang: zh-CN
 
 <Pet
   :pet="{
-    num: '004',
-    name: '惡魔貓',
+    num: '005',
+    name: '恶魔猫',
     level: 3,
     type: 'silver',
     images: {
@@ -149,12 +154,13 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/005"
 />
 
 <Pet
   :pet="{
     num: '002',
-    name: '貓妖',
+    name: '猫妖',
     level: 2,
     type: 'normal',
     images: {
@@ -162,11 +168,12 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/002"
 />
 <Pet
   :pet="{
     num: '003',
-    name: '羅剎',
+    name: '罗剎',
     level: 3,
     type: 'silver',
     images: {
@@ -174,6 +181,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/003"
 />
 
 <Pet
@@ -202,7 +210,9 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="/pets/004"
 />
+
 <Pet
   :pet="{
     num: '159',
