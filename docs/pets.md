@@ -9,8 +9,6 @@ lang: zh-CN
 
 <Valine />
 
-> 特别鸣谢 ❤️ @糖有莎（1142760222）
-
 ## 野兽系 🦖
 
 <Pet
@@ -93,6 +91,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/019"
 />
 <Pet
   :pet="{
@@ -105,6 +104,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/018"
 />
 <Pet
   :pet="{
@@ -117,6 +117,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/020"
 />
 <Pet
   :pet="{
@@ -129,6 +130,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/021"
 />
 <Pet
   :pet="{
@@ -141,6 +143,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/1021"
 />
 
 <Pet
@@ -198,7 +201,6 @@ lang: zh-CN
   url="/pets/001"
 />
 
-
 <Pet
   :pet="{
     num: '004',
@@ -224,6 +226,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/159"
 />
 
 <Pet
@@ -237,6 +240,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/160"
 />
 <Pet
   :pet="{
@@ -249,6 +253,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/161"
 />
 <Pet
   :pet="{
@@ -261,6 +266,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/162"
 />
 <Pet
   :pet="{
@@ -273,6 +279,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="/pets/006"
 />
 
 
@@ -287,6 +294,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/163"
 />
 <Pet
   :pet="{
@@ -299,6 +307,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/164"
 />
 <Pet
   :pet="{
@@ -311,6 +320,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/165"
 />
 <Pet
   :pet="{
@@ -323,11 +333,12 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/166"
 />
 <Pet
   :pet="{
     num: '016',
-    name: '水藍鼠',
+    name: '水蓝鼠',
     level: 6,
     type: 'gold',
     images: {
@@ -335,6 +346,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/016"
 />
 <Pet
   :pet="{
@@ -347,12 +359,13 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/012"
 />
 
 <Pet
   :pet="{
     num: '013',
-    name: '惡夢鼠',
+    name: '噩梦鼠',
     level: 2,
     type: 'sliver',
     images: {
@@ -360,6 +373,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/012"
 />
 <Pet
   :pet="{
@@ -372,11 +386,13 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/014"
+/>
 />
 <Pet
   :pet="{
     num: '015',
-    name: '寶石鼠',
+    name: '宝石鼠',
     level: 2,
     type: 'sliver',
     images: {
@@ -384,6 +400,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/015"
 />
 <Pet
   :pet="{
@@ -396,6 +413,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/017"
 />
 
 <Pet
@@ -409,6 +427,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/1012"
 />
 <Pet
   :pet="{
@@ -421,6 +440,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
+  url="pets/1014"
 />
 
 
@@ -2937,3 +2957,7 @@ lang: zh-CN
   }"
   size="big"
 />
+
+> 特别鸣谢 ❤️ 
+> - @糖有莎（QQ 1142760222）
+> - @余温 (魔力宝贝台服怀旧永恒初心群主： 893519779）
