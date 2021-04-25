@@ -9,9 +9,10 @@ lang: zh-CN
 
 ### 🏰 法兰城
 
-- 被历史抹去的禁地 -- 
-<Popup url="/tasks/1">🕶️概要</Popup> 
-<Popup url="/tasks/1_details">🥽剧情</Popup>
-- H7N9防疫宣传任务, 领取防疫口罩 --
-<Popup url="/tasks/2">🕶️概要</Popup>
-:x:剧情
+| 任务 | 必要条件 | 建议等级 | 难度 | 详细 |
+| :---- |:-------------:|:-------------:|:-------------:|:-------------:|
+| ☘️新手任务 |  -  |  1  |  -  |  <Popup url="/tasks/0">🕶️概要</Popup> :x:剧情 |
+| H7N9防疫宣传 |  -  |  1  |  -  |  <Popup url="/tasks/1">🕶️概要</Popup> :x:剧情 |
+| 神秘联络员 |  -  |  1  |  -  |  <Popup url="/tasks/5">🕶️概要</Popup> :x:剧情 |
+| 被历史抹去的禁地 |  -  |  12 - 23  |  ⭐  |  <Popup url="/tasks/1">🕶️概要</Popup> <Popup url="/tasks/1_details">🥽剧情</Popup> |
+
