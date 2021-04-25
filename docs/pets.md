@@ -373,7 +373,7 @@ lang: zh-CN
     },
     race: '兽',
   }"
-  url="pets/012"
+  url="pets/013"
 />
 <Pet
   :pet="{
@@ -387,7 +387,6 @@ lang: zh-CN
     race: '兽',
   }"
   url="pets/014"
-/>
 />
 <Pet
   :pet="{
