@@ -12,84 +12,6 @@ lang: zh-CN
 > 特别鸣谢 ❤️ @糖有莎（1142760222）
 
 ## 野兽系 🦖
-<Pet
-  :pet="{
-    num: '001',
-    name: '虎人',
-    level: 2,
-    type: 'normal',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937668-69804200-a4d3-11eb-88d8-411c3fb1a650.gif',
-    },
-    race: '兽',
-  }"
-  url="/pets/001"
-/>
-
-<Pet
-  :pet="{
-    num: '002',
-    name: '貓妖',
-    level: 2,
-    type: 'normal',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937654-67b67e80-a4d3-11eb-8328-66a62e20304e.gif',
-    },
-    race: '兽',
-  }"
-/>
-
-<Pet
-  :pet="{
-    num: '003',
-    name: '羅剎',
-    level: 3,
-    type: 'silver',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937667-69804200-a4d3-11eb-8c5f-26aa632e9bb4.gif',
-    },
-    race: '兽',
-  }"
-/>
-
-<Pet
-  :pet="{
-    num: '004',
-    name: '貓人',
-    level: 3,
-    type: 'silver',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937687-6dac5f80-a4d3-11eb-9ba0-89362a0055e4.gif',
-    },
-    race: '兽',
-  }"
-/>
-
-<Pet
-  :pet="{
-    num: '004',
-    name: '惡魔貓',
-    level: 3,
-    type: 'silver',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937679-6be29c00-a4d3-11eb-9769-531c2aaedff0.gif',
-    },
-    race: '兽',
-  }"
-/>
-
-<Pet
-  :pet="{
-    num: '006',
-    name: '妖狐',
-    level: 4,
-    type: 'silver',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937645-65542480-a4d3-11eb-870b-abbe6e95af4f.gif',
-    },
-    race: '兽',
-  }"
-/>
 
 <Pet
   :pet="{
@@ -106,12 +28,12 @@ lang: zh-CN
 
 <Pet
   :pet="{
-    num: '008',
-    name: '赤熊',
+    num: '009',
+    name: '北極熊',
     level: 5,
     type: 'normal',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937658-684f1500-a4d3-11eb-9304-46bff29e7f66.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115937625-61280700-a4d3-11eb-8ea9-cac79a13c12c.gif',
     },
     race: '兽',
   }"
@@ -119,12 +41,12 @@ lang: zh-CN
 
 <Pet
   :pet="{
-    num: '009',
-    name: '北極熊',
+    num: '008',
+    name: '赤熊',
     level: 5,
     type: 'normal',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937625-61280700-a4d3-11eb-8ea9-cac79a13c12c.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115937658-684f1500-a4d3-11eb-9304-46bff29e7f66.gif',
     },
     race: '兽',
   }"
@@ -155,76 +77,14 @@ lang: zh-CN
     race: '兽',
   }"
 />
-
 <Pet
   :pet="{
-    num: '012',
-    name: '大地鼠',
-    level: 1,
+    num: '019',
+    name: '巨狼',
+    level: 4,
     type: 'normal',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937647-65ecbb00-a4d3-11eb-8337-967c67d8aaa6.gif',
-    },
-    race: '兽',
-  }"
-/>
-
-<Pet
-  :pet="{
-    num: '013',
-    name: '惡夢鼠',
-    level: 2,
-    type: 'sliver',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937678-6be29c00-a4d3-11eb-8dbf-e28571541dc0.gif',
-    },
-    race: '兽',
-  }"
-/>
-<Pet
-  :pet="{
-    num: '014',
-    name: '火焰鼠',
-    level: 1,
-    type: 'normal',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937649-66855180-a4d3-11eb-8b9b-86fe18544cee.gif',
-    },
-    race: '兽',
-  }"
-/>
-<Pet
-  :pet="{
-    num: '015',
-    name: '寶石鼠',
-    level: 2,
-    type: 'sliver',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937664-68e7ab80-a4d3-11eb-9502-80b5f76af214.gif',
-    },
-    race: '兽',
-  }"
-/>
-<Pet
-  :pet="{
-    num: '016',
-    name: '水藍鼠',
-    level: 6,
-    type: 'gold',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937617-5f5e4380-a4d3-11eb-9e77-75e36722190d.gif',
-    },
-    race: '兽',
-  }"
-/>
-<Pet
-  :pet="{
-    num: '017',
-    name: '鼠王',
-    level: 7,
-    type: 'gold',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937697-6f762300-a4d3-11eb-8a70-e4636bfc3ed9.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115937628-61c09d80-a4d3-11eb-8313-3a6ab2d00c14.gif',
     },
     race: '兽',
   }"
@@ -237,18 +97,6 @@ lang: zh-CN
     type: 'normal',
     images: {
       default: 'https://user-images.githubusercontent.com/78347270/115937639-6422f780-a4d3-11eb-849b-0270d9b66f45.gif',
-    },
-    race: '兽',
-  }"
-/>
-<Pet
-  :pet="{
-    num: '019',
-    name: '巨狼',
-    level: 4,
-    type: 'normal',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937628-61c09d80-a4d3-11eb-8313-3a6ab2d00c14.gif',
     },
     race: '兽',
   }"
@@ -277,7 +125,84 @@ lang: zh-CN
     race: '兽',
   }"
 />
+<Pet
+  :pet="{
+    num: '1021',
+    name: '改造地狱妖犬',
+    level: -1,
+    type: '',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115937651-66855180-a4d3-11eb-950c-f045e942e66d.gif',
+    },
+    race: '兽',
+  }"
+/>
 
+<Pet
+  :pet="{
+    num: '004',
+    name: '惡魔貓',
+    level: 3,
+    type: 'silver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115937679-6be29c00-a4d3-11eb-9769-531c2aaedff0.gif',
+    },
+    race: '兽',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '002',
+    name: '貓妖',
+    level: 2,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115937654-67b67e80-a4d3-11eb-8328-66a62e20304e.gif',
+    },
+    race: '兽',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '003',
+    name: '羅剎',
+    level: 3,
+    type: 'silver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115937667-69804200-a4d3-11eb-8c5f-26aa632e9bb4.gif',
+    },
+    race: '兽',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '001',
+    name: '虎人',
+    level: 2,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115937668-69804200-a4d3-11eb-88d8-411c3fb1a650.gif',
+    },
+    race: '兽',
+  }"
+  url="/pets/001"
+/>
+
+
+<Pet
+  :pet="{
+    num: '004',
+    name: '貓人',
+    level: 3,
+    type: 'silver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115937687-6dac5f80-a4d3-11eb-9ba0-89362a0055e4.gif',
+    },
+    race: '兽',
+  }"
+/>
 <Pet
   :pet="{
     num: '159',
@@ -329,6 +254,20 @@ lang: zh-CN
 />
 <Pet
   :pet="{
+    num: '006',
+    name: '妖狐',
+    level: 4,
+    type: 'silver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115937645-65542480-a4d3-11eb-870b-abbe6e95af4f.gif',
+    },
+    race: '兽',
+  }"
+/>
+
+
+<Pet
+  :pet="{
     num: '163',
     name: '地底龟',
     level: 3,
@@ -375,6 +314,79 @@ lang: zh-CN
     race: '兽',
   }"
 />
+<Pet
+  :pet="{
+    num: '016',
+    name: '水藍鼠',
+    level: 6,
+    type: 'gold',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115937617-5f5e4380-a4d3-11eb-9e77-75e36722190d.gif',
+    },
+    race: '兽',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '012',
+    name: '大地鼠',
+    level: 1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115937647-65ecbb00-a4d3-11eb-8337-967c67d8aaa6.gif',
+    },
+    race: '兽',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '013',
+    name: '惡夢鼠',
+    level: 2,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115937678-6be29c00-a4d3-11eb-8dbf-e28571541dc0.gif',
+    },
+    race: '兽',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '014',
+    name: '火焰鼠',
+    level: 1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115937649-66855180-a4d3-11eb-8b9b-86fe18544cee.gif',
+    },
+    race: '兽',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '015',
+    name: '寶石鼠',
+    level: 2,
+    type: 'sliver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115937664-68e7ab80-a4d3-11eb-9502-80b5f76af214.gif',
+    },
+    race: '兽',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '017',
+    name: '鼠王',
+    level: 7,
+    type: 'gold',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115937697-6f762300-a4d3-11eb-8a70-e4636bfc3ed9.gif',
+    },
+    race: '兽',
+  }"
+/>
 
 <Pet
   :pet="{
@@ -400,46 +412,18 @@ lang: zh-CN
     race: '兽',
   }"
 />
-<Pet
-  :pet="{
-    num: '1021',
-    name: '改造地狱妖犬',
-    level: -1,
-    type: '',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115937651-66855180-a4d3-11eb-950c-f045e942e66d.gif',
-    },
-    race: '兽',
-  }"
-/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 ## 不死系 🧟
 <Pet
   :pet="{
-    num: '022',
-    name: '僵尸',
+    num: '025',
+    name: '腐尸',
     level: 2,
     type: 'normal',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115939414-0c878a80-a4d9-11eb-8742-1cefb0acd4bc.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115939419-0db8b780-a4d9-11eb-88c2-e147e0b7e275.gif',
     },
     race: '不死',
   }"
@@ -470,12 +454,12 @@ lang: zh-CN
 />
 <Pet
   :pet="{
-    num: '025',
-    name: '腐尸',
+    num: '022',
+    name: '僵尸',
     level: 2,
     type: 'normal',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115939419-0db8b780-a4d9-11eb-88c2-e147e0b7e275.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115939414-0c878a80-a4d9-11eb-8742-1cefb0acd4bc.gif',
     },
     race: '不死',
   }"
@@ -493,15 +477,27 @@ lang: zh-CN
     race: '不死',
   }"
 />
+<Pet
+  :pet="{
+    num: '030',
+    name: '武装骷髅',
+    level: 4,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115939418-0d202100-a4d9-11eb-9668-972258e3a3ba.gif',
+    },
+    race: '不死',
+  }"
+/>
 
 <Pet
   :pet="{
-    num: '027',
-    name: '骷髅战士',
+    num: '029',
+    name: '地狱骷髅',
     level: 3,
-    type: 'normal',
+    type: 'normlal',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115939441-13160200-a4d9-11eb-930a-50ec1213bb24.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115939455-16a98900-a4d9-11eb-8216-0b8d855b85c0.gif',
     },
     race: '不死',
   }"
@@ -520,24 +516,12 @@ lang: zh-CN
 />
 <Pet
   :pet="{
-    num: '029',
-    name: '地狱骷髅',
+    num: '027',
+    name: '骷髅战士',
     level: 3,
-    type: 'normlal',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115939455-16a98900-a4d9-11eb-8216-0b8d855b85c0.gif',
-    },
-    race: '不死',
-  }"
-/>
-<Pet
-  :pet="{
-    num: '030',
-    name: '武装骷髅',
-    level: 4,
     type: 'normal',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115939418-0d202100-a4d9-11eb-9668-972258e3a3ba.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115939441-13160200-a4d9-11eb-930a-50ec1213bb24.gif',
     },
     race: '不死',
   }"
@@ -554,6 +538,20 @@ lang: zh-CN
     race: '不死',
   }"
 />
+
+<Pet
+  :pet="{
+    num: '035',
+    name: '死灵',
+    level: 4,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115939457-17421f80-a4d9-11eb-80be-c8398c41588b.gif',
+    },
+    race: '不死',
+  }"
+/>
+
 <Pet
   :pet="{
     num: '032',
@@ -586,19 +584,6 @@ lang: zh-CN
     type: 'sliver',
     images: {
       default: 'https://user-images.githubusercontent.com/78347270/115939446-14472f00-a4d9-11eb-960c-084545399ef8.gif',
-    },
-    race: '不死',
-  }"
-/>
-
-<Pet
-  :pet="{
-    num: '035',
-    name: '死灵',
-    level: 4,
-    type: 'normal',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115939457-17421f80-a4d9-11eb-80be-c8398c41588b.gif',
     },
     race: '不死',
   }"
@@ -714,25 +699,12 @@ lang: zh-CN
 
 <Pet
   :pet="{
-    num: '036',
-    name: '小石像怪',
-    level: 1,
-    type: 'normal',
+    num: '039',
+    name: '小恶魔',
+    level: 3,
+    type: 'silver',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859776-9ac52780-a46b-11eb-8faf-8b8ffce29bf6.gif',
-    },
-    race: '飞',
-  }"
-/>
-
-<Pet
-  :pet="{
-    num: '037',
-    name: '使魔',
-    level: 2,
-    type: 'normal',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859828-a44e8f80-a46b-11eb-900a-cf65d64da235.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115859778-9b5dbe00-a46b-11eb-9f2c-6b0bd3a266a8.gif',
     },
     race: '飞',
   }"
@@ -750,15 +722,14 @@ lang: zh-CN
     race: '飞',
   }"
 />
-
 <Pet
   :pet="{
-    num: '039',
-    name: '小恶魔',
-    level: 3,
-    type: 'silver',
+    num: '037',
+    name: '使魔',
+    level: 2,
+    type: 'normal',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859778-9b5dbe00-a46b-11eb-9f2c-6b0bd3a266a8.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115859828-a44e8f80-a46b-11eb-900a-cf65d64da235.gif',
     },
     race: '飞',
   }"
@@ -776,19 +747,19 @@ lang: zh-CN
     race: '飞',
   }"
 />
-
 <Pet
   :pet="{
-    num: '041',
-    name: '丘比特',
-    level: 7,
-    type: 'gold',
+    num: '036',
+    name: '小石像怪',
+    level: 1,
+    type: 'normal',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859795-9dc01800-a46b-11eb-81b4-5cc2adf8a85c.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115859776-9ac52780-a46b-11eb-8faf-8b8ffce29bf6.gif',
     },
     race: '飞',
   }"
 />
+
 
 <Pet
   :pet="{
@@ -805,25 +776,24 @@ lang: zh-CN
 
 <Pet
   :pet="{
-    num: '043',
-    name: '血魔',
-    level: 5,
-    type: 'normal',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859812-a0bb0880-a46b-11eb-9440-bbae2706bdd9.gif',
-    },
-    race: '飞',
-  }"
-/>
-
-<Pet
-  :pet="{
     num: '044',
     name: '墮天使',
     level: 6,
     type: 'silver',
     images: {
       default: 'https://user-images.githubusercontent.com/78347270/115859875-ab759d80-a46b-11eb-9347-dbae6aa86ec5.gif',
+    },
+    race: '飞',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '043',
+    name: '血魔',
+    level: 5,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115859812-a0bb0880-a46b-11eb-9440-bbae2706bdd9.gif',
     },
     race: '飞',
   }"
@@ -842,73 +812,20 @@ lang: zh-CN
   }"
 />
 
-
-<Pet />
-
 <Pet
   :pet="{
-    num: '047',
-    name: '掃把蝙蝠',
-    level: 2,
-    type: 'silver',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859807-a0227200-a46b-11eb-836c-8740564fa0c7.gif',
-    },
-    race: '飞',
-  }"
-/>
-
-<Pet
-  :pet="{
-    num: '048',
-    name: '迷你蝙蝠',
-    level: 1,
-    type: 'normal',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859873-aadd0700-a46b-11eb-81a6-7d74afb41509.gif',
-    },
-    race: '飞',
-  }"
-/>
-
-<Pet
-  :pet="{
-    num: '049',
-    name: '水果蝙蝠',
-    level: 2,
-    type: 'silver',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859789-9c8eeb00-a46b-11eb-9282-5663ee3a4638.gif',
-    },
-    race: '飞',
-  }"
-/>
-
-<Pet
-  :pet="{
-    num: '050',
-    name: '恶魔蝙蝠',
+    num: '041',
+    name: '丘比特',
     level: 7,
     type: 'gold',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859868-aa447080-a46b-11eb-8f0c-51ce967bb68b.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115859795-9dc01800-a46b-11eb-81b4-5cc2adf8a85c.gif',
     },
     race: '飞',
   }"
 />
 
-<Pet
-  :pet="{
-    num: '051',
-    name: '天使蝙蝠',
-    level: 7,
-    type: 'gold',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859783-9c8eeb00-a46b-11eb-9ad0-0b08f99178f9.gif',
-    },
-    race: '飞',
-  }"
-/>
+
 
 <Pet
   :pet="{
@@ -918,20 +835,6 @@ lang: zh-CN
     type: 'normal',
     images: {
       default: 'https://user-images.githubusercontent.com/78347270/115859775-9a2c9100-a46b-11eb-90a7-40eb5c522f4e.gif',
-    },
-    race: '飞',
-  }"
-/>
-
-
-<Pet
-  :pet="{
-    num: '053',
-    name: '巨蝙蝠',
-    level: 4,
-    type: 'normal',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859799-9e58ae80-a46b-11eb-9fd6-de3751952cf2.gif',
     },
     race: '飞',
   }"
@@ -949,7 +852,6 @@ lang: zh-CN
     race: '飞',
   }"
 />
-
 <Pet
   :pet="{
     num: '055',
@@ -962,6 +864,19 @@ lang: zh-CN
     race: '飞',
   }"
 />
+<Pet
+  :pet="{
+    num: '053',
+    name: '巨蝙蝠',
+    level: 4,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115859799-9e58ae80-a46b-11eb-9fd6-de3751952cf2.gif',
+    },
+    race: '飞',
+  }"
+/>
+
 
 <Pet
   :pet="{
@@ -975,63 +890,6 @@ lang: zh-CN
     race: '飞',
   }"
 />
-
-<Pet
-  :pet="{
-    num: '175',
-    name: '獅鷲獸',
-    level: 6,
-    type: 'normal',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859859-a9134380-a46b-11eb-9da8-2bb7e8360db5.gif',
-    },
-    race: '飞',
-  }"
-  size="big"
-/>
-
-<Pet
-  :pet="{
-    num: '176',
-    name: '變種獅鷲獸',
-    level: 6,
-    type: 'normal',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859836-a57fbc80-a46b-11eb-9325-b1f0a6fcf8a0.gif',
-    },
-    race: '飞',
-  }"
-  size="big"
-/>
-
-<Pet
-  :pet="{
-    num: '177',
-    name: '布雷歐',
-    level: 7,
-    type: 'silver',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859802-9e58ae80-a46b-11eb-99cc-4872b40a6e29.gif',
-    },
-    race: '飞',
-  }"
-  size="big"
-/>
-
-<Pet
-  :pet="{
-    num: '178',
-    name: '依格羅斯',
-    level: 7,
-    type: 'silver',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859829-a44e8f80-a46b-11eb-82ed-d7f3696ea3d9.gif',
-    },
-    race: '飞',
-  }"
-  size="big"
-/>
-
 <Pet
   :pet="{
     num: '179',
@@ -1097,6 +955,132 @@ lang: zh-CN
   }"
 />
 
+<Pet />
+
+<Pet
+  :pet="{
+    num: '047',
+    name: '扫把蝙蝠',
+    level: 2,
+    type: 'silver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115859807-a0227200-a46b-11eb-836c-8740564fa0c7.gif',
+    },
+    race: '飞',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '048',
+    name: '迷你蝙蝠',
+    level: 1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115859873-aadd0700-a46b-11eb-81a6-7d74afb41509.gif',
+    },
+    race: '飞',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '049',
+    name: '水果蝙蝠',
+    level: 2,
+    type: 'silver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115859789-9c8eeb00-a46b-11eb-9282-5663ee3a4638.gif',
+    },
+    race: '飞',
+  }"
+/>
+
+<Pet
+  :pet="{
+    num: '1047',
+    name: '改造掃把蝙蝠',
+    level: -1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115859807-a0227200-a46b-11eb-836c-8740564fa0c7.gif',
+    },
+    race: '飞',
+  }"
+/>
+
+
+<Pet
+  :pet="{
+    num: '175',
+    name: '獅鷲獸',
+    level: 6,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115859859-a9134380-a46b-11eb-9da8-2bb7e8360db5.gif',
+    },
+    race: '飞',
+  }"
+  size="big"
+/>
+
+<Pet
+  :pet="{
+    num: '176',
+    name: '變種獅鷲獸',
+    level: 6,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115859836-a57fbc80-a46b-11eb-9325-b1f0a6fcf8a0.gif',
+    },
+    race: '飞',
+  }"
+  size="big"
+/>
+
+<Pet
+  :pet="{
+    num: '177',
+    name: '布雷歐',
+    level: 7,
+    type: 'silver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115859802-9e58ae80-a46b-11eb-99cc-4872b40a6e29.gif',
+    },
+    race: '飞',
+  }"
+  size="big"
+/>
+
+<Pet
+  :pet="{
+    num: '178',
+    name: '依格羅斯',
+    level: 7,
+    type: 'silver',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115859829-a44e8f80-a46b-11eb-82ed-d7f3696ea3d9.gif',
+    },
+    race: '飞',
+  }"
+  size="big"
+/>
+
+<Pet
+  :pet="{
+    num: '051',
+    name: '天使蝙蝠',
+    level: 7,
+    type: 'gold',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115859783-9c8eeb00-a46b-11eb-9ad0-0b08f99178f9.gif',
+    },
+    race: '飞',
+  }"
+/>
+
+
+
 <Pet
   :pet="{
     num: '?',
@@ -1127,6 +1111,19 @@ lang: zh-CN
 
 <Pet
   :pet="{
+    num: '?',
+    name: '依鲁特奇美拉',
+    level: -1,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115866150-39ee1d00-a474-11eb-8e6a-b153ce06f9f8.gif',
+    },
+    race: '飞',
+  }"
+  size="large"
+/>
+<Pet
+  :pet="{
     num: '11514',
     name: '佛魯斯奇美拉',
     level: -1,
@@ -1141,26 +1138,12 @@ lang: zh-CN
 
 <Pet
   :pet="{
-    num: '?',
-    name: '依鲁特奇美拉',
-    level: -1,
-    type: 'normal',
+    num: '050',
+    name: '恶魔蝙蝠',
+    level: 7,
+    type: 'gold',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115866150-39ee1d00-a474-11eb-8e6a-b153ce06f9f8.gif',
-    },
-    race: '飞',
-  }"
-  size="large"
-/>
-
-<Pet
-  :pet="{
-    num: '1047',
-    name: '改造掃把蝙蝠',
-    level: -1,
-    type: 'normal',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115859807-a0227200-a46b-11eb-836c-8740564fa0c7.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115859868-aa447080-a46b-11eb-8f0c-51ce967bb68b.gif',
     },
     race: '飞',
   }"
