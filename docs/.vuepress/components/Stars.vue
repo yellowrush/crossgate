@@ -1,13 +1,11 @@
 <template>
   <div class="stars">
     <vp-icon
-      :class="['icon', { 'dark': starNumber < 1 }]"
-      :name="starNumber > 0 ? 'star' : 'star_outlined'"
+      v-for="num in 5"
+      :key="num"
+      :class="`icon ${getStarClass(num)}`"
+      :name="getStarName(num)"
      />
-    <vp-icon :class="['icon', { 'dark': starNumber < 2 }]" :name="starNumber > 1 ? 'star' : 'star_outlined'" />
-    <vp-icon :class="['icon', { 'dark': starNumber < 3 }]" :name="starNumber > 2 ? 'star' : 'star_outlined'" />
-    <vp-icon :class="['icon', { 'dark': starNumber < 4 }]" :name="starNumber > 3 ? 'star' : 'star_outlined'" />
-    <vp-icon :class="['icon', { 'dark': starNumber < 5 }]" :name="starNumber > 4 ? 'star' : 'star_outlined'" />
   </div>
 </template>
 
@@ -20,11 +18,20 @@ export default {
       default: 0,
     },
   },
-  computed: {
-    starNumber() {
-      return Number(this.number);
+  methods: {
+    getStarClass(num) {
+      return num > this.number  ? 'dark' : '';
     },
-  }
+    getStarName(num) {
+      if (num <= this.number) {
+        return 'star'
+      } else if (num > this.number && num - this.number < 1) {
+        return 'star_half';
+      } else {
+        return 'star_outlined';
+      }
+    },
+  },
 };
 </script>
 
