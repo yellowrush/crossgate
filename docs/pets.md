@@ -2236,36 +2236,11 @@ lang: zh-CN
     race: '金',
   }"
 />
-
-<Pet
-  :pet="{
-    num: '127',
-    name: '铁剪螃蟹',
-    level: 3,
-    type: 'sliver',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115958481-96b80900-a542-11eb-9399-db4651ed32fe.gif',
-    },
-    race: '金',
-  }"
-/>
 <Pet
   :pet="{
     num: '128',
     name: '黄金螃蟹',
     level: 3,
-    type: 'sliver',
-    images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115958486-97e93600-a542-11eb-91d2-1f54b59911bc.gif',
-    },
-    race: '金',
-  }"
-/>
-<Pet
-  :pet="{
-    num: '195',
-    name: '盾',
-    level: 6,
     type: 'sliver',
     images: {
       default: 'https://user-images.githubusercontent.com/78347270/115958486-97e93600-a542-11eb-91d2-1f54b59911bc.gif',
@@ -2467,7 +2442,7 @@ lang: zh-CN
     level: 5,
     type: 'normal',
     images: {
-      default: 'https://user-images.githubusercontent.com/78347270/115959085-56a65580-a545-11eb-80de-bdc6868adbba.gif',
+      default: 'https://user-images.githubusercontent.com/78347270/115959068-527a3800-a545-11eb-8c10-39036fb65a5f.gif',
     },
     race: '龙',
   }"
