@@ -1679,9 +1679,22 @@ lang: zh-CN
     race: '植',
   }"
 />
+
 <Pet
   :pet="{
     num: '092',
+    name: '印第安仙人掌',
+    level: 3,
+    type: 'normal',
+    images: {
+      default: 'https://user-images.githubusercontent.com/78347270/115957201-05459880-a53c-11eb-8a95-63fb02e2bd99.gif',
+    },
+    race: '植',
+  }"
+/>
+<Pet
+  :pet="{
+    num: '093',
     name: '火焰舞者',
     level: 5,
     type: 'gold',
