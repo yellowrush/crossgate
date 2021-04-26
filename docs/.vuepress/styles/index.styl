@@ -4,8 +4,26 @@
  * ref：https://v1.vuepress.vuejs.org/config/#index-styl
  */
 
+
+@require './config'
+@require './fallback'
+
+
 .home .hero img
   max-width 450px!important
 
 .icon
   font-size 1.2rem
+
+
+table
+  width 100%
+  display table
+  thead tr, tbody tr
+    width 100%
+@media (max-width: $MQMobileNarrow)
+  table
+    font-size .8rem
+    thead,
+    tbody,
+      display none
