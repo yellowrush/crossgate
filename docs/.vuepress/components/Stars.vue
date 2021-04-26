@@ -43,7 +43,7 @@ export default {
   margin-left 1rem
   .vp-icon
     font-size 1.2rem
-    color var(--accentColor)
+    color #ffeb3b
     &.vp-icon-star_outlined
       color var(--borderColor)
 </style>

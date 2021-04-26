@@ -456,6 +456,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/025"
 />
 <Pet
   :pet="{
@@ -468,6 +469,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/023"
 />
 <Pet
   :pet="{
@@ -480,6 +482,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/024"
 />
 <Pet
   :pet="{
@@ -492,6 +495,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/022"
 />
 
 <Pet
@@ -505,6 +509,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/026"
 />
 <Pet
   :pet="{
@@ -517,8 +522,8 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/030"
 />
-
 <Pet
   :pet="{
     num: '029',
@@ -530,6 +535,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/029"
 />
 <Pet
   :pet="{
@@ -542,6 +548,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/028"
 />
 <Pet
   :pet="{
@@ -554,6 +561,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/027"
 />
 <Pet
   :pet="{
@@ -566,6 +574,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/031"
 />
 
 <Pet
@@ -579,6 +588,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/035"
 />
 
 <Pet
@@ -592,6 +602,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/032"
 />
 <Pet
   :pet="{
@@ -604,6 +615,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/033"
 />
 <Pet
   :pet="{
@@ -616,6 +628,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/034"
 />
 
 <Pet
@@ -629,6 +642,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/171"
 />
 
 <Pet
@@ -642,6 +656,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/168"
 />
 
 <Pet
@@ -655,6 +670,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/169"
 />
 
 <Pet
@@ -668,8 +684,8 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/170"
 />
-
 
 <Pet
   :pet="{
@@ -682,6 +698,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/167"
 />
 <Pet
   :pet="{
@@ -694,6 +711,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/173"
 />
 <Pet
   :pet="{
@@ -706,6 +724,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/172"
 />
 
 <Pet
@@ -719,6 +738,7 @@ lang: zh-CN
     },
     race: '不死',
   }"
+  url="pets/174"
 />
 
 
