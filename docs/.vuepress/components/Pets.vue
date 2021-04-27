@@ -34,6 +34,7 @@
               images: pet.images,
               race: pet.race,
             }"
+            :size="pet.size || 'normal'"
             :url="`pets/${pet.num}`"
           />
         </template>

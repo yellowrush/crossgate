@@ -568,7 +568,7 @@ export default {
       race: '飞',
     }, {
       num: '045',
-      name: '惡魔',
+      name: '恶魔',
       level: 5,
       type: 'normal',
       images: {
@@ -631,7 +631,7 @@ export default {
       race: '飞',
     }, {
       num: '179',
-      name: '托羅帝鳥',
+      name: '托罗帝鸟',
       level: 3,
       type: 'normal',
       images: {
@@ -649,7 +649,7 @@ export default {
       race: '飞',
     }, {
       num: '181',
-      name: '火焰啄木鳥',
+      name: '火焰啄木鸟',
       level: 3,
       type: 'normal',
       images: {
@@ -658,7 +658,7 @@ export default {
       race: '飞',
     }, {
       num: '182',
-      name: '狂奔鳥',
+      name: '狂奔鸟',
       level: 3,
       type: 'normal',
       images: {
@@ -667,16 +667,7 @@ export default {
       race: '飞',
     }, {
       num: '5208',
-      name: '虛弱的雛鳥',
-      level: -1,
-      type: 'normal',
-      images: {
-        default: 'https://user-images.githubusercontent.com/78347270/115859827-a3b5f900-a46b-11eb-8429-8252838fa2b3.gif',
-      },
-      race: '飞',
-    }, {
-      num: '5208',
-      name: '虛弱的雛鳥',
+      name: '虛弱的雏鸟',
       level: -1,
       type: 'normal',
       images: {
@@ -727,7 +718,7 @@ export default {
       race: '飞',
     }, {
       num: '1047',
-      name: '改造掃把蝙蝠',
+      name: '改造扫把蝙蝠',
       level: -1,
       type: 'normal',
       images: {
@@ -736,40 +727,44 @@ export default {
       race: '飞',
     }, {
       num: '175',
-      name: '獅鷲獸',
+      name: '狮鹫兽',
       level: 6,
       type: 'normal',
       images: {
         default: 'https://user-images.githubusercontent.com/78347270/115859859-a9134380-a46b-11eb-9da8-2bb7e8360db5.gif',
       },
       race: '飞',
+      size: "big"
     }, {
       num: '176',
-      name: '變種獅鷲獸',
+      name: '变种狮鹫兽',
       level: 6,
       type: 'normal',
       images: {
         default: 'https://user-images.githubusercontent.com/78347270/115859836-a57fbc80-a46b-11eb-9325-b1f0a6fcf8a0.gif',
       },
       race: '飞',
+      size: "big"
     }, {
       num: '177',
-      name: '布雷歐',
+      name: '布雷欧',
       level: 7,
       type: 'silver',
       images: {
         default: 'https://user-images.githubusercontent.com/78347270/115859802-9e58ae80-a46b-11eb-99cc-4872b40a6e29.gif',
       },
       race: '飞',
+      size: "big"
     }, {
       num: '178',
-      name: '依格羅斯',
+      name: '依格罗斯',
       level: 7,
       type: 'silver',
       images: {
         default: 'https://user-images.githubusercontent.com/78347270/115859829-a44e8f80-a46b-11eb-82ed-d7f3696ea3d9.gif',
       },
       race: '飞',
+      size: "big"
     }, {
       num: '051',
       name: '天使蝙蝠',
@@ -780,7 +775,7 @@ export default {
       },
       race: '飞',
     }, {
-      num: '?',
+      num: '11511',
       name: '奇美拉',
       level: -1,
       type: 'normal',
@@ -788,8 +783,9 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115859820-a284cc00-a46b-11eb-9d33-d15929c3f464.gif',
       },
       race: '飞',
+      size: "large"
     }, {
-      num: '?',
+      num: '11512',
       name: '艾克尼奇美拉',
       level: -1,
       type: 'normal',
@@ -797,8 +793,9 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115866362-88032080-a474-11eb-8bd7-fb49c55e6c64.gif',
       },
       race: '飞',
+      size: "large"
     }, {
-      num: '?',
+      num: '11513',
       name: '依鲁特奇美拉',
       level: -1,
       type: 'normal',
@@ -806,6 +803,7 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115866150-39ee1d00-a474-11eb-8e6a-b153ce06f9f8.gif',
       },
       race: '飞',
+      size: "large"
     }, {
       num: '11514',
       name: '佛魯斯奇美拉',
@@ -815,6 +813,7 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115859813-a0bb0880-a46b-11eb-908c-421a99db8da4.gif',
       },
       race: '飞',
+      size: "large"
     }, {
       num: '050',
       name: '恶魔蝙蝠',
