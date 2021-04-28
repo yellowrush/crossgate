@@ -109,7 +109,8 @@ export default {
     .footer
       flex-direction column
       p
-        margin-bottom 0
+        margin-top 0
+        margin-bottom .2rem
 
 @media (max-width: $MQMobileNarrow)
   .home
