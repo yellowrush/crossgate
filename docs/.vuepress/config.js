@@ -1,6 +1,6 @@
 module.exports = {
   base: '/',
-  title: '魔力玩家的百科全书 - 魔力全书',
+  title: '魔力全书',
   description: '魔力玩家的百科全书',
   head: [
     ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "apple-touch-icon-180x180.png"}],

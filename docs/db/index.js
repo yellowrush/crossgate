@@ -289,8 +289,6 @@ export default {
       },
       race: '兽',
     }
-    
-
   ],
   u: [
     {
@@ -981,7 +979,7 @@ export default {
       race: '昆',
     }, {
       num: '074',
-      name: '火蜘蛛',
+      name: '风蜘蛛',
       level: 3,
       type: 'sliver',
       images: {
@@ -1025,6 +1023,17 @@ export default {
       },
       race: '昆',
     }, {
+      num: '1058',
+      name: '改造黄蝎',
+      level: -1,
+      type: 'normal',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/115956344-21930680-a537-11eb-9ca9-e719409801f5.gif',
+      },
+      race: '昆',
+    }
+    /* 
+    {
       num: '1059',
       name: '改造黄蝎',
       level: -1,
@@ -1043,6 +1052,7 @@ export default {
       },
       race: '昆',
     }
+    */
   ],
   p: [
     {
