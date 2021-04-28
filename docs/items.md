@@ -7,6 +7,11 @@ lang: zh-CN
 
 # 🛍️ 道具商城（预测）
 
+::: tip 🧮 点数换算（预测）
+- 1新台币 = 1点
+- 1人民币约为4块新台币 汇率参考自[百度搜索](https://www.baidu.com/s?wd=%E4%BA%BA%E6%B0%91%E5%B8%81%20%E5%8F%B0%E5%B8%81)
+:::
+
 <Valine />
 
 #### 💵 勇者币 (1点)
@@ -204,4 +209,6 @@ lang: zh-CN
 :::
 
 ------------------
-特别鸣谢 @chairoikoguma 👍 - 参考[链接](https://chairoikoguma.github.io/)
+> 特别鸣谢 
+> - @chairoikoguma 👍 - 参考[链接](https://chairoikoguma.github.io/)
+> - @冷泉 (QQ 434362556)
