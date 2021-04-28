@@ -1022,16 +1022,7 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115956336-2061d980-a537-11eb-963c-ec951181c2fa.gif',
       },
       race: '昆',
-    }, {
-      num: '1058',
-      name: '改造黄蝎',
-      level: -1,
-      type: 'normal',
-      images: {
-        default: 'https://user-images.githubusercontent.com/78347270/115956344-21930680-a537-11eb-9ca9-e719409801f5.gif',
-      },
-      race: '昆',
-    }
+    },
     /* 
     {
       num: '1059',
