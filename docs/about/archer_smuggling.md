@@ -3,6 +3,8 @@ title: '偷渡学习乱射'
 lang: zh-CN
 ---
 
+<RouterBack />
+
 # 🏹 关于偷渡学习乱射
 
 <Valine />

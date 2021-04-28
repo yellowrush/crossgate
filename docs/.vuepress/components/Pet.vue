@@ -1,13 +1,13 @@
 <template>
   <div :class="['pet', { 'is-big': size === 'big' }, { 'is-large': size === 'large' }]">
-    <a @click="onOpenPopup" class="pet-image">
+    <RouterLink :to="url" class="pet-image">
       <div class="name">
         <span>{{ pet.name }}</span>
       </div>
       <div class="image">
         <img :src="pet.images[type]" :alt="pet.name">
       </div>
-    </a>
+    </RouterLink>
   </div>
 </template>
 
@@ -92,22 +92,6 @@ export default {
       }
     },
   },
-
-  methods: {
-    onClickPet(type) {
-      const filtered = this.types.filter((t) => t !== type);
-      this.type = filtered[Math.floor(Math.random() * filtered.length)];
-      this.trigger = false;
-      setTimeout(() => {
-        this.trigger = true;
-      }, 0);
-      this.$router.push(this.url);
-    },
-    onOpenPopup() {
-      MyWindow = window.open(this.url, 'MyWindow', `width=${1024},height=${800}`);
-      return false;
-    }
-  }
 }
 </script>
 <style lang="stylus" scoped>

@@ -82,6 +82,16 @@ export default {
       },
       race: '兽',
     }, {
+      num: '004',
+      name: '貓人',
+      level: 3,
+      type: 'silver',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/115937687-6dac5f80-a4d3-11eb-9ba0-89362a0055e4.gif',
+      },
+      race: '兽',
+    },
+    /*{
       num: '1021',
       name: '改造地狱妖犬',
       level: -1,
@@ -90,7 +100,9 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115937651-66855180-a4d3-11eb-950c-f045e942e66d.gif',
       },
       race: '兽',
-    }, {
+    },
+    */
+    {
       num: '005',
       name: '恶魔猫',
       level: 3,
@@ -127,12 +139,12 @@ export default {
       },
       race: '兽',
     }, {
-      num: '004',
-      name: '貓人',
-      level: 3,
+      num: '006',
+      name: '妖狐',
+      level: 4,
       type: 'silver',
       images: {
-        default: 'https://user-images.githubusercontent.com/78347270/115937687-6dac5f80-a4d3-11eb-9ba0-89362a0055e4.gif',
+        default: 'https://user-images.githubusercontent.com/78347270/115937645-65542480-a4d3-11eb-870b-abbe6e95af4f.gif',
       },
       race: '兽',
     }, {
@@ -172,12 +184,12 @@ export default {
       },
       race: '兽',
     }, {
-      num: '006',
-      name: '妖狐',
-      level: 4,
-      type: 'silver',
+      num: '016',
+      name: '水蓝鼠',
+      level: 6,
+      type: 'gold',
       images: {
-        default: 'https://user-images.githubusercontent.com/78347270/115937645-65542480-a4d3-11eb-870b-abbe6e95af4f.gif',
+        default: 'https://user-images.githubusercontent.com/78347270/115937617-5f5e4380-a4d3-11eb-9e77-75e36722190d.gif',
       },
       race: '兽',
     }, {
@@ -217,15 +229,15 @@ export default {
       },
       race: '兽',
     }, {
-      num: '016',
-      name: '水蓝鼠',
-      level: 6,
+      num: '017',
+      name: '鼠王',
+      level: 7,
       type: 'gold',
       images: {
-        default: 'https://user-images.githubusercontent.com/78347270/115937617-5f5e4380-a4d3-11eb-9e77-75e36722190d.gif',
+        default: 'https://user-images.githubusercontent.com/78347270/115937697-6f762300-a4d3-11eb-8a70-e4636bfc3ed9.gif',
       },
       race: '兽',
-    }, {
+    },{
       num: '012',
       name: '大地鼠',
       level: 1,
@@ -261,16 +273,8 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115937664-68e7ab80-a4d3-11eb-9502-80b5f76af214.gif',
       },
       race: '兽',
-    }, {
-      num: '017',
-      name: '鼠王',
-      level: 7,
-      type: 'gold',
-      images: {
-        default: 'https://user-images.githubusercontent.com/78347270/115937697-6f762300-a4d3-11eb-8a70-e4636bfc3ed9.gif',
-      },
-      race: '兽',
-    }, {
+    }, 
+    /*{
       num: '1012',
       name: '改造大地鼠',
       level: -1,
@@ -289,6 +293,7 @@ export default {
       },
       race: '兽',
     }
+    */
   ],
   u: [
     {
@@ -489,7 +494,16 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115939461-18734c80-a4d9-11eb-82d7-6e3958507098.gif',
       },
       race: '不死',
-    },
+    }, {
+      num: '1022',
+      name: '改造僵尸',
+      level: '?',
+      type: 'normal',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/115939414-0c878a80-a4d9-11eb-8742-1cefb0acd4bc.gif',
+      },
+      race: '不死',
+    }
   ],
   f: [
     {
