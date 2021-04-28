@@ -3,7 +3,10 @@ module.exports = {
   plugins: [
     ['@vuepress/pwa', {
       serviceWorker: true,
-      updatePopup: true
+      updatePopup: {
+        message: "发现新内容可用",
+        buttonText: "🔄点击刷新"
+      }
     }],
     ['@vuepress/search', {
       searchMaxSuggestions: 10
