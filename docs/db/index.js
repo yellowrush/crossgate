@@ -1015,7 +1015,7 @@ export default {
       race: '昆',
     }, {
       num: '186',
-      name: '楸型虫',
+      name: '独角仙',
       level: 5,
       type: 'sliver',
       images: {
