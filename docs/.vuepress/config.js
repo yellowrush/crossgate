@@ -22,9 +22,9 @@ module.exports = {
     ['@vuepress/last-updated'],
     ['@vuepress/pwa', {
       serviceWorker: true,
+      popupComponent: 'MySWUpdatePopup',
       updatePopup: {
         message: '发现来自作者的更新包',
-        popupComponent: 'UpdatePopup',
       }
     }],
     /*

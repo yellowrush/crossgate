@@ -14,7 +14,6 @@
 <script>
 import SWUpdatePopup from '@vuepress/plugin-pwa/lib/SWUpdatePopup.vue'
 export default {
-  name: 'UpdatePopup',
   components: { SWUpdatePopup }
 }
 </script>
