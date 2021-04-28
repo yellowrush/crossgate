@@ -23,8 +23,8 @@ module.exports = {
     ['@vuepress/pwa', {
       serviceWorker: true,
       updatePopup: {
-        message: "发现新内容可用",
-        buttonText: "🔄点击刷新"
+        message: '发现来自作者的更新包',
+        popupComponent: 'UpdatePopup',
       }
     }],
     /*
