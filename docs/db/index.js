@@ -1097,7 +1097,7 @@ export default {
       race: '植',
     }, {
       num: '078',
-      name: '黄金树精',
+      name: '惨白树精',
       level: 4,
       type: 'sliver',
       images: {
@@ -1276,6 +1276,27 @@ export default {
       },
       race: '植',
     }, {
+      num: '1083',
+      name: '妖花',
+      level: 2,
+      type: 'normal',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/115957436-6457dd00-a53d-11eb-9153-e72dae912857.gif',
+      },
+      race: '植',
+      new: true,
+    }, {
+      num: '1091',
+      name: '荒漠兔耳仙人掌',
+      level: 4,
+      type: 'sliver',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/115957211-08408900-a53c-11eb-8551-2e4ed43be711.gif',
+      },
+      race: '植',
+      new: true,
+    }
+    /*{
       num: '1075',
       name: '改造树精',
       level: -1,
@@ -1294,6 +1315,7 @@ export default {
       },
       race: '植',
     }, 
+    */
   ],
   a: [
     {
