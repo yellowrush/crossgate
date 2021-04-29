@@ -1277,7 +1277,7 @@ export default {
       race: '植',
     }, {
       num: '1083',
-      name: '妖花',
+      name: '禁地妖花',
       level: 2,
       type: 'normal',
       images: {

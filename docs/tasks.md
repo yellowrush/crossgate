@@ -5,8 +5,6 @@ lang: zh-CN
 
 ## :scroll: 游戏任务 - 🏗️
 
-<Valine />
-
 ### 🏰 法兰城
 
 
