@@ -45,8 +45,19 @@ module.exports = {
   themeConfig: {
     logo: 'https://user-images.githubusercontent.com/78347270/106699233-d519e800-6625-11eb-83fc-6466733512a4.png',
     nav: [
-      { text: '⚔️ 练级', link: '/leveling' },
-      { text: '📜 游戏任务', link: '/tasks' },
+      {
+        text: '🗂️ 攻略',
+        items: [
+          { text: '⚔️ 练级点', link: '/leveling' },
+          { text: '📜 游戏任务', link: '/tasks' },
+        ],
+      },
+      { 
+        text: '💾 数据',
+        items: [
+          { text: '🔮 宝石属性', link: '/gems' },
+        ],
+      },
       { text: '🐉 宠物大全', link: '/pets' },
       { text: '💸 道具商城', link: '/items' }
     ]

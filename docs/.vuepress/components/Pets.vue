@@ -1,7 +1,7 @@
 <template>
   <div class="pets">
     <div class="head">
-      <h1>🐉 宠物大全</h1>
+      <h1>🐉 宠物大全  - 🏗️</h1>
       <div class="input">
         <label for="search">
           <vp-icon class="icon" name="search" />
@@ -33,6 +33,7 @@
               type: pet.type,
               images: pet.images,
               race: pet.race,
+              new: pet.new || false,
             }"
             :size="pet.size || 'normal'"
             :url="`pets/${pet.num}`"

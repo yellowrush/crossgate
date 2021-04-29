@@ -3,7 +3,7 @@ title: '偷渡学习乱射'
 lang: zh-CN
 ---
 
-<RouterBack />
+<RouterBack url="/" />
 
 # 🏹 关于偷渡学习乱射
 

@@ -7,6 +7,7 @@
       <div class="image">
         <img :src="pet.images[type]" :alt="pet.name">
       </div>
+      <span v-if="pet.new" class="new">new</span>
     </RouterLink>
   </div>
 </template>
@@ -43,6 +44,7 @@ export default {
           defend: 'https://user-images.githubusercontent.com/78347270/107148413-3c24fd00-6996-11eb-9ae8-f5d7c94c7f02.gif',
         },
         race: '飞',
+        new: false,
       }),
     },
     size: {
@@ -154,6 +156,16 @@ export default {
 .pet-ability
   margin-right 1rem
 
+.new
+  position absolute
+  border-radius 50px
+  border 1px solid var(--accentColor)
+  color var(--accentColor)
+  font-size 10px
+  padding 2px 5px
+  bottom 5px
+  right 5px
+
 @media (max-width: $MQMobileNarrow)
   .pet
     width: 100%
@@ -172,6 +184,11 @@ export default {
       width 100%
       img
         transform: scale(1.5);
+  .new
+    font-size 1.2rem
+    padding 3px 8px
+    line-height 20px
 .spacing
   margin-left .2rem
+
 </style>

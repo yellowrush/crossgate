@@ -6,7 +6,7 @@ export default {
       level: 3,
       type: 'normal',
       images: {
-        default: 'https://raw.githubusercontent.com/crossgate-book/crossgate-images/main/04_%E5%AE%A0%E7%89%A9/%E9%87%8E%E5%85%BD%E7%B3%BB/%E7%A9%B4%E7%86%8A.gif',
+        default: 'https://user-images.githubusercontent.com/78347270/116523506-43163880-a911-11eb-860d-2a177427640f.gif',
       },
       race: '兽',
     }, {
@@ -83,7 +83,7 @@ export default {
       race: '兽',
     }, {
       num: '004',
-      name: '貓人',
+      name: '猫人',
       level: 3,
       type: 'silver',
       images: {
@@ -91,17 +91,6 @@ export default {
       },
       race: '兽',
     },
-    /*{
-      num: '1021',
-      name: '改造地狱妖犬',
-      level: -1,
-      type: '',
-      images: {
-        default: 'https://user-images.githubusercontent.com/78347270/115937651-66855180-a4d3-11eb-950c-f045e942e66d.gif',
-      },
-      race: '兽',
-    },
-    */
     {
       num: '005',
       name: '恶魔猫',
@@ -292,8 +281,27 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115937649-66855180-a4d3-11eb-8b9b-86fe18544cee.gif',
       },
       race: '兽',
-    }
-    */
+    }, {
+      num: '1021',
+      name: '改造地狱妖犬',
+      level: -1,
+      type: '',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/115937651-66855180-a4d3-11eb-950c-f045e942e66d.gif',
+      },
+      race: '兽',
+    },
+    */ {
+      num: '1004',
+      name: '夜行猫人',
+      level: -1,
+      type: 'normal',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/115937687-6dac5f80-a4d3-11eb-9ba0-89362a0055e4.gif',
+      },
+      race: '兽',
+      new: true,
+    },
   ],
   u: [
     {

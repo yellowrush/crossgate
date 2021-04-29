@@ -1,5 +1,5 @@
 <template>
-  <a @click="onClickBack" class="router-back">
+  <a class="router-back" @click="onClickBack">
     <vp-icon class="icon" name="back" />
     返回
   </a>
@@ -17,7 +17,7 @@ export default {
   methods: {
     onClickBack() {
       if (this.url) return this.$router.push(this.url);
-      this.$router.go(-1);
+      this.$router.back();
     },
   },
 };
