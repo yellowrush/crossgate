@@ -511,7 +511,17 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115939414-0c878a80-a4d9-11eb-8742-1cefb0acd4bc.gif',
       },
       race: '不死',
-    }
+    }, {
+      num: '1030',
+      name: '深渊武装骷髅',
+      level: 4,
+      type: 'normal',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/115939418-0d202100-a4d9-11eb-9668-972258e3a3ba.gif',
+      },
+      race: '不死',
+      new: true,
+    },
   ],
   f: [
     {
