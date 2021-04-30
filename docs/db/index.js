@@ -1517,7 +1517,8 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115957977-417af800-a540-11eb-86bb-dba594a130fe.gif',
       },
       race: '特',
-    }, {
+    },
+    /*{
       num: '1110',
       name: '改造阴影',
       level: -1,
@@ -1527,6 +1528,7 @@ export default {
       },
       race: '特',
     },
+    */
   ],
   m: [
     {
