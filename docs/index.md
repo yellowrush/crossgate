@@ -40,7 +40,7 @@ copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 
 ### 📜 热门任务
 
-- 被历史抹去的禁地 🔥
+- 被抹去的大陆 🔥
 <Popup url="/tasks/1">🕶️概要</Popup> 
 <Popup url="/tasks/1_details">🥽剧情</Popup>
 
