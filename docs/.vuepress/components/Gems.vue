@@ -92,7 +92,7 @@
       <tbody>
         <template v-if="gem.weapean.length === 10">
           <tr v-for="index in 10" :key="`${gem.name}-${index}`">
-            <td>
+            <td class="line">
               {{ getGemNameByLevel(index, gem.name) }}
             </td>
             <td>
@@ -108,7 +108,7 @@
         </template>
         <template v-else>
           <tr>
-            <td>
+            <td class="line">
               {{ gem.name }}0
             </td>
             <td>
@@ -233,9 +233,9 @@ table
     tr
       td
         text-align left
-        word-break keep-all
         &:not(:first-child){
           width: 17.5%
+          word-break keep-all
         }
 
 
@@ -247,12 +247,32 @@ table
         flex-basis calc(33% - 4px)
         margin-bottom .5rem
         button
+          font-size 1rem
           justify-content center
           width 100%
-          height 2rem
+          height 2.4rem
           text-align center
           padding 0
           margin 0
+  table
+    font-size: .8rem
+    thead
+      tr
+        th
+          width auto
+          padding 0.5rem
+          text-align center
+          &.line
+            max-width 3vw
+    tbody
+      tr
+        td
+          width auto
+          padding 0.5rem 0
+          text-align center
+          &.line
+            max-width 3vw
+
 
 @media (max-width: $MQMobileNarrow)
   .gems
@@ -264,9 +284,10 @@ table
         button
           justify-content center
           width 100%
-          height 2rem
           text-align center
           padding 0
           margin 0
+  table
+    font-size: .7rem
 
 </style>

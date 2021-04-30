@@ -7,4 +7,6 @@ lang: zh-CN
 
 ### 🔮 宝石属性
 
+<Valine />
+
 <Gems />
