@@ -1605,7 +1605,7 @@ export default {
       race: '金',
     }, {
       num: '119',
-      name: '蓝魔吓人箱',
+      name: '绿魔吓人箱',
       level: 3,
       type: 'normal',
       images: {
@@ -1765,7 +1765,8 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115958494-9a4b9000-a542-11eb-88a1-214dc8fd0d2c.gif',
       },
       race: '金',
-    }, {
+    }, 
+    /*{
       num: '1108',
       name: '改造旋律影子',
       level: -1,
@@ -1775,6 +1776,7 @@ export default {
       },
       race: '金',
     },
+    */
   ],
   d: [
     {
