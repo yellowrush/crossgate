@@ -1765,7 +1765,17 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115958494-9a4b9000-a542-11eb-88a1-214dc8fd0d2c.gif',
       },
       race: '金',
-    }, 
+    }, {
+      num: '1125',
+      name: '堕落恶魔螃蟹',
+      level: 2,
+      type: 'normal',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/115958476-9586dc00-a542-11eb-8877-1828211a339b.gif',
+      },
+      race: '金',
+      new: true,
+    }
     /*{
       num: '1108',
       name: '改造旋律影子',
@@ -2171,7 +2181,17 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115960052-39c05100-a54a-11eb-80fe-e91cc20d171e.gif',
       },
       race: '人',
-    },
+    },{
+      num: '1155',
+      name: '迷幻歌妖',
+      level: 4,
+      type: 'sliver',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/115960046-388f2400-a54a-11eb-817c-5b4193e1e808.gif',
+      },
+      race: '人',
+      new: true,
+    }
   ],
   s: [
     {
