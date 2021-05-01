@@ -1825,7 +1825,7 @@ export default {
       },
       race: '龙',
     }, {
-      num: '133',
+      num: '134',
       name: '寒冰翼龙',
       level: 5,
       type: 'normal',
@@ -1834,7 +1834,7 @@ export default {
       },
       race: '龙',
     }, {
-      num: '134',
+      num: '135',
       name: '火焰翼龙',
       level: 5,
       type: 'normal',
@@ -1961,14 +1961,15 @@ export default {
       race: '龙',
     }, {
       num: '210',
-      name: '雏龙',
+      name: '穴龙',
       level: 5,
       type: 'sliver',
       images: {
         default: 'https://user-images.githubusercontent.com/78347270/115959072-53ab6500-a545-11eb-9f33-6b17a22ba13d.gif',
       },
       race: '龙',
-    }, {
+    },
+    /*{
       num: '1134',
       name: '改造寒冰翼龙',
       level: -1,
@@ -1978,6 +1979,7 @@ export default {
       },
       race: '龙',
     },
+    */
   ],
   h: [
     {

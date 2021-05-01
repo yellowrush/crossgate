@@ -53,7 +53,7 @@ module.exports = {
         ],
       },
       { 
-        text: '💾 数据',
+        text: '💾 游戏数据',
         items: [
           { text: '🔮 宝石属性', link: '/gems' },
         ],
