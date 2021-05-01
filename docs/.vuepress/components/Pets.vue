@@ -1,7 +1,7 @@
 <template>
   <div class="pets">
     <div class="head">
-      <h1>🐉 宠物大全  - 🏗️</h1>
+      <h1>🐉 宠物大全</h1>
       <div class="input">
         <label for="search">
           <vp-icon class="icon" name="search" />
