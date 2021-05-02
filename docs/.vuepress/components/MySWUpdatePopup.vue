@@ -29,6 +29,7 @@ export default {
   padding: 15px 20px 15px 10px;
   border: 3px solid var(--borderColor);
   border-radius: 5px;
+  cursor: pointer;
 }
 .my-sw-update-popup h3 {
   margin: 0;
