@@ -1,7 +1,7 @@
 <template>
-  <RouterLink :to="url" class="banner">
+  <a target="_blank" rel="noopener" :href="url" class="banner">
     <img :alt="alt" :src="src" />
-  </RouterLink>
+  </a>
 </template>
 
 <script>
