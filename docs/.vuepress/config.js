@@ -50,6 +50,7 @@ module.exports = {
         items: [
           { text: '⚔️ 练级点', link: '/leveling' },
           { text: '📜 游戏任务', link: '/tasks' },
+          { text: '🅾️ 答疑解惑', link: '/questions' },
         ],
       },
       { 
