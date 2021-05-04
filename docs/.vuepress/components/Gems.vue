@@ -32,13 +32,13 @@
         </button>
       </li>
       <li>
-        <button :class="{ 'active': selectedOption === '躲闪' }" @click="selectOption('躲闪')">
-          💨 躲闪
+        <button :class="{ 'active': selectedOption === '敏捷' }" @click="selectOption('敏捷')">
+          🍃 敏捷
         </button>
       </li>
       <li>
-        <button :class="{ 'active': selectedOption === '敏捷' }" @click="selectOption('敏捷')">
-          🍃 敏捷
+        <button :class="{ 'active': selectedOption === '命中' }" @click="selectOption('命中')">
+          🎯 命中
         </button>
       </li>
       <li>
