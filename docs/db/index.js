@@ -2225,7 +2225,7 @@ export default {
       race: '邪魔',
       size: "large"
     }, {
-      num: '9001',
+      num: '9004',
       name: '烈风牛头怪',
       level: -1,
       type: 'normal',
