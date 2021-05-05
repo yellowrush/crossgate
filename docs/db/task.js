@@ -14,6 +14,13 @@ export const tasks = [
     haveDetails: false,
     type: '装备',
   }, {
+    id: "9",
+    name: '🥦友情的使者',
+    level: '1',
+    difficulty: '-',
+    haveDetails: false,
+    type: '物品',
+  }, {
     id: "8",
     name: '🍞特卖面包招待卷',
     level: '1',
