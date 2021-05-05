@@ -87,9 +87,14 @@ export default {
 
 @media (max-width: $MQMobile)
   .go-to-top {
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2.6rem;
+    height: 2.6rem;
     bottom: 1rem;
-    right: 3rem;
+    right: 1rem;
+    padding: 0;
+    img {
+      width: calc(100% - 13px);
+      height: calc(100% - 13px);
+    }
   }
 </style>

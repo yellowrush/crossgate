@@ -21,18 +21,13 @@
           <td>
             {{ task.difficulty }}
           </td>
-          <td>
-            <p>
-              <RouterLink :to="`tasks/${task.id}`">
-                🕶️概要
-              </RouterLink>
-            </p>
-            <p v-if="!task.haveDetails">❌剧情</p>
-            <p v-else>
-              <RouterLink :to="`tasks/${task.id}_details`">
-                🥽剧情
-              </RouterLink>
-            </p>
+          <td class="text-left">
+            <RouterLink :to="`tasks/${task.id}`">
+              🕶️概要
+            </RouterLink>
+            <RouterLink v-if="task.haveDetails" :to="`tasks/${task.id}_details`">
+              🥽剧情
+            </RouterLink>
           </td>
         </tr>
       </tbody>
@@ -101,12 +96,16 @@ table
     tr
       th
         text-align center
+        &.detail
+          text-align left
   tbody
     tr
       td:not(:first-child)
         text-align center
         p
           margin 0
+        &.detail
+          text-align left
 
 
 @media (max-width: $MQMobile)

@@ -1,82 +1,87 @@
 <template>
   <div class="gems">
-    <ul class="gem-options">
-      <li>
-        <button :class="{ 'active': selectedOption === '生命' }" @click="selectOption('生命')">
-          🩸 生命
-        </button>
-      </li>
-      <li>
-        <button :class="{ 'active': selectedOption === '魔力' }" @click="selectOption('魔力')">
-          💙 魔力
-        </button>
-      </li>
-      <li>
-        <button :class="{ 'active': selectedOption === '攻击' }" @click="selectOption('攻击')">
-          🗡️ 攻击
-        </button>
-      </li>
-      <li>
-        <button :class="{ 'active': selectedOption === '防御' }" @click="selectOption('防御')">
-          🛡️ 防御
-        </button>
-      </li>
-      <li>
-        <button :class="{ 'active': selectedOption === '精神' }" @click="selectOption('精神')">
-          🛐 精神
-        </button>
-      </li>
-      <li>
-        <button :class="{ 'active': selectedOption === '回复' }" @click="selectOption('回复')">
-          💝 回复
-        </button>
-      </li>
-      <li>
-        <button :class="{ 'active': selectedOption === '敏捷' }" @click="selectOption('敏捷')">
-          🍃 敏捷
-        </button>
-      </li>
-      <li>
-        <button :class="{ 'active': selectedOption === '命中' }" @click="selectOption('命中')">
-          🎯 命中
-        </button>
-      </li>
-      <li>
-        <button :class="{ 'active': selectedOption === '反击' }" @click="selectOption('反击')">
-          🤺 反击
-        </button>
-      </li>
-      <li>
-        <button :class="{ 'active': selectedOption === '必杀' }" @click="selectOption('必杀')">
-          🎇 必杀
-        </button>
-      </li>
-      <li>
-        <button :class="{ 'active': selectedOption === '耐久' }" @click="selectOption('耐久')">
-          ⚙️ 耐久
-        </button>
-      </li>
-      <li>
-        <button :class="{ 'active': selectedOption === '魅力' }" @click="selectOption('魅力')">
-          💄 魅力
-        </button>
-      </li>
-      <li>
-        <button :class="{ 'active': selectedOption === '抗性' }" @click="selectOption('抗性')">
-          🧬 增加抗性
-        </button>
-      </li>
-    </ul>
-    <hr />
-    <ul class="gem-options">
-      <li v-for="(gem) in gems" :key="gem.name">
-        <button  :class="{ 'active': selectedGem === gem.name }" @click="selectGem(gem.name)">
-          <img :src="gem.image" :alt="gem.name">
-          {{ gem.name }}
-        </button>
-      </li>
-    </ul>
-    <hr />
+      
+    <tabs>
+      <tab name="属性分类" :selected="true">
+        <ul class="gem-options">
+          <li>
+            <button :class="{ 'active': selectedOption === '生命' }" @click="selectOption('生命')">
+              🩸 生命
+            </button>
+          </li>
+          <li>
+            <button :class="{ 'active': selectedOption === '魔力' }" @click="selectOption('魔力')">
+              💙 魔力
+            </button>
+          </li>
+          <li>
+            <button :class="{ 'active': selectedOption === '攻击' }" @click="selectOption('攻击')">
+              🗡️ 攻击
+            </button>
+          </li>
+          <li>
+            <button :class="{ 'active': selectedOption === '防御' }" @click="selectOption('防御')">
+              🛡️ 防御
+            </button>
+          </li>
+          <li>
+            <button :class="{ 'active': selectedOption === '精神' }" @click="selectOption('精神')">
+              🛐 精神
+            </button>
+          </li>
+          <li>
+            <button :class="{ 'active': selectedOption === '回复' }" @click="selectOption('回复')">
+              💝 回复
+            </button>
+          </li>
+          <li>
+            <button :class="{ 'active': selectedOption === '敏捷' }" @click="selectOption('敏捷')">
+              🍃 敏捷
+            </button>
+          </li>
+          <li>
+            <button :class="{ 'active': selectedOption === '命中' }" @click="selectOption('命中')">
+              🎯 命中
+            </button>
+          </li>
+          <li>
+            <button :class="{ 'active': selectedOption === '反击' }" @click="selectOption('反击')">
+              🤺 反击
+            </button>
+          </li>
+          <li>
+            <button :class="{ 'active': selectedOption === '必杀' }" @click="selectOption('必杀')">
+              🎇 必杀
+            </button>
+          </li>
+          <li>
+            <button :class="{ 'active': selectedOption === '耐久' }" @click="selectOption('耐久')">
+              ⚙️ 耐久
+            </button>
+          </li>
+          <li>
+            <button :class="{ 'active': selectedOption === '魅力' }" @click="selectOption('魅力')">
+              💄 魅力
+            </button>
+          </li>
+          <li>
+            <button :class="{ 'active': selectedOption === '抗性' }" @click="selectOption('抗性')">
+              🧬 增加抗性
+            </button>
+          </li>
+        </ul>
+      </tab>
+      <tab name="宝石分类">
+        <ul class="gem-options">
+          <li v-for="(gem) in gems" :key="gem.name">
+            <button  :class="{ 'active': selectedGem === gem.name }" @click="selectGem(gem.name)">
+              <img :src="gem.image" :alt="gem.name">
+              {{ gem.name }}
+            </button>
+          </li>
+        </ul>
+      </tab>
+    </tabs>
     <table v-for="(gem) in filteredGems" :key="gem.name">
       <thead>
         <tr>
@@ -129,9 +134,15 @@
 
 <script>
 import * as gems from '../../db/gem';
+import Tab from './Tab.vue';
+import Tabs from './Tabs.vue';
 
 export default {
   name: 'Gems',
+  components: {
+    Tab,
+    Tabs,
+  },
   data() {
     return {
       gems: Object.entries(gems).map(p => p[1]),
