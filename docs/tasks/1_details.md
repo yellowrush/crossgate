@@ -186,8 +186,6 @@ lang: zh-CN
 
 #### 以上为全部主线对话剧情，还有部分补充对话的内容这边会展示相关图片
 
-> 特别鸣谢 ❤️ @许小浩（QQ 840564540）
-
 ::: details 其他对话图片
 
 ![11](https://user-images.githubusercontent.com/78347270/115718177-d998a600-a3b5-11eb-9e20-bed7cbebb6a0.png)

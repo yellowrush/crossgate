@@ -1,6 +1,10 @@
 ---
+home: true
 title: '偷渡学习乱射'
 lang: zh-CN
+
+footer: 魔力全书 © 2021 make with ❤️ by
+copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 ---
 
 <RouterBack url="/" />
@@ -40,6 +44,5 @@ lang: zh-CN
 #### 4.登出回到法兰城，再去就职【弓箭手】
 
 #### 5.前往法兰城传送点，传送至奇丽村，再由大号或者队友一起前往索奇亚沙漠域学习【乱射】既可
-
 
 ![4](https://user-images.githubusercontent.com/78347270/115169327-b097bd00-a0f8-11eb-8e61-faba0d97ac6e.png)

@@ -23,7 +23,9 @@
       v-if="data.footer"
       class="footer"
     >
-      <p> {{ data.footer }} </p>
+      <p>
+        {{ data.footer }} <RouterLink to="/about/us">作者们</RouterLink>
+      </p>
       <p> {{ data.copyright }} </p>
     </div>
   </main>
