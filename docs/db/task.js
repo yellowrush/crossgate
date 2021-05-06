@@ -49,6 +49,13 @@ export const tasks = [
     haveDetails: false,
     type: '宝箱',
   }, {
+    id: "10",
+    name: '宠物改造I',
+    level: '-',
+    difficulty: '⭐',
+    haveDetails: false,
+    type: '物品',
+  }, {
     id: "1",
     name: '被抹去的大陆',
     level: '12 ~ 23',
