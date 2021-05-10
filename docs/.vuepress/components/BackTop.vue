@@ -60,7 +60,7 @@ export default {
   cursor: pointer;
   position: fixed;
   bottom: 1rem;
-  right: calc(50% - 375px - 2rem);
+  right: calc(50% - 485px - 2rem);
   width: 2rem;
   height: 2rem;
   border-radius: 5px;
@@ -90,7 +90,7 @@ export default {
     width: 2.6rem;
     height: 2.6rem;
     bottom: 1rem;
-    right: 1rem;
+    right: 2rem;
     padding: 0;
     img {
       width: calc(100% - 13px);

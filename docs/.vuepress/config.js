@@ -48,7 +48,7 @@ module.exports = {
       {
         text: '🗂️ 攻略',
         items: [
-          { text: '⚔️ 练级点', link: '/leveling' },
+          { text: '⚔️ 练级路线', link: '/leveling' },
           { text: '📜 游戏任务', link: '/tasks' },
           { text: '🅾️ 答疑解惑', link: '/questions' },
           { text: '🦸‍♂️ 游戏账号', link: '/accounts' },
