@@ -60,6 +60,17 @@ module.exports = {
           { text: '🔮 宝石属性', link: '/gems' },
         ],
       },
+      /*
+      {
+        text: '🏦 交易频道',
+        items: [
+          { text: '💵 魔币交易', link: '/trades/money' },
+          { text: '🐕 宠物交易', link: '/trades/pets' },
+          { text: '🗡️ 装备交易', link: '/trades/equipments' },
+          { text: '🧪 水料交易', link: '/trades/recovers' },
+        ],
+      },
+      */
       { text: '🐉 宠物大全', link: '/pets' },
       { text: '💸 道具商城', link: '/items' }
     ]

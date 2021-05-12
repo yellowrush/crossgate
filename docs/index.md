@@ -14,7 +14,7 @@ copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 
 ### :fire: 最新活动
 
-<Banner alt="预约二重大礼包" src="https://user-images.githubusercontent.com/78347270/116799919-79cd9800-ab37-11eb-9efe-08839eaac19d.png" url="https://cg.originmood.com/event/20200903" />
+[预约活动奖励领取传送门🚪](https://cg.originmood.com/events/pre-reg.html)
 
 -------------------------------
 

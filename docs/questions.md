@@ -20,6 +20,10 @@ copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 
 > [游戏主程序和更新包](https://cg.originmood.com/download.html)
 
+- 游戏内提示.NET版本错误信息
+
+> [Microsoft .NET Framework 4](https://www.microsoft.com/zh-cn/download/details.aspx?id=17718)
+
 ### :ab: 文字乱码
 
 - [游戏程序乱码解决方法](guides/locale)
