@@ -51,7 +51,7 @@ module.exports = {
           { text: '⚔️ 练级路线', link: '/leveling' },
           { text: '📜 游戏任务', link: '/tasks' },
           { text: '🅾️ 答疑解惑', link: '/questions' },
-          { text: '🦸‍♂️ 游戏账号', link: '/accounts' },
+          { text: '🦸‍♂️ 游戏账号', link: '/guides/register' },
         ],
       },
       { 

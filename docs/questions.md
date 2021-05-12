@@ -9,6 +9,21 @@ copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 
 ### 🅾️ 常见问题
 
+### :sassy_man: 游戏账号
+
+- [账号注册以及登录，创建游戏账号](guides/register)
+
+### :book: 游戏安装
+
+- [游戏下载以及安装](guides/install)
+- [游戏进入服务器失败, DNS设定解决方法](guides/dns)
+
+> [游戏主程序和更新包](https://cg.originmood.com/download.html)
+
+### :ab: 文字乱码
+
+- [游戏程序乱码解决方法](guides/locale)
+- [游戏内输入法乱码解决方法](guides/input)
 
 #### 如何注册账号？
 > 魔力宝贝：永恒初心需要到官网用手机号注册，86区号的手机目前无法注册，一个手机号📱能注册一个账号，一个账号可以新建3个游戏账号。详细流程请参考[注册攻略](/guides/register)。

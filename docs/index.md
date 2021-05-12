@@ -12,10 +12,6 @@ copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 
 <Valine />
 
-::: tip 🎉 公測开服时间公告
-- 2021年5月11日（星期二 11:00 am）正式开服！！！
-:::
--------------------------------
 ### :fire: 最新活动
 
 <Banner alt="预约二重大礼包" src="https://user-images.githubusercontent.com/78347270/116799919-79cd9800-ab37-11eb-9efe-08839eaac19d.png" url="https://cg.originmood.com/event/20200903" />
@@ -46,3 +42,15 @@ copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 <Popup url="/tasks/1">🕶️概要</Popup> 
 <Popup url="/tasks/1_details">🥽剧情</Popup>
 
+
+### :book: 游戏安装
+
+- [游戏下载以及安装](guides/install)
+- [游戏进入服务器失败, DNS设定解决方法](guides/dns)
+
+> [游戏主程序和更新包](https://cg.originmood.com/download.html)
+
+### :ab: 文字乱码
+
+- [游戏程序乱码解决方法](guides/locale)
+- [游戏内输入法乱码解决方法](guides/input)
