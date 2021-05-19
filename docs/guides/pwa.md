@@ -7,7 +7,7 @@ footer: 魔力全书 © 2021 make with ❤️ by
 copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 ---
 
-# ☁️ 手机轻量APP功能
+# ☁️ 全书离线APP功能
 
 ### 关于此功能实际名称介绍： [Progressive Web App](https://zhuanlan.zhihu.com/p/240534682)来自知乎
 

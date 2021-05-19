@@ -64,6 +64,7 @@ module.exports = {
         text: '⚒️ 游戏工具',
         items: [
           { text: '🧮 宠物算档器', link: '/tools/calculate' },
+          { text: '🛸 全书离线APP', link: '/guides/pwa' },
         ],
       },
       /*
