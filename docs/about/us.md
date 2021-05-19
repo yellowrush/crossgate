@@ -56,3 +56,4 @@ copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 [B站传送门🚪](https://space.bilibili.com/1310215?from=search&seid=8949120630143158763)
 - @chairoikoguma 👍 - 参考[链接](https://chairoikoguma.github.io/)
 - @亞達Archer
+- @烈炎 - [魔力宝贝资料站](http://www.520cg.com/)

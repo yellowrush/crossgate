@@ -19,7 +19,8 @@ module.exports = (options, ctx) => {
       return {
         '@AlgoliaSearchBox': isAlgoliaSearch
           ? path.resolve(__dirname, 'components/AlgoliaSearchBox.vue')
-          : path.resolve(__dirname, 'noopModule.js')
+          : path.resolve(__dirname, 'noopModule.js'),
+        '@alias': path.resolve(__dirname, 'public/暗月宠物计算器.rar'),
       }
     },
 
