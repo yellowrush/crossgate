@@ -649,6 +649,48 @@ export const quartz = {
   keyword: '魅力'
 }
 
+export const mgem = {
+  name: '锰红柱石',
+  image: 'https://user-images.githubusercontent.com/78347270/116541345-5253b100-a926-11eb-86f3-d4eaa36863da.gif',
+  weapean: [
+    '反击+1 攻击-1%',
+    '反击+2 攻击-2%',
+    '反击+3 攻击-3%',
+    '反击+4 攻击-4%',
+    '反击+5 攻击-5%',
+    '反击+6 攻击-6%',
+    '反击+7 攻击-7%',
+    '反击+8 攻击-8%',
+    '反击+9 攻击-9%',
+    '反击+10 攻击-10%',
+  ],
+  armor: [
+    '必杀+1 敏捷-4',
+    '必杀+2 敏捷-8',
+    '必杀+3 敏捷-12',
+    '必杀+4 敏捷-16',
+    '必杀+5 敏捷-20',
+    '必杀+6 敏捷-24',
+    '必杀+7 敏捷-28',
+    '必杀+8 敏捷-32',
+    '必杀+9 敏捷-36',
+    '必杀+10 敏捷-40',
+  ],
+  accessory: [
+    '反击+1 攻击-1%',
+    '反击+2 攻击-2%',
+    '反击+3 攻击-3%',
+    '反击+4 攻击-4%',
+    '反击+5 攻击-5%',
+    '反击+6 攻击-6%',
+    '反击+7 攻击-7%',
+    '反击+8 攻击-8%',
+    '反击+9 攻击-9%',
+    '反击+10 攻击-10%',
+  ],
+  keyword: '反击 必杀'
+}
+
 export const tektite = {
   name: '玻陨石',
   image: 'https://user-images.githubusercontent.com/78347270/116541350-5384de00-a926-11eb-84d9-a8cd6b01a22e.gif',
@@ -775,48 +817,6 @@ export const cassiterite = {
   keyword: '抗性'
 }
 
-export const opal = {
-  name: '蛋白石',
-  image: 'https://user-images.githubusercontent.com/78347270/116541351-5384de00-a926-11eb-988a-2aab9a7c4f66.gif',
-  weapean: [
-    '魔力+30',
-    '魔力+40',
-    '魔力+50',
-    '魔力+60',
-    '魔力+70',
-    '魔力+80',
-    '魔力+90',
-    '魔力+100',
-    '魔力+110',
-    '魔力+120',
-  ],
-  armor: [
-    '魔力+30',
-    '魔力+35',
-    '魔力+40',
-    '魔力+45',
-    '魔力+50',
-    '魔力+55',
-    '魔力+60',
-    '魔力+65',
-    '魔力+70',
-    '魔力+75',
-  ],
-  accessory: [
-    '魔力+30 耐久-5%',
-    '魔力+40 耐久-10%',
-    '魔力+50 耐久-15%',
-    '魔力+60 耐久-20%',
-    '魔力+70 耐久-25%',
-    '魔力+80 耐久-30%',
-    '魔力+90 耐久-35%',
-    '魔力+100 耐久-40%',
-    '魔力+110 耐久-45%',
-    '魔力+120 耐久-50%',
-  ],
-  keyword: '魔力'
-}
-
 export const redStar = {
   name: '沙漠红星',
   image: 'https://user-images.githubusercontent.com/78347270/116541353-5384de00-a926-11eb-8efb-f393d8b4ce6c.gif',
@@ -825,6 +825,7 @@ export const redStar = {
   accessory: '必杀-1~+5 反击-1~+5',
   keyword: '必杀 方剂 躲闪 命中'
 }
+
 export const meteor = {
   name: '流星',
   image: 'https://user-images.githubusercontent.com/78347270/116541350-5384de00-a926-11eb-84d9-a8cd6b01a22e.gif',

@@ -1055,6 +1055,16 @@ export default {
       },
       race: '昆',
     },
+    {
+      num: '1059',
+      name: '改造黄蝎',
+      level: -1,
+      type: 'normal',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/115956344-21930680-a537-11eb-9ca9-e719409801f5.gif',
+      },
+      race: '昆',
+    }
     /* 
     {
       num: '1059',
@@ -1286,6 +1296,24 @@ export default {
       },
       race: '植',
     }, {
+      num: '1075',
+      name: '改造树精',
+      level: -1,
+      type: 'normal',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/115957218-0971b600-a53c-11eb-94f8-522e071d457a.gif',
+      },
+      race: '植',
+    }, {
+      num: '1085',
+      name: '改造绿色口臭鬼',
+      level: -1,
+      type: 'normal',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/115957209-07a7f280-a53c-11eb-9cfb-525bf5e99594.gif',
+      },
+      race: '植',
+    }, {
       num: '1083',
       name: '禁地妖花',
       level: 2,
@@ -1305,27 +1333,7 @@ export default {
       },
       race: '植',
       new: true,
-    }
-    /*{
-      num: '1075',
-      name: '改造树精',
-      level: -1,
-      type: 'normal',
-      images: {
-        default: 'https://user-images.githubusercontent.com/78347270/115957218-0971b600-a53c-11eb-94f8-522e071d457a.gif',
-      },
-      race: '植',
-    }, {
-      num: '1085',
-      name: '改造绿色口臭鬼',
-      level: -1,
-      type: 'normal',
-      images: {
-        default: 'https://user-images.githubusercontent.com/78347270/115957209-07a7f280-a53c-11eb-9cfb-525bf5e99594.gif',
-      },
-      race: '植',
-    }, 
-    */
+    },
   ],
   a: [
     {
@@ -1517,8 +1525,7 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115957977-417af800-a540-11eb-86bb-dba594a130fe.gif',
       },
       race: '特',
-    },
-    /*{
+    }, {
       num: '1110',
       name: '改造阴影',
       level: -1,
@@ -1528,6 +1535,7 @@ export default {
       },
       race: '特',
     },
+    /*
     */
   ],
   m: [
@@ -2181,7 +2189,16 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115960052-39c05100-a54a-11eb-80fe-e91cc20d171e.gif',
       },
       race: '人',
-    },{
+    }, {
+      num: '1145',
+      name: '改造烈风哥布林',
+      level: 3,
+      type: 'sliver',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/115960063-3cbb4180-a54a-11eb-9152-cc730bb44315.gif',
+      },
+      race: '人',
+    }, {
       num: '1155',
       name: '迷幻歌妖',
       level: 4,
