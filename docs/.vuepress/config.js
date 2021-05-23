@@ -58,6 +58,7 @@ module.exports = {
         text: '💾 游戏数据',
         items: [
           { text: '🔮 宝石属性', link: '/gems' },
+          { text: '💸 道具商城', link: '/items' },
         ],
       },
       { 
@@ -79,7 +80,6 @@ module.exports = {
       },
       */
       { text: '🐉 宠物大全', link: '/pets' },
-      { text: '💸 道具商城', link: '/items' }
     ]
   },
   markdown: {

@@ -10,7 +10,7 @@
           id="search"
           class="search"
           type="text"
-          placeholder="输入宠物名搜索"
+          placeholder="输入宠物名/种族搜索"
           v-model="search"
         />
       </div>
@@ -67,9 +67,61 @@ export default {
       const searchVal = this.search.replace(/\s/g, '');
       const searchTarget = this.petDatas.slice(0);
       if (!searchVal) return searchTarget;
+
+      if (searchVal === '昆虫') {
+        return searchTarget.map((pets) => {
+          return [pets[0], pets[0] === 'i' ? pets[1] : []];
+        });
+      }
+      if (searchVal === '野兽') {
+        return searchTarget.map((pets) => {
+          return [pets[0], pets[0] === 'b' ? pets[1] : []];
+        });
+      }
+      if (searchVal === '不死') {
+        return searchTarget.map((pets) => {
+          return [pets[0], pets[0] === 'u' ? pets[1] : []];
+        });
+      }
+      if (searchVal === '飞行') {
+        return searchTarget.map((pets) => {
+          return [pets[0], pets[0] === 'f' ? pets[1] : []];
+        });
+      }
+      if (searchVal === '植物') {
+        return searchTarget.map((pets) => {
+          return [pets[0], pets[0] === 'p' ? pets[1] : []];
+        });
+      }
+      if (searchVal === '特殊') {
+        return searchTarget.map((pets) => {
+          return [pets[0], pets[0] === 'a' ? pets[1] : []];
+        });
+      }
+      if (searchVal === '龙') {
+        return searchTarget.map((pets) => {
+          return [pets[0], pets[0] === 'd' ? pets[1] : []];
+        });
+      }
+      
+      if (searchVal === '金属') {
+        return searchTarget.map((pets) => {
+          return [pets[0], pets[0] === 'm' ? pets[1] : []];
+        });
+      }
+      if (searchVal === '人') {
+        return searchTarget.map((pets) => {
+          return [pets[0], pets[0] === 'h' ? pets[1] : []];
+        });
+      }
+      
+      if (searchVal === '邪魔') {
+        return searchTarget.map((pets) => {
+          return [pets[0], pets[0] === 's' ? pets[1] : []];
+        });
+      }
       
       return searchTarget.map((pets) => {
-        console.log(pets[1]);
         return [pets[0], pets[1].filter((pet) => pet.name.includes(searchVal))]
       });
     },
@@ -129,15 +181,17 @@ export default {
           left 0
           top 0
           bottom 0
-          margin .7rem
+          margin .53rem
         .search
-          font-size: 1rem;
+          width calc(100% - 45px);
+          font-size: .9rem;
           display: block;
           appearance: none;
           outline: 0;
-          height 30px;
-          border: 2px solid var(--codeBgColor);
-          width: 125px;
+          height 1.4rem;
+          border: 1px solid var(--borderColor);
+          color: var(--textColor);
+          background transparent;
           border-radius: 3px;
           padding: 5px 5px 5px 40px;
           margin: 0 auto 10px auto;
@@ -148,5 +202,15 @@ export default {
           &:hover{
             border-color var(--accentColor)
           }
+
+@media (max-width: $MQMobileNarrow)
+  .pets
+    .head
+      flex-direction column
+      .input
+        width 100%
+        margin-bottom 1rem
+        input
+          text-align center
 
 </style>
