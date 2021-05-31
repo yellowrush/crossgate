@@ -30,6 +30,10 @@ copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 <Popup url="/tasks/1">🕶️概要</Popup> 
 <Popup url="/tasks/1_details">🥽剧情</Popup>
 
+- 禁地追踪 🔥
+<Popup url="/tasks/6">🕶️概要</Popup> 
+<Popup url="/tasks/6_videos">📺视频</Popup>
+
 
 ### :book: 游戏安装
 

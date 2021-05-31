@@ -21,12 +21,15 @@
           <td>
             {{ task.difficulty }}
           </td>
-          <td class="text-left">
+          <td width="100" class="actions text-left">
             <RouterLink :to="`tasks/${task.id}`">
-              🕶️概要
+              🕶️任务概要
             </RouterLink>
             <RouterLink v-if="task.haveDetails" :to="`tasks/${task.id}_details`">
-              🥽剧情
+              🥽任务剧情
+            </RouterLink>
+            <RouterLink v-if="task.haveVideos" :to="`tasks/${task.id}_videos`">
+              📺视频攻略
             </RouterLink>
           </td>
         </tr>
@@ -106,6 +109,10 @@ table
           margin 0
         &.detail
           text-align left
+        &.actions
+          & a
+            display block
+            margin 10px 0
 
 
 @media (max-width: $MQMobile)
