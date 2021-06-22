@@ -14,7 +14,7 @@ copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 
 ### :fire: 最新活动
 
-[预约活动奖励领取传送门🚪](https://cg.originmood.com/events/pre-reg.html)
+[賀端午祭龍祖活動](https://cg.originmood.com/NewsContent/zh_TW/mlbb_notice_5133.html)
 
 -------------------------------
 
@@ -26,11 +26,15 @@ copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 
 ### 📜 热门任务
 
-- 被抹去的大陆 🔥
+- 賀端午祭龙祖 🔥
+<Popup url="/tasks/11">🕶️概要</Popup> 
+
+
+- 被抹去的大陆
 <Popup url="/tasks/1">🕶️概要</Popup> 
 <Popup url="/tasks/1_details">🥽剧情</Popup>
 
-- 禁地追踪 🔥
+- 禁地追踪
 <Popup url="/tasks/6">🕶️概要</Popup> 
 <Popup url="/tasks/6_videos">📺视频</Popup>
 

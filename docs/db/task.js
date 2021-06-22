@@ -77,6 +77,13 @@ export const tasks = [
     difficulty: '?',
     haveDetails: false,
     type: '?',
+  }, {
+    id: "11",
+    name: '賀端午祭龙祖',
+    level: '45+',
+    difficulty: '⭐⭐⭐',
+    haveDetails: false,
+    type: '物品 饰品',
   },
 ];
 
