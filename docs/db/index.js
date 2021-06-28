@@ -1064,18 +1064,8 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115956344-21930680-a537-11eb-9ca9-e719409801f5.gif',
       },
       race: '昆',
-    }
-    /* 
+    },
     {
-      num: '1059',
-      name: '改造黄蝎',
-      level: -1,
-      type: 'normal',
-      images: {
-        default: 'https://user-images.githubusercontent.com/78347270/115956344-21930680-a537-11eb-9ca9-e719409801f5.gif',
-      },
-      race: '昆',
-    }, {
       num: '1072',
       name: '改造水蜘蛛',
       level: -1,
@@ -1085,7 +1075,6 @@ export default {
       },
       race: '昆',
     }
-    */
   ],
   p: [
     {
@@ -1534,9 +1523,16 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115957959-3d4eda80-a540-11eb-9fb0-6f52c9d437ee.gif',
       },
       race: '特',
+    }, {
+      num: '1104',
+      name: '粉红炸弹',
+      level: -1,
+      type: 'normal',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/123658771-fdbcab80-d86c-11eb-9bcd-3a95b2742b67.gif',
+      },
+      race: '特',
     },
-    /*
-    */
   ],
   m: [
     {
@@ -1986,7 +1982,16 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115959072-53ab6500-a545-11eb-9f33-6b17a22ba13d.gif',
       },
       race: '龙',
-    },
+    }, {
+      num: '1133',
+      name: '变异龙祖',
+      level: -1,
+      type: '?',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/123658767-fc8b7e80-d86c-11eb-835e-40b4d350c63e.gif',
+      },
+      race: '龙',
+    }
     /*{
       num: '1134',
       name: '改造寒冰翼龙',
