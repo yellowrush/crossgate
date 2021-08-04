@@ -79,11 +79,25 @@ export const tasks = [
     type: '?',
   }, {
     id: "11",
-    name: '賀端午祭龙祖',
+    name: '賀端午祭龙祖(结束)',
     level: '45+',
     difficulty: '⭐⭐⭐',
     haveDetails: false,
     type: '物品 饰品',
+  }, {
+    id: "12",
+    name: '雷霆與劇毒的主宰',
+    level: '50+ / 30+',
+    difficulty: '⭐⭐⭐',
+    haveDetails: false,
+    type: '材料',
+  }, {
+    id: "12",
+    name: '20週年慶典活動',
+    level: '20+',
+    difficulty: '⭐⭐⭐⭐',
+    haveDetails: false,
+    type: '宠物',
   },
 ];
 

@@ -1,5 +1,8 @@
 const path = require('path')
 
+import './pre-game';
+import './game';
+
 // Theme API.
 module.exports = (options, ctx) => {
   const { themeConfig, siteConfig } = ctx

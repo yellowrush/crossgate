@@ -300,7 +300,16 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115937687-6dac5f80-a4d3-11eb-9ba0-89362a0055e4.gif',
       },
       race: '兽',
-      new: true,
+      new: false,
+    }, {
+      num: '1020',
+      name: '雷兽',
+      level: -1,
+      type: '',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/126047770-5b52f512-e740-4530-b8f0-4e38150736d9.gif',
+      },
+      race: '兽',
     },
   ],
   u: [
@@ -520,7 +529,7 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115939418-0d202100-a4d9-11eb-9668-972258e3a3ba.gif',
       },
       race: '不死',
-      new: true,
+      new: false,
     },
   ],
   f: [
@@ -1074,6 +1083,15 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115956316-1a6bf880-a537-11eb-966e-5aacd14040a7.gif',
       },
       race: '昆',
+    }, {
+      num: '1066',
+      name: '櫻花螳螂',
+      level: -1,
+      type: 'normal',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/128184122-de475555-9b89-4929-8504-009d9fa6f3d4.gif',
+      },
+      race: '昆',
     }
   ],
   p: [
@@ -1311,7 +1329,7 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115957436-6457dd00-a53d-11eb-9153-e72dae912857.gif',
       },
       race: '植',
-      new: true,
+      new: false,
     }, {
       num: '1091',
       name: '荒漠兔耳仙人掌',
@@ -1321,7 +1339,7 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115957211-08408900-a53c-11eb-8551-2e4ed43be711.gif',
       },
       race: '植',
-      new: true,
+      new: false,
     },
   ],
   a: [
@@ -1532,7 +1550,16 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/123658771-fdbcab80-d86c-11eb-9bcd-3a95b2742b67.gif',
       },
       race: '特',
-    },
+    }, {
+      num: '1095',
+      name: '純白液態史萊姆',
+      level: -1,
+      type: 'normal',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/128184126-07105079-522b-4185-861f-ccd250c9e11f.gif',
+      },
+      race: '特',
+    }
   ],
   m: [
     {
@@ -1778,7 +1805,16 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115958476-9586dc00-a542-11eb-8877-1828211a339b.gif',
       },
       race: '金',
-      new: true,
+      new: false,
+    }, {
+      num: '1128',
+      name: '剧毒螃蟹',
+      level: 3,
+      type: 'sliver',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/126490247-22c8f653-313e-4632-8726-434dfeb53ea4.gif',
+      },
+      race: '金',
     }
     /*{
       num: '1108',
@@ -2212,7 +2248,7 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/115960046-388f2400-a54a-11eb-817c-5b4193e1e808.gif',
       },
       race: '人',
-      new: true,
+      new: false,
     }
   ],
   s: [
