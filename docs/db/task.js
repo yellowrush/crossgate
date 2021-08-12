@@ -93,11 +93,11 @@ export const tasks = [
     type: '材料',
   }, {
     id: "12",
-    name: '20週年慶典活動',
+    name: '20週年慶典活動(结束)',
     level: '20+',
     difficulty: '⭐⭐⭐⭐',
     haveDetails: false,
-    type: '宠物',
+    type: '宠物 饰品',
   },
 ];
 

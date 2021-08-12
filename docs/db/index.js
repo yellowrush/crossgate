@@ -1084,6 +1084,15 @@ export default {
       },
       race: '昆',
     }, {
+      num: '1064',
+      name: '赤炎黄蜂',
+      level: 2,
+      type: 'normal',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/129139923-a371d550-b040-4505-8e22-0f98a250e4dc.gif',
+      },
+      race: '昆',
+    }, {
       num: '1066',
       name: '櫻花螳螂',
       level: -1,
@@ -1340,7 +1349,16 @@ export default {
       },
       race: '植',
       new: false,
-    },
+    }, {
+      num: '10750',
+      name: '怀旧树精',
+      level: -1,
+      type: 'normal',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/129139924-79b41853-20f5-4ab7-94c8-fe3456c74312.gif',
+      },
+      race: '植',
+    }
   ],
   a: [
     {
