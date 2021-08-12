@@ -310,6 +310,60 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/126047770-5b52f512-e740-4530-b8f0-4e38150736d9.gif',
       },
       race: '兽',
+    }, {
+      num: '10120',
+      name: '西瓜大地鼠',
+      level: -1,
+      type: '',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/129139789-b2bd8140-1176-43ac-9798-912eb8e21f96.gif',
+      },
+      race: '兽',
+    }, {
+      num: '10121',
+      name: '祭奠火焰鼠',
+      level: -1,
+      type: '',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/129139783-5cf2d9a8-c73a-4a17-aa2b-cc975ec04d94.gif',
+      },
+      race: '兽',
+    }, {
+      num: '10122',
+      name: '浮潜噩梦鼠',
+      level: -1,
+      type: '',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/129139787-bd36dd7d-4e4f-4276-82be-d50c05fe467a.gif',
+      },
+      race: '兽',
+    }, {
+      num: '10123',
+      name: '兜风宝石鼠',
+      level: -1,
+      type: '',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/129139785-9b7f56af-a8f4-4fcf-b527-c34106089688.gif',
+      },
+      race: '兽',
+    }, {
+      num: '10124',
+      name: '漂漂水蓝鼠',
+      level: -1,
+      type: '',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/129139790-fd233b17-4244-426f-bb22-4ed0f13aeffc.gif',
+      },
+      race: '兽',
+    }, {
+      num: '10125',
+      name: '黄金鼠王',
+      level: -1,
+      type: '',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/129139800-f4681ca3-d020-4f63-9189-32adee34d0e4.gif',
+      },
+      race: '兽',
     },
   ],
   u: [
@@ -2043,6 +2097,15 @@ export default {
       type: '?',
       images: {
         default: 'https://user-images.githubusercontent.com/78347270/123658767-fc8b7e80-d86c-11eb-835e-40b4d350c63e.gif',
+      },
+      race: '龙',
+    }, {
+      num: '1139',
+      name: '暗黑水龙蜥',
+      level: -1,
+      type: 'normal',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/129139795-f76046c1-768e-490b-832a-c11d5435dddf.gif',
       },
       race: '龙',
     }
