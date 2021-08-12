@@ -1631,7 +1631,16 @@ export default {
         default: 'https://user-images.githubusercontent.com/78347270/128184126-07105079-522b-4185-861f-ccd250c9e11f.gif',
       },
       race: '特',
-    }
+    }, {
+      num: '1194',
+      name: '祥云宝宝',
+      level: -1,
+      type: 'sliver',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/129139810-836a260c-4188-4105-8f28-42a400de2183.gif',
+      },
+      race: '特',
+    },
   ],
   m: [
     {
@@ -2106,6 +2115,15 @@ export default {
       type: 'normal',
       images: {
         default: 'https://user-images.githubusercontent.com/78347270/129139795-f76046c1-768e-490b-832a-c11d5435dddf.gif',
+      },
+      race: '龙',
+    }, {
+      num: '1210',
+      name: '小白龙',
+      level: -1,
+      type: 'sliver',
+      images: {
+        default: 'https://user-images.githubusercontent.com/78347270/129139814-952a3a72-69c7-4f46-8c12-0d2bcc6d7673.gif',
       },
       race: '龙',
     }
