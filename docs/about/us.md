@@ -17,7 +17,7 @@ copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 
 
 ## 🛠️ 小明（脑洞驱动者）
-<img style="border-radius: 5px; margin-right: 5px;" src="https://user-images.githubusercontent.com/78347270/117245751-48760480-ae76-11eb-99b3-396999bbb36a.JPG" width="100" height="100"> qq: 420495794, 微信: yelo123
+<img style="border-radius: 5px; margin-right: 5px;" src="https://user-images.githubusercontent.com/78347270/117245751-48760480-ae76-11eb-99b3-396999bbb36a.JPG" width="100" height="100"> DC: 小黃#3696, qq: 420495794, 微信: yelo123
 
 
 ## 🎨 柳哲纳（图像大师）

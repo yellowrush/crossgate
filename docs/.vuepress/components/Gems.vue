@@ -1,6 +1,5 @@
 <template>
   <div class="gems">
-      
     <tabs>
       <tab name="属性分类" :selected="true">
         <ul class="gem-options">
