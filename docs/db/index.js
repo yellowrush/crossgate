@@ -2294,7 +2294,7 @@ export default {
       },
       race: '人',
     }, {
-      num: '211',
+      num: '212',
       name: '大型半兽人',
       level: 4,
       type: 'normal',
@@ -2303,7 +2303,7 @@ export default {
       },
       race: '人',
     }, {
-      num: '212',
+      num: '211',
       name: '猪鬼',
       level: 5,
       type: 'sliver',
