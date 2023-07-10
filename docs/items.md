@@ -3,20 +3,10 @@ home: true
 title: '道具商城'
 lang: zh-CN
 
-footer: 魔力全书 © 2021 make with ❤️ by
 copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 ---
 
-
-::: tip 作者偷懶中😪
-
-- 商城有持續更新哦，詳細訊息請參考傳送門
-
-:::
-
 # 🛍️ 道具商城
-
-<Valine />
 
 [道具商城传送门🚪](https://cg.originmood.com/shop.html)
 

@@ -5,8 +5,6 @@ lang: zh-CN
 
 ## 🎮 游戏版本
 
-<Valine />
-
 ![0f616bfd1e178a829356dbebe103738da877e8d8](https://user-images.githubusercontent.com/78347270/115949685-b125be80-a511-11eb-868e-15d5ac0309e6.jpg)
 
 ### 永恆初心机制为<Strong>免费</Strong>游玩以及[道具商城](/items)。

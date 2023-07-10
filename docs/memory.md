@@ -3,11 +3,8 @@ home: true
 title: '小黃的回忆'
 lang: zh-CN
 
-footer: 魔力全书 © 2021 make with ❤️ by
 copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 ---
-
-<Valine />
 
 # 2021/4/18  第一次打过热砂！获得能🚢海的戒指！
 

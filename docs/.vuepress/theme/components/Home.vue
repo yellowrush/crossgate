@@ -24,7 +24,7 @@
       class="footer"
     >
       <p>
-        {{ data.footer }} <RouterLink to="/about/us">作者们</RouterLink>
+        魔力全书 © {{ currentYear }} make with ❤️ by <RouterLink to="/about/us">作者们</RouterLink>
       </p>
       <p> {{ data.copyright }} </p>
     </div>
@@ -52,7 +52,11 @@ export default {
     
     algolia () {
       return this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {}
-    }
+    },
+
+    currentYear () {
+      return new Date(Date.now()).getFullYear();
+    },
   }
 }
 </script>
