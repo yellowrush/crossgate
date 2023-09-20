@@ -23,6 +23,7 @@
     "vuepress-theme-succinct": "^1.7.2"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001538",
     "leancloud-storage": "^4.10.1",
     "valine": "^1.4.14"
   }
