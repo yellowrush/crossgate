@@ -2,8 +2,6 @@
 home: true
 title: '偷渡学习乱射'
 lang: zh-CN
-
-copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 ---
 
 <RouterBack url="/" />

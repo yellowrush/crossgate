@@ -2,8 +2,6 @@
 home: true
 title: '游戏账号'
 lang: zh-CN
-
-copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 ---
 
 # 📑 游戏账号

@@ -58,7 +58,6 @@ module.exports = {
         text: '💾 游戏数据',
         items: [
           { text: '🔮 宝石属性', link: '/gems' },
-          { text: '💸 道具商城', link: '/items' },
         ],
       },
       { 

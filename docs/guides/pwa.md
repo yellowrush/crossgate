@@ -2,8 +2,6 @@
 home: true
 title: '手机轻量APP'
 lang: zh-CN
-
-copyright: 本站所有图档等资料版权 - 史克威尔艾尼克斯
 ---
 
 # ☁️ 全书离线APP功能

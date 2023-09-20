@@ -7,7 +7,7 @@ lang: zh-CN
 
 ![0f616bfd1e178a829356dbebe103738da877e8d8](https://user-images.githubusercontent.com/78347270/115949685-b125be80-a511-11eb-868e-15d5ac0309e6.jpg)
 
-### 永恆初心机制为<Strong>免费</Strong>游玩以及[道具商城](/items)。
+### 永恆初心机制为<Strong>免费</Strong>游玩以及<Strong>道具商城</Strong>。
 
 - 同时开启<Strong>永恒双子、永恒天秤、永恒狮子</Strong>各<Strong>20</Strong>分流。
 

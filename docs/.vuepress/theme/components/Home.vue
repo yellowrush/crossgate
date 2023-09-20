@@ -19,14 +19,11 @@
     
     <Content class="theme-default-content custom" />
 
-    <div
-      v-if="data.footer"
-      class="footer"
-    >
+    <div class="footer">
       <p>
-        魔力全书 © {{ currentYear }} make with ❤️ by <RouterLink to="/about/us">作者们</RouterLink>
+        魔力全书 © {{ currentYear }} make with ❤️ <!-- by <RouterLink to="/about/us">作者们</RouterLink> -->
       </p>
-      <p> {{ data.copyright }} </p>
+      <p> 本站所有图档等资料版权 - 史克威尔艾尼克斯 </p>
     </div>
   </main>
 </template>
