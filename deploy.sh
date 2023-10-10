@@ -11,7 +11,6 @@ cd docs/.vuepress/dist
 cp -b ../beaudar.json .
 
 git init
-git fetch
 git add -A
 git commit -m 'deploy'
 git remote -v
