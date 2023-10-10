@@ -8,19 +8,13 @@ yarn build
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist
-# 
 cp -b ../beaudar.json .
 
-# 如果是发布到自定义域名
-# echo 'www.example.com' > CNAME
-
 git init
+git fetch
 git add -A
 git commit -m 'deploy'
 git remote -v
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f git@github.com:crossgate-x/crossgate-x.github.io.git master
-
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-cd -
+git push -f git@github.com:crossgate-book/crossgate-book.github.io.git master
