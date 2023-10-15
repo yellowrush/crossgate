@@ -31,12 +31,13 @@ jobs:
       - name: install
         run: yarn --frozen-lockfile
 
-      - name: build & deploy
-        run: |
-          yarn build
-          git init
-          git commit -m 'deploy'
-          git commit -m 'deploy'
-          git remote -v
-          git push -f git@github.com:crossgate-book/crossgate-book.github.io.git master
+      - name: build
+        run: yarn build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          publish_dir: ./src/.vuepress/dist
+          publish_branch: master
       
