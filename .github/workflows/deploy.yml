@@ -32,7 +32,13 @@ jobs:
         run: yarn --frozen-lockfile
 
       - name: build
-        run: yarn build
+        run: |
+          yarn build,
+          cp -b ../beaudar.json .
+          git init
+          git commit -m 'deploy'
+          git commit -m 'deploy'
+          git remote -v
 
       # Runs a set of commands using the runners shell
       - name: commit
