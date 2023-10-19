@@ -15,6 +15,8 @@
         />
       </div>
     </div>
+    
+    <LastUpdate />
 
     <div class="contain">
       <template v-for="(pets, index) in filterData">
@@ -47,13 +49,13 @@
 <script>
 import petDatas from '../../db/index';
 import Pet from './Pet.vue';
-import Valine from './Valine.vue'
+import LastUpdate from './LastUpdate.vue'
 
 export default {
   name: 'Pets',
   components: {
     Pet,
-    Valine,
+    LastUpdate,
   },
   data() {
     return {
