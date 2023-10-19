@@ -16,15 +16,13 @@
   "license": "MIT",
   "devDependencies": {
     "@goy/vuepress-plugin-svg-icons": "^4.2.3",
-    "@vuepress/plugin-pwa": "^1.8.2",
-    "vue-typical": "^1.4.0",
-    "vuepress": "^1.5.3",
-    "vuepress-plugin-comment": "^0.7.3",
-    "vuepress-theme-succinct": "^1.7.2"
+    "@vuepress/plugin-pwa": "^1.9.10",
+    "vuepress": "^1.9.10",
+    "vuepress-plugin-comment": "^0.7.3"
   },
   "dependencies": {
     "caniuse-lite": "^1.0.30001538",
     "leancloud-storage": "^4.10.1",
-    "valine": "^1.4.14"
+    "valine": "^1.5.1"
   }
 }

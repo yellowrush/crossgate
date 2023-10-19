@@ -19,7 +19,11 @@ module.exports = {
     ['@goy/svg-icons', {
       svgsDir: 'svgs',
     }],
-    ['@vuepress/last-updated'],
+    ['@vuepress/last-updated', {
+      dateOptions:{
+        hour12: false
+      },
+    }],
     ['@vuepress/pwa', {
       serviceWorker: true,
       popupComponent: 'MySWUpdatePopup',
@@ -27,58 +31,45 @@ module.exports = {
         message: '发现来自作者的更新包',
       }
     }],
-    /*
     [
       'vuepress-plugin-comment',
       {
         choosen: 'valine', 
-        // options选项中的所有参数，会传给Valine的配置
         options: {
-          el: '#valine-vuepress-comment',
-          appId: '5VWlV86eof1RVirEVvj4JYvU-gzGzoHsz',
-          appKey: 'wRiq6arzVYEHNdWoW97vF6uy'
+          el: '#vcomments',
+          appId: '5x9DOGS2ozr2GlNDuVmsPvsl-gzGzoHsz',
+          appKey: 'lEH8MaJGsVTQvTJfYtfj3hkv',
         }
       }
     ],
-    */
   ],
   themeConfig: {
     logo: 'https://user-images.githubusercontent.com/78347270/106699233-d519e800-6625-11eb-83fc-6466733512a4.png',
     nav: [
-      {
-        text: '🗂️ 攻略',
-        items: [
-          { text: '⚔️ 练级路线', link: '/leveling' },
-          { text: '📜 游戏任务', link: '/tasks' },
-          { text: '🅾️ 答疑解惑', link: '/questions' },
-          { text: '🦸‍♂️ 游戏账号', link: '/guides/register' },
-        ],
-      },
+      // {
+      //   text: '🗂️ 攻略',
+      //   items: [
+      //     { text: '⚔️ 练级路线', link: '/leveling' },
+      //     { text: '📜 游戏任务', link: '/tasks' },
+      //     { text: '🅾️ 答疑解惑', link: '/questions' },
+      //     { text: '🦸‍♂️ 游戏账号', link: '/guides/register' },
+      //   ],
+      // },
+      // { 
+      //   text: '⚒️ 游戏工具',
+      //   items: [
+      //     { text: '🧮 宠物算档器', link: '/tools/calculate' },
+      //     { text: '🛸 全书离线APP', link: '/guides/pwa' },
+      //   ],
+      // },
       { 
         text: '💾 游戏数据',
         items: [
           { text: '🔮 宝石属性', link: '/gems' },
+          { text: '🐉 宠物大全', link: '/pets' },
         ],
       },
-      { 
-        text: '⚒️ 游戏工具',
-        items: [
-          { text: '🧮 宠物算档器', link: '/tools/calculate' },
-          { text: '🛸 全书离线APP', link: '/guides/pwa' },
-        ],
-      },
-      /*
-      {
-        text: '🏦 交易频道',
-        items: [
-          { text: '💵 魔币交易', link: '/trades/money' },
-          { text: '🐕 宠物交易', link: '/trades/pets' },
-          { text: '🗡️ 装备交易', link: '/trades/equipments' },
-          { text: '🧪 水料交易', link: '/trades/recovers' },
-        ],
-      },
-      */
-      { text: '🐉 宠物大全', link: '/pets' },
+      { text: '💬 留言', link: '/comment' },
     ]
   },
   markdown: {

@@ -1,5 +1,5 @@
 <template>
-    <div class="u-valine">
+    <div class="last-update">
       <span class="leancloud-visitors" data-flag-title="Your Article Title">
         <span class="stat update-time">
             <vp-icon class="icon" name="time" />
@@ -43,9 +43,8 @@ export default {
             document.getElementsByClassName('leancloud-visitors')[0].id = path
 
             this.valine.init({
-                el: '#vcomments',
-                appId: '5VWlV86eof1RVirEVvj4JYvU-gzGzoHsz',
-                appKey: 'wRiq6arzVYEHNdWoW97vF6uy',
+                appId: '5x9DOGS2ozr2GlNDuVmsPvsl-gzGzoHsz',
+                appKey: 'lEH8MaJGsVTQvTJfYtfj3hkv',
                 notify: false,
                 verify: false,
                 path,
@@ -67,9 +66,13 @@ export default {
 </script>
 
 <style scoped>
+.last-update {
+    margin: 1rem 0;
+}
+
 .leancloud-visitors{
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 .icon {
     width: 20px;
