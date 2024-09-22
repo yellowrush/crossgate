@@ -15,7 +15,7 @@ jobs:
       uses: jenkey2011/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets.TOKEN }}
-        TARGET_REPO: yellowrush/crossgate
+        TARGET_REPO: crossgate-book/crossgate-book.github.io
         TARGET_BRANCH: master
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: docs/.vuepress/dist
