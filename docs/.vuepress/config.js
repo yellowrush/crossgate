@@ -46,22 +46,22 @@ module.exports = {
   themeConfig: {
     logo: 'https://user-images.githubusercontent.com/78347270/106699233-d519e800-6625-11eb-83fc-6466733512a4.png',
     nav: [
-      // {
-      //   text: '🗂️ 攻略',
-      //   items: [
-      //     { text: '⚔️ 练级路线', link: '/leveling' },
-      //     { text: '📜 游戏任务', link: '/tasks' },
-      //     { text: '🅾️ 答疑解惑', link: '/questions' },
-      //     { text: '🦸‍♂️ 游戏账号', link: '/guides/register' },
-      //   ],
-      // },
-      // { 
-      //   text: '⚒️ 游戏工具',
-      //   items: [
-      //     { text: '🧮 宠物算档器', link: '/tools/calculate' },
-      //     { text: '🛸 全书离线APP', link: '/guides/pwa' },
-      //   ],
-      // },
+      {
+        text: '🗂️ 攻略',
+        items: [
+          { text: '⚔️ 练级路线', link: '/leveling' },
+          { text: '📜 游戏任务', link: '/tasks' },
+          { text: '🅾️ 答疑解惑', link: '/questions' },
+          { text: '🦸‍♂️ 游戏账号', link: '/guides/register' },
+        ],
+      },
+      { 
+        text: '⚒️ 游戏工具',
+        items: [
+          { text: '🧮 宠物算档器', link: '/tools/calculate' },
+          { text: '🛸 全书离线APP', link: '/guides/pwa' },
+        ],
+      },
       { 
         text: '💾 游戏数据',
         items: [
