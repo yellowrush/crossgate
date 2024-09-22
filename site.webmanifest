@@ -1,0 +1,18 @@
+{
+  "name":"魔力全书",
+  "short_name":"魔力全书",
+  "icons":[
+    {"src":"apple-touch-icon-180x180.png","sizes":"180x180","type":"image/png"},
+    {"src":"apple-touch-icon-512x512.png","sizes":"512x512","type":"image/png"},
+    {
+      "src": "maskable_icon.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./",
+  "theme_color":"#ffffff",
+  "background_color":"#ffffff",
+  "display":"standalone"
+}
