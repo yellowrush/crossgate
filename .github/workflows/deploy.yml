@@ -17,6 +17,6 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.TOKEN }}
         TARGET_REPO: yellowrush/crossgate
         TARGET_BRANCH: master
-        BUILD_SCRIPT: yarn && yarn docs:build
+        BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: docs/.vuepress/dist
       
