@@ -29,10 +29,24 @@ home/wwwroot/vuepress
 
 ```
 安装
-- yarn global -D vuepress
-`
+- mkdir vuepress-starter && cd vuepress-starter
+- yarn init
+- yarn add -D vuepres
+
+```
+
+```package.json
+{
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
+```
+```
 开发
-- echo '# Hello VuePress!' > README.md
-- vuepress build --dest 发布路径 ../wwwroot/
+- yarn docs:dev
+发布
+- yarn docs:build --dest 发布路径 ../wwwroot/
 
 ```
