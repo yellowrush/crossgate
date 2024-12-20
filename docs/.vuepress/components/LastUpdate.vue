@@ -1,107 +1,108 @@
 <template>
-    <div class="last-update">
-      <span class="leancloud-visitors" data-flag-title="Your Article Title">
-        <span class="stat update-time">
-            <vp-icon class="icon" name="time" />
-            {{ $page.lastUpdated }}
-        </span>
-        <span class="stat read-count">
-            <vp-icon class="icon" name="read" />
-            <span class="leancloud-visitors-count">-</span>
-        </span>
+  <div class="last-update">
+    <span class="leancloud-visitors" data-flag-title="Your Article Title">
+      <span class="stat update-time">
+        <vp-icon class="icon" name="time" />
+        {{ $page.lastUpdated }}
       </span>
-    </div>
+      <span class="stat read-count">
+        <vp-icon class="icon" name="read" />
+        <span class="leancloud-visitors-count">-</span>
+      </span>
+    </span>
+  </div>
 </template>
 
 <script>
-export default {
+  export default {
     name: 'Valine',
 
     mounted() {
-        // valine库里面存在window变量；HTML会通过NodeJS进行服务端渲染来产生
-        // 通过动态导入来解决“NodeJS环境下对window变量未定义”的问题
-        import('valine').then(module => {
-            const Valine = module.default
+      // valine库里面存在window变量；HTML会通过NodeJS进行服务端渲染来产生
+      // 通过动态导入来解决“NodeJS环境下对window变量未定义”的问题
+      import('valine').then((module) => {
+        const Valine = module.default;
 
-            if (typeof window !== 'undefined') {
-                const isDev = window.location.hostname.includes('localhost');
-                if (isDev) return; // 不统计本地开发时的阅读量
+        if (typeof window !== 'undefined') {
+          const isDev = window.location.hostname.includes('localhost');
+          if (isDev) return; // 不统计本地开发时的阅读量
 
-                document.getElementsByClassName('leancloud-visitors')[0].id = window.location.pathname
-                this.window = window
-                window.AV = require('leancloud-storage')
+          document.getElementsByClassName('leancloud-visitors')[0].id =
+            window.location.pathname;
+          this.window = window;
+          window.AV = require('leancloud-storage');
 
-                this.valine = new Valine()
-                this.initValine()
-            }
-        })
+          this.valine = new Valine();
+          this.initValine();
+        }
+      });
     },
 
     methods: {
-        initValine () {
-            let path = window.location.pathname
-            document.getElementsByClassName('leancloud-visitors')[0].id = path
+      initValine() {
+        let path = window.location.pathname;
+        document.getElementsByClassName('leancloud-visitors')[0].id = path;
 
-            this.valine.init({
-                appId: '5x9DOGS2ozr2GlNDuVmsPvsl-gzGzoHsz',
-                appKey: 'lEH8MaJGsVTQvTJfYtfj3hkv',
-                notify: false,
-                verify: false,
-                path,
-                visitor: true,
-                avatar: 'mm',
-                placeholder: 'write here'
-            })
-        }
+        this.valine.init({
+          appId: '5x9DOGS2ozr2GlNDuVmsPvsl-gzGzoHsz',
+          appKey: 'lEH8MaJGsVTQvTJfYtfj3hkv',
+          notify: false,
+          verify: false,
+          path,
+          visitor: true,
+          avatar: 'mm',
+          placeholder: 'write here',
+        });
+      },
     },
 
     watch: {
-        $route (to, from) {
-            if (from.path !== to.path) {
-                this.initValine()
-            }
+      $route(to, from) {
+        if (from.path !== to.path) {
+          this.initValine();
         }
-    }
-}
+      },
+    },
+  };
 </script>
 
 <style scoped>
-.last-update {
+  .last-update {
     margin: 1rem 0;
-}
+  }
 
-.leancloud-visitors{
+  .leancloud-visitors {
     display: flex;
     align-items: center;
-}
-.icon {
+  }
+  .icon {
     width: 20px;
     font-size: 20px;
     margin-right: 4px;
     vertical-align: middle;
     opacity: 1;
-}
+  }
 
-.update-time{
+  .update-time {
     display: flex;
     font-size: 12px;
-}
+  }
 
-.update-time .icon{
+  .update-time .icon {
     font-size: 18px;
-}
+  }
 
-.leancloud-visitors-count {
+  .leancloud-visitors-count {
     vertical-align: middle;
     font-size: 12px;
-}
+  }
 
-.stat{
-  display: flex;
-  align-items: center;
-  margin-right: .5rem;
-}
-.stat:last-child::after {
-    content: " ";
-}
+  .stat {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+  }
+  .stat:last-child::after {
+    content: ' ';
+  }
 </style>
