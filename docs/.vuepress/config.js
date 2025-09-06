@@ -81,6 +81,7 @@ module.exports = {
           el: '#vcomments',
           appId: '5x9DOGS2ozr2GlNDuVmsPvsl-gzGzoHsz',
           appKey: 'lEH8MaJGsVTQvTJfYtfj3hkv',
+          recordIP: false,
         },
       },
     ],

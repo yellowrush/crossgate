@@ -98,7 +98,7 @@
     max-width: 100vw;
     overflow-x: hidden;
     position: relative;
-    margin: 3rem auto 2rem auto;
+    margin: 0 auto 2rem auto;
     background: #232328;
     border-radius: 16px;
   }
