@@ -56,7 +56,7 @@ module.exports = {
       },
     ],
     [
-      '@vuepress/last-updated',
+      '@vuepress/plugin-last-updated',
       {
         dateOptions: {
           hour12: false,
@@ -111,7 +111,6 @@ module.exports = {
           { text: '🛸 全书离线APP', link: '/guides/pwa' },
         ],
       },
-      { text: '💬 留言', link: '/comment' },
     ],
   },
   markdown: {
