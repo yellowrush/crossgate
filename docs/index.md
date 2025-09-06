@@ -24,11 +24,11 @@ lang: zh-CN
 ## 📰 最新公告
 
 <NewsList :news="[
-	{ title: '中元幽冥之瞳 骷髏王的王權迴響', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15784.html', date: '2025-09-04' },
-	{ title: '9月4日維護公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15774.html', date: '2025-09-03' },
-	{ title: 'PVP爭霸賽第16期開啟預告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15764.html', date: '2025-08-28' },
+	{ title: '中元幽冥之瞳 骷髅王的王权回响', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15784.html', date: '2025-09-04' },
+	{ title: '9月4日维护公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15774.html', date: '2025-09-03' },
+	{ title: 'PVP争霸赛第16期开启预告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15764.html', date: '2025-08-28' },
 	{ title: '商城上架七夕特惠道具的公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15754.html', date: '2025-08-28' },
-	{ title: '8月28日維護公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15744.html', date: '2025-08-27' }
+	{ title: '8月28日维护公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15744.html', date: '2025-08-27' }
 ]" />
 
 ## 🕒 服务器维护时间
