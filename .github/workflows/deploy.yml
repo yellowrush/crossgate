@@ -1,22 +1,21 @@
 name: Build and Deploy
 on:
   push:
-    branches: [ "develop" ]
+    branches: ['develop']
   workflow_dispatch:
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@master
+      - name: Checkout
+        uses: actions/checkout@master
 
-    - name: vuepress-deploy
-      uses: jenkey2011/vuepress-deploy@master
-      env:
-        ACCESS_TOKEN: ${{ secrets.TOKEN }}
-        TARGET_REPO: crossgate-book/crossgate-book.github.io
-        TARGET_BRANCH: master
-        BUILD_SCRIPT: yarn && yarn build
-        BUILD_DIR: docs/.vuepress/dist
-      
+      - name: vuepress-deploy
+        uses: jenkey2011/vuepress-deploy@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.TOKEN }}
+          TARGET_REPO: crossgate-book/crossgate-book.github.io
+          TARGET_BRANCH: master
+          BUILD_SCRIPT: yarn && NODE_OPTIONS=--openssl-legacy-provider yarn build
+          BUILD_DIR: docs/.vuepress/dist
