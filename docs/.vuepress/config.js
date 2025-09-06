@@ -32,7 +32,7 @@ module.exports = {
     ['link', { rel: 'manifest', href: 'site.webmanifest' }],
     ['link', { rel: 'shortcut icon', href: 'favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'mobile-web-app-capable', content: 'yes' }],
     [
       'meta',
       { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
@@ -93,7 +93,7 @@ module.exports = {
         items: [
           { text: '⚔️ 练级路线', link: '/leveling' },
           { text: '📜 游戏任务', link: '/tasks' },
-          { text: '🅾️ ', link: '/questions' },
+          { text: '🅾️ Q&A', link: '/questions' },
           { text: '🦸‍♂️ 游戏账号', link: '/guides/register' },
         ],
       },
