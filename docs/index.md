@@ -24,11 +24,11 @@ lang: zh-CN
 ## 📰 最新公告
 
 <NewsList :news="[
-	{ title: '中秋月宮遇奇緣 嫦娥邀君解危局', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16004.html', date: '2025-10-01' },
-	{ title: '10月2日维护公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15984.html', date: '2025-09-30' },
-	{ title: '9月26日临时维护公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15974.html', date: '2025-09-26' },
-	{ title: '关于9月25日的优化公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15964.html', date: '2025-09-25' },
-	{ title: '9月25日维护公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15944.html', date: '2025-09-24' }
+    { title: '王國遠征令啟程 解鎖寵物傳承之力', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16064.html', date: '2025-10-15' },
+    { title: '10月16日維護公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16054.html', date: '2025-10-15' },
+    { title: '改造狂想曲 超越極限的雙重詠嘆', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16044.html', date: '2025-10-10' },
+    { title: '10月10日維護公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16034.html', date: '2025-10-09' },
+    { title: '10月9日不維護公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16024.html', date: '2025-10-08' }
 ]" />
 
 ## 🕒 服务器维护时间
