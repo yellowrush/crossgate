@@ -6586,23 +6586,7 @@ leancloud-realtime@^5.0.0-alpha.3, leancloud-realtime@^5.0.0-rc.8:
     protobufjs "^5.0.1"
     uuid "^3.0.0"
 
-leancloud-storage@^3.0.4:
-  version "3.15.0"
-  resolved "https://registry.yarnpkg.com/leancloud-storage/-/leancloud-storage-3.15.0.tgz#6d3b010a313189985bb69ab08c75c7ad74bd1788"
-  integrity sha512-UbR6pLA0tVYPcY7AND0pey45iFsB2PkIo8Wz0DZ9BabKyqndA1ey2LKzYpFDGNh3ODrmT3fValVn9yY4bgf9Uw==
-  dependencies:
-    debug "^3.1.0"
-    es6-promise "4.2.3"
-    eventemitter3 "^2.0.3"
-    leancloud-realtime "^5.0.0-alpha.3"
-    leancloud-realtime-plugin-live-query "^1.2.0"
-    localstorage-memory "^1.0.1"
-    md5 "^2.0.0"
-    superagent "^3.3.1"
-    underscore "^1.8.3"
-    uuid "^3.3.2"
-
-leancloud-storage@^4.10.1:
+leancloud-storage@4.15.2:
   version "4.15.2"
   resolved "https://registry.yarnpkg.com/leancloud-storage/-/leancloud-storage-4.15.2.tgz#1d540daca745897932f86e7ef4ec69e9f6250f1a"
   integrity sha512-zvlfeG2aq25lFZ+2pvo0KoMf3jDuR0ThzLivCj5Yv3yhZf2i/BL5fypW+0IqRh6YSFkJ731iHHfq7FIPhxdHpw==
@@ -6618,6 +6602,22 @@ leancloud-storage@^4.10.1:
     leancloud-realtime-plugin-live-query "^1.2.0"
     md5 "^2.0.0"
     promise-timeout "^1.3.0"
+    underscore "^1.8.3"
+    uuid "^3.3.2"
+
+leancloud-storage@^3.0.4:
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/leancloud-storage/-/leancloud-storage-3.15.0.tgz#6d3b010a313189985bb69ab08c75c7ad74bd1788"
+  integrity sha512-UbR6pLA0tVYPcY7AND0pey45iFsB2PkIo8Wz0DZ9BabKyqndA1ey2LKzYpFDGNh3ODrmT3fValVn9yY4bgf9Uw==
+  dependencies:
+    debug "^3.1.0"
+    es6-promise "4.2.3"
+    eventemitter3 "^2.0.3"
+    leancloud-realtime "^5.0.0-alpha.3"
+    leancloud-realtime-plugin-live-query "^1.2.0"
+    localstorage-memory "^1.0.1"
+    md5 "^2.0.0"
+    superagent "^3.3.1"
     underscore "^1.8.3"
     uuid "^3.3.2"
 
@@ -10989,7 +10989,25 @@ validate-npm-package-name@^3.0.0, validate-npm-package-name@~3.0.0:
   dependencies:
     builtins "^1.0.3"
 
-valine@^1.3.9, valine@^1.5.1:
+valine@1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/valine/-/valine-1.5.3.tgz#962a7ce19542b4fd97ad56f376fc07937ac8ebff"
+  integrity sha512-jIj9j+yDTUo5WOq6Ykq/QhbDt79x7tDQSWVyYGhB6ydew/3XfnMR2PKM9NOoLgV8D91sv/OXS887edK2XPXoqg==
+  dependencies:
+    autosize "^4.0.2"
+    balajs "^1.0.7"
+    balalaika "^1.0.1"
+    blueimp-md5 "^2.8.0"
+    element-closest "^3.0.2"
+    hanabi "^0.4.0"
+    insane "^2.6.2"
+    leancloud-storage "^3.0.4"
+    marked "^4.0.8"
+    sass "^1.49.9"
+    storejs "^1.0.25"
+    xss "^1.0.6"
+
+valine@^1.3.9:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/valine/-/valine-1.5.1.tgz#cb7aa97c07588646e7cd1494bd1a4d09093931c3"
   integrity sha512-uT9tHuoKkFUqqVHHRyz4EPe8U+h1ZkCa2lVKH8SKZM9r1Whm8DZW9GfrK4USmLJ+QwpHWenPIKOH0s2xO0BVbQ==
