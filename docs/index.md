@@ -4,8 +4,6 @@ title: '魔力全书'
 lang: zh-CN
 ---
 
-<LastUpdate />
-
 ## 🔥 最新活動
 
 <BannerCarousel :banners="[
