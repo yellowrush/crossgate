@@ -24,11 +24,11 @@ lang: zh-CN
 ## 📰 最新公告
 
 <NewsList :news="[
-    { title: '王國遠征令啟程 解鎖寵物傳承之力', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16064.html', date: '2025-10-15' },
-    { title: '10月16日維護公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16054.html', date: '2025-10-15' },
-    { title: '改造狂想曲 超越極限的雙重詠嘆', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16044.html', date: '2025-10-10' },
-    { title: '10月10日維護公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16034.html', date: '2025-10-09' },
-    { title: '10月9日不維護公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16024.html', date: '2025-10-08' }
+    { title: '11月20日維護公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16214.html', date: '2025-11-19' },
+    { title: 'PVP爭霸賽第17期正式開啟', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16204.html', date: '2025-11-17' },
+    { title: '帝國傳奇現世 穿越千年的寶藏', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16194.html', date: '2025-11-13' },
+    { title: '11月13日維護公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16184.html', date: '2025-11-12' },
+    { title: '任務爭霸賽第28季開啟', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16174.html', date: '2025-11-10' }
 ]" />
 
 ## 🕒 服务器维护时间
