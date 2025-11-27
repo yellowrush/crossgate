@@ -24,19 +24,19 @@
       <!-- 基础属性输入 -->
       <div class="stats-row">
         <div class="form-group">
-          <label>体力：</label>
+          <label>HP：</label>
           <input type="number" v-model="stats.hp" />
         </div>
         <div class="form-group">
-          <label>魔法：</label>
+          <label>MP：</label>
           <input type="number" v-model="stats.mag" />
         </div>
         <div class="form-group">
-          <label>力量：</label>
+          <label>攻击力：</label>
           <input type="number" v-model="stats.str" />
         </div>
         <div class="form-group">
-          <label>防御：</label>
+          <label>防御力：</label>
           <input type="number" v-model="stats.def" />
         </div>
         <div class="form-group">
@@ -123,8 +123,7 @@
 </template>
 
 <script>
-  import { Stat, GrowRange } from '../lib/PetCalc';
-  import { pets } from '../lib/PetsData';
+  import { petsData, RealGuess, GuessResultToString } from 'crossgate-pet-calc';
 
   export default {
     name: 'PetCalculator',
@@ -140,24 +139,27 @@
           agi: 0,
           mag: 0,
         },
-        results: {
-          baseStats: '',
-          combinations: 0,
-          totalDropRange: '',
-          dropRanges: '',
-        },
+        // RealGuess + GuessResultToString 的最终字符串结果
+        resultText: '',
         showResults: false,
         error: null,
-        petTypes: pets,
+        // 下拉用的宠物列表（name 从 petsData 第二个字段读取）
+        petTypes: petsData.map((row, index) => ({
+          id: index,
+          name: row[1],
+        })),
       };
     },
     computed: {
       isFormValid() {
         return (
-          this.petType &&
+          this.petType !== '' &&
           this.level > 0 &&
           Object.values(this.stats).every((val) => val >= 0)
         );
+      },
+      selectedPet() {
+        return this.petTypes.find((p) => p.id === this.petType) || null;
       },
     },
     methods: {
@@ -176,117 +178,39 @@
             mag: parseInt(this.stats.mag, 10),
           };
 
-          // Only calculate if all values are valid numbers
-          if (
-            !isNaN(level) &&
-            !Object.values(stats).some((val) => isNaN(val))
-          ) {
-            const currentStat = new Stat(
-              level,
-              stats.hp,
-              stats.mag,
-              stats.str,
-              stats.def,
-              stats.agi
-            );
-
-            const bp = currentStat.toBP();
-
-            if (bp && !Object.values(bp).some((val) => isNaN(val))) {
-              // Format the results
-              const baseStats = [
-                Math.round(bp.hpp),
-                Math.round(bp.attackp),
-                Math.round(bp.defendp),
-                Math.round(bp.agip),
-                Math.round(bp.mpp),
-              ].join(',');
-
-              const selectedPet = this.petTypes.find(
-                (p) => p.id === this.petType
-              );
-              const growthType = selectedPet?.growthType || 'normal';
-
-              const growRange = new GrowRange(
-                bp.hpp,
-                bp.attackp,
-                bp.defendp,
-                bp.agip,
-                bp.mpp,
-                1,
-                growthType
-              );
-
-              const currentLevelStats = growRange.calcBPAtLevel(level, 0);
-              const prevLevelStats =
-                level > 1 ? growRange.calcBPAtLevel(level - 1, 0) : null;
-
-              const drops = this.calculateDrops(
-                currentLevelStats,
-                prevLevelStats
-              );
-              const combinations =
-                this.calculateCombinations(currentLevelStats);
-
-              this.results = {
-                baseStats: baseStats,
-                combinations: combinations,
-                totalDropRange: drops.totalDropRange,
-                dropRanges: drops.dropRanges,
-              };
-
-              this.error = null;
-              this.showResults = true;
-            }
+          if (isNaN(level) || Object.values(stats).some((v) => isNaN(v))) {
+            this.error = '请输入合法的等级和属性数值';
+            this.showResults = false;
+            return;
           }
+
+          const petRow = petsData[this.petType];
+          if (!petRow) {
+            this.error = '找不到对应的宠物数据';
+            this.showResults = false;
+            return;
+          }
+
+          const petName = petRow[1];
+
+          const guessResult = RealGuess(
+            petsData,
+            petName,
+            level,
+            stats.hp,
+            stats.mag,
+            stats.str,
+            stats.def,
+            stats.agi
+          );
+
+          this.resultText = GuessResultToString(guessResult);
+          this.error = null;
+          this.showResults = true;
         } catch (error) {
           this.error = error.message || '计算过程中发生错误';
           this.showResults = false;
         }
-      },
-
-      calculateDrops(currentLevelStats, prevLevelStats) {
-        const drops = {
-          total: { min: 0, max: 0 },
-          individual: [],
-        };
-
-        if (prevLevelStats) {
-          const currentTotal =
-            Math.round(currentLevelStats.sumFullBP * 10) / 10;
-          const prevTotal =
-            Math.round(prevLevelStats.sumFullBP * 1.1 * 10) / 10;
-          drops.total.min = Math.floor(currentTotal - prevTotal);
-          drops.total.max = Math.ceil(currentTotal - prevTotal);
-
-          const statNames = ['体力', '魔法', '攻击', '防御', '敏捷'];
-          drops.individual = currentLevelStats.baseBP.map((stat, index) => {
-            const prevStat = prevLevelStats.baseBP[index];
-            const dropMin = Math.floor((stat - prevStat * 1.1) * 10) / 10;
-            const dropMax = Math.ceil((stat - prevStat * 1.1) * 10) / 10;
-            return {
-              name: statNames[index],
-              range: `${dropMin.toFixed(1)} ~ ${dropMax.toFixed(1)}`,
-            };
-          });
-        }
-
-        return {
-          totalDropRange:
-            drops.total.min === drops.total.max
-              ? `${drops.total.min}`
-              : `${drops.total.min} ~ ${drops.total.max}`,
-          dropRanges: drops.individual.length
-            ? drops.individual.map((d) => d.range).join(' , ')
-            : '0 , 0 , 0 , 0 , 0',
-        };
-      },
-
-      calculateCombinations(currentLevelStats) {
-        const baseBPs = currentLevelStats.baseBP.map((bp) => Math.floor(bp));
-        return baseBPs.reduce((acc, bp) => {
-          return acc * (bp > 0 ? Math.floor(bp / 4) + 1 : 1);
-        }, 1);
       },
       getGrowthTypeDisplay(type) {
         switch (type) {
@@ -321,12 +245,9 @@
           agi: 0,
           mag: 0,
         };
+        this.resultText = '';
         this.showResults = false;
-      },
-    },
-    computed: {
-      selectedPet() {
-        return this.petTypes.find((p) => p.id === this.petType) || null;
+        this.error = null;
       },
     },
   };

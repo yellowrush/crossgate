@@ -22,6 +22,7 @@
     "vuepress-plugin-comment": "^0.7.3"
   },
   "dependencies": {
+    "crossgate-pet-calc": "^1.0.2",
     "leancloud-storage": "4.15.2",
     "valine": "1.5.3"
   },
