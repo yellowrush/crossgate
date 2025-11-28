@@ -4,45 +4,16 @@
     <div class="calculator-form">
       <h3>🔰 宠物掉档计算</h3>
 
-      <!-- 宠物种类选择 -->
+      <!-- 一行指令式输入 -->
       <div class="form-group">
-        <label>宠物种类：</label>
-        <select v-model="petType" @change="updateSelectedPetName">
-          <option value="">请选择宠物种类</option>
-          <option v-for="pet in petTypes" :key="pet.id" :value="pet.id">
-            {{ pet.name }}
-          </option>
-        </select>
-      </div>
-
-      <!-- 等级输入 -->
-      <div class="form-group">
-        <label>等级：</label>
-        <input type="number" v-model="level" min="1" max="200" />
-      </div>
-
-      <!-- 基础属性输入 -->
-      <div class="stats-row">
-        <div class="form-group">
-          <label>HP：</label>
-          <input type="number" v-model="stats.hp" />
-        </div>
-        <div class="form-group">
-          <label>MP：</label>
-          <input type="number" v-model="stats.mag" />
-        </div>
-        <div class="form-group">
-          <label>攻击力：</label>
-          <input type="number" v-model="stats.str" />
-        </div>
-        <div class="form-group">
-          <label>防御力：</label>
-          <input type="number" v-model="stats.def" />
-        </div>
-        <div class="form-group">
-          <label>敏捷：</label>
-          <input type="number" v-model="stats.agi" />
-        </div>
+        <label>输入：</label>
+        <input
+          v-model="command"
+          type="text"
+          class="command-input"
+          placeholder="宠物名称 等级（1级可以省略） HP MP 攻击力 防御力 敏捷"
+          @keyup.enter="calculateBP"
+        />
       </div>
 
       <!-- 计算按钮 -->
@@ -66,56 +37,16 @@
     <!-- 计算结果 -->
     <div v-if="showResults && !error" class="calculator-results">
       <div class="input-summary">
-        <h4>输入资料:</h4>
+        <h4>输入指令:</h4>
         <div class="command-text">
-          {{ selectedPetName }} {{ level }} {{ stats.hp }} {{ stats.str }}
-          {{ stats.def }} {{ stats.agi }} {{ stats.mag }}
-        </div>
-      </div>
-
-      <div class="pet-info">
-        <div class="info-row">
-          <span class="label">宠物名称:</span>
-          <span class="value">{{ selectedPetName }}</span>
-        </div>
-        <div class="info-row">
-          <span class="label">成长类型:</span>
-          <span class="value growth-type" :class="selectedPet?.growthType">
-            {{ getGrowthTypeDisplay(selectedPet?.growthType) }}
-          </span>
-        </div>
-        <div class="info-row">
-          <span class="label">宠物总档次:</span>
-          <span class="value">{{ results.baseStats }}</span>
-          <span
-            class="growth-bonus"
-            v-if="selectedPet?.growthType !== 'normal'"
-          >
-            (成长加成: {{ getGrowthBonus(selectedPet?.growthType) }})
-          </span>
+          {{ command }}
         </div>
       </div>
 
       <div class="calculation-results">
-        <h4>===计算结果===</h4>
-        <div class="results-text" v-if="results.combinations > 100">
-          (共有 {{ results.combinations }} 个结果，超过
-          100个组合，不显示详细结果)
-        </div>
-        <div class="stat-order">分布是 血 攻 防 敏 魔 顺序</div>
-
-        <div class="drop-range">
-          <div class="total-drop">总掉档: {{ results.totalDropRange }}</div>
-          <div class="drop-possibilities">
-            掉档可能解范围: {{ results.dropRanges }}
-          </div>
-        </div>
-      </div>
-
-      <div class="command-help">
-        <h4>==</h4>
-        <div class="help-text">
-          指令: /掉档 宠物名称 &lt;等级(一级可不写)&gt; 血 魔 攻 防 敏
+        <h4>计算结果</h4>
+        <div class="command-text">
+          {{ resultText }}
         </div>
       </div>
     </div>
@@ -123,87 +54,40 @@
 </template>
 
 <script>
-  import { petsData, RealGuess, GuessResultToString } from 'crossgate-pet-calc';
+  import {
+    petsData,
+    RealGuessRaw,
+    GuessResultToString,
+  } from 'crossgate-pet-calc';
 
   export default {
     name: 'PetCalculator',
     data() {
       return {
-        petType: '',
-        selectedPetName: '',
-        level: 1,
-        stats: {
-          hp: 0,
-          str: 0,
-          def: 0,
-          agi: 0,
-          mag: 0,
-        },
+        // 一行指令输入，如：淺域龍神 128 63 46 26 33
+        command: '',
         // RealGuess + GuessResultToString 的最终字符串结果
         resultText: '',
         showResults: false,
         error: null,
-        // 下拉用的宠物列表（name 从 petsData 第二个字段读取）
-        petTypes: petsData.map((row, index) => ({
-          id: index,
-          name: row[1],
-        })),
       };
     },
     computed: {
       isFormValid() {
-        return (
-          this.petType !== '' &&
-          this.level > 0 &&
-          Object.values(this.stats).every((val) => val >= 0)
-        );
-      },
-      selectedPet() {
-        return this.petTypes.find((p) => p.id === this.petType) || null;
+        return this.command.trim().split(/\s+/).length >= 6;
       },
     },
     methods: {
-      updateSelectedPetName() {
-        const pet = this.petTypes.find((p) => p.id === this.petType);
-        this.selectedPetName = pet ? pet.name : '';
-      },
       calculateBP() {
         try {
-          const level = parseInt(this.level, 10);
-          const stats = {
-            hp: parseInt(this.stats.hp, 10),
-            str: parseInt(this.stats.str, 10),
-            def: parseInt(this.stats.def, 10),
-            agi: parseInt(this.stats.agi, 10),
-            mag: parseInt(this.stats.mag, 10),
-          };
-
-          if (isNaN(level) || Object.values(stats).some((v) => isNaN(v))) {
-            this.error = '请输入合法的等级和属性数值';
+          const input = this.command.trim();
+          if (!input) {
+            this.error = '请输入宠物名称和属性';
             this.showResults = false;
             return;
           }
 
-          const petRow = petsData[this.petType];
-          if (!petRow) {
-            this.error = '找不到对应的宠物数据';
-            this.showResults = false;
-            return;
-          }
-
-          const petName = petRow[1];
-
-          const guessResult = RealGuess(
-            petsData,
-            petName,
-            level,
-            stats.hp,
-            stats.mag,
-            stats.str,
-            stats.def,
-            stats.agi
-          );
-
+          const guessResult = RealGuessRaw(petsData, input);
           this.resultText = GuessResultToString(guessResult);
           this.error = null;
           this.showResults = true;
@@ -212,39 +96,8 @@
           this.showResults = false;
         }
       },
-      getGrowthTypeDisplay(type) {
-        switch (type) {
-          case 'normal':
-            return '普通成长';
-          case 'high':
-            return '高速成长';
-          case 'special':
-            return '特殊成长';
-          default:
-            return '未知';
-        }
-      },
-      getGrowthBonus(type) {
-        switch (type) {
-          case 'high':
-            return '基础×1.1，成长×1.2';
-          case 'special':
-            return '基础×1.2，成长×1.5';
-          default:
-            return '';
-        }
-      },
       reset() {
-        this.petType = '';
-        this.selectedPetName = '';
-        this.level = 1;
-        this.stats = {
-          hp: 0,
-          str: 0,
-          def: 0,
-          agi: 0,
-          mag: 0,
-        };
+        this.command = '';
         this.resultText = '';
         this.showResults = false;
         this.error = null;
@@ -380,6 +233,38 @@
     margin-bottom: 0;
     white-space: nowrap;
     font-size: 14px;
+  }
+
+  .command-input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 0 14px;
+    border-radius: 999px;
+    border: 1px solid var(--c-border);
+    background: var(--c-bg);
+    color: var(--c-text);
+    font-size: 14px;
+    text-align: left;
+    outline: none;
+    transition: all 0.2s ease;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui,
+      sans-serif;
+  }
+
+  .command-input::placeholder {
+    color: var(--c-text-light);
+  }
+
+  .command-input:hover {
+    border-color: var(--c-brand);
+    background: var(--c-bg-lighter);
+  }
+
+  .command-input:focus {
+    border-color: var(--c-brand);
+    box-shadow: 0 0 0 2px rgba(66, 185, 131, 0.2);
+    background: var(--c-bg);
   }
 
   /* Add visual feedback on valid input */
@@ -686,6 +571,17 @@
 
   .theme-dark .pet-calculator {
     --c-shadow: rgba(0, 0, 0, 0.2);
+  }
+
+  .theme-dark .command-input {
+    background: var(--c-bg-dark);
+    border-color: var(--c-border-dark);
+    color: var(--c-text);
+  }
+
+  .theme-dark .command-input:hover,
+  .theme-dark .command-input:focus {
+    background: var(--c-bg-darker);
   }
 
   .growth-type {
