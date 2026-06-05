@@ -7,7 +7,7 @@
       </li>
     </ul>
     <div class="more">
-      <a target="_blank" href="https://cg.originmood.com/news.html"
+      <a target="_blank" href="https://cg.originmood.com/"
         >查看更多公告</a
       >
     </div>
