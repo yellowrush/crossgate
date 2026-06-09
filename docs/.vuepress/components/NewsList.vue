@@ -1,19 +1,13 @@
 <template>
   <div class="news-list">
     <ul>
-      <li v-for="item in displayNews" :key="item.link">
-        <a target="_blank" rel="noopener noreferrer" :href="item.link">{{
-          item.title
-        }}</a>
+      <li v-for="item in news" :key="item.link">
+        <a target="_blank" :href="item.link">{{ item.title }}</a>
         <span class="date">{{ item.date }}</span>
       </li>
     </ul>
     <div class="more">
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://cg.originmood.com/"
-      >
+      <a target="_blank" href="https://cg.originmood.com/news.html"
         >查看更多公告</a
       >
     </div>
@@ -40,31 +34,11 @@
         }
         // fallback to default data
         return [
-          {
-            title: '6月4日維護公告',
-            link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_10522.html',
-            date: '2026-06-03',
-          },
-          {
-            title: '【修復公告】PVP爭霸賽頁面異常修復說明',
-            link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_10519.html',
-            date: '2026-06-02',
-          },
-          {
-            title: 'PVP爭霸賽第19期正式開啟',
-            link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_10518.html',
-            date: '2026-06-01',
-          },
-          {
-            title: '「家族任務爭霸賽」延期與獎勵調整的通知',
-            link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_10517.html',
-            date: '2026-06-01',
-          },
-          {
-            title: '五週年收官獻禮 訂製屬於你的心愛陪伴',
-            link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_10513.html',
-            date: '2026-05-27',
-          },
+          { title: '封测开启公告', link: '/announces/1', date: '2025-04-16' },
+          { title: '新活动上线', link: '/announces/2', date: '2025-05-01' },
+          { title: '维护公告', link: '/announces/3', date: '2025-05-10' },
+          { title: '商城更新', link: '/announces/4', date: '2025-06-01' },
+          { title: '夏日活动', link: '/announces/5', date: '2025-07-01' },
         ].slice(0, this.count);
       },
     },
