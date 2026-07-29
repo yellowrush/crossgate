@@ -1,0 +1,109 @@
+@import './palette.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--body-font-size);
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--text);
+  background: var(--body-bg);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+code {
+  font-family: var(--mono-font);
+  background: var(--code-bg);
+  color: var(--code-color);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+table {
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.5em;
+  border: 1px solid var(--border);
+}
+
+/* VuePress container blocks */
+.custom-block {
+  padding: 0.1rem 1.5rem;
+  border-left-width: 0.5rem;
+  border-left-style: solid;
+  margin: 1rem 0;
+}
+
+.custom-block.tip {
+  background: var(--badge-tip);
+  border-color: var(--accent);
+}
+
+.custom-block.warning {
+  background: var(--badge-warning);
+  border-color: #e7c000;
+}
+
+.custom-block.danger {
+  background: var(--badge-error);
+  border-color: #cc0000;
+}
+
+/* Theme default content */
+.theme-default-content {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+}
+
+.home .hero img {
+  max-width: 450px !important;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 719px) {
+  .theme-default-content {
+    padding: 1.5rem;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 419px) {
+  .theme-default-content {
+    padding: 1rem;
+  }
+}

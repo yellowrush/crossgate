@@ -1,0 +1,47 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Navbar from '../components/astro/Navbar.astro';
+import Sidebar from '../components/astro/Sidebar.astro';
+import Footer from '../components/astro/Footer.astro';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  lang?: string;
+}
+
+const { title, description, lang } = Astro.props;
+const sidebarItems = [];
+---
+
+<BaseLayout title={title} description={description} lang={lang}>
+  <div class="theme-container">
+    <Navbar />
+    <div class="sidebar-mask" id="sidebar-mask"></div>
+    <Sidebar items={sidebarItems} />
+    <main class="page">
+      <slot />
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>
+
+<style>
+  .theme-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .page {
+    flex: 1;
+    margin-left: var(--sidebar-width);
+    padding-top: var(--navbar-height);
+  }
+
+  @media (max-width: 719px) {
+    .page {
+      margin-left: 0;
+    }
+  }
+</style>

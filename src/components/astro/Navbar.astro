@@ -1,0 +1,99 @@
+---
+const logo =
+  'https://user-images.githubusercontent.com/78347270/106699233-d519e800-6625-11eb-83fc-6466733512a4.png';
+---
+
+<header class="navbar">
+  <button class="sidebar-button" id="sidebar-btn" aria-label="打开侧边栏">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <a href="/" class="home-link">
+    <img src={logo} alt="魔力全书" class="logo" />
+    <span class="site-name">魔力全书</span>
+  </a>
+  <div class="links">
+    <slot name="nav-links" />
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('sidebar-btn');
+  const mask = document.getElementById('sidebar-mask');
+  if (btn && mask) {
+    btn.addEventListener('click', () => {
+      document.querySelector('.sidebar')?.classList.toggle('open');
+      mask.style.display =
+        mask.style.display === 'block' ? 'none' : 'block';
+    });
+    mask.addEventListener('click', () => {
+      document.querySelector('.sidebar')?.classList.remove('open');
+      mask.style.display = 'none';
+    });
+  }
+</script>
+
+<style>
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--navbar-height);
+    background: var(--body-bg);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    z-index: 20;
+  }
+
+  .sidebar-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .sidebar-button span {
+    display: block;
+    width: 1.25rem;
+    height: 2px;
+    background: var(--text);
+    margin: 4px 0;
+  }
+
+  .home-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  .logo {
+    height: 2.2rem;
+    margin-right: 0.8rem;
+  }
+
+  .site-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  @media (max-width: 719px) {
+    .sidebar-button {
+      display: block;
+    }
+  }
+</style>

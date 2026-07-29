@@ -1,0 +1,62 @@
+/* Light theme (default) */
+:root,
+[data-theme='light'] {
+  --accent: #3eaf7c;
+  --text: #2c3e50;
+  --text-muted: #6a7a8a;
+  --border: #eaecef;
+  --code-bg: #282c34;
+  --code-color: #b3b9c5;
+  --arrow-bg: #ccc;
+  --body-bg: #fafafa;
+  --body-complement: #f5f5f5;
+  --selection: rgba(44, 62, 80, 0.1);
+  --header: #3a4a5a;
+  --description: #8a9aa8;
+  --badge-tip: #e7f1ec;
+  --badge-warning: #f8f2d1;
+  --badge-error: #ffdadc;
+  --action-btn-border: #36a86b;
+  --action-btn-hover-border: #4cc08a;
+  --nav-item-hover: #4cc08a;
+  --code-block-active: #1f7a4a;
+
+  /* Layout */
+  --navbar-height: 3.6rem;
+  --sidebar-width: 20rem;
+  --content-width: 740px;
+  --home-page-width: 960px;
+
+  /* Font */
+  --body-font: 'Inter', sans-serif;
+  --mono-font: 'Roboto Mono', monospace;
+  --body-font-size: 18px;
+
+  /* Responsive */
+  --mq-narrow: 959px;
+  --mq-mobile: 719px;
+  --mq-mobile-narrow: 419px;
+}
+
+/* Dark theme */
+[data-theme='dark'] {
+  --accent: #3eaf7c;
+  --text: #e2e1db;
+  --text-muted: #a8a69d;
+  --border: #4c525c;
+  --code-bg: #1a1c22;
+  --code-color: #8b8f9a;
+  --arrow-bg: #555;
+  --body-bg: #25262b;
+  --body-complement: #2f3036;
+  --selection: rgba(226, 225, 219, 0.1);
+  --header: #d4d3cc;
+  --description: #8a8a85;
+  --badge-tip: #1b4b35;
+  --badge-warning: #574e21;
+  --badge-error: #692025;
+  --action-btn-border: #2e8f64;
+  --action-btn-hover-border: #3eaf7c;
+  --nav-item-hover: #3a9d6e;
+  --code-block-active: #1f6a4a;
+}
