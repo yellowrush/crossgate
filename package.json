@@ -1,30 +1,32 @@
 {
   "name": "crossgate",
-  "version": "0.0.1",
-  "description": "crossgate game",
+  "version": "0.1.0",
+  "description": "crossgate game - 魔力全书",
   "authors": {
     "name": "tom huang",
     "email": "huangchon@gmail.com"
   },
   "repository": "yellowrush/crossgate",
+  "type": "module",
   "scripts": {
-    "dev": "vuepress dev docs --temp .temp",
-    "build": "vuepress build docs",
-    "svgo": "vuepress svgo docs",
-    "deploy": "./deploy.sh"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "convert-pets": "node scripts/convert-pets.mjs"
   },
   "license": "MIT",
-  "devDependencies": {
-    "@goy/vuepress-plugin-svg-icons": "^4.2.3",
-    "@vuepress/plugin-medium-zoom": "1.9.10",
-    "@vuepress/plugin-pwa": "^1.9.10",
-    "vuepress": "^1.9.10",
-    "vuepress-plugin-comment": "^0.7.3"
-  },
   "dependencies": {
+    "@astrojs/mdx": "^4.3.3",
+    "@astrojs/vue": "^7.0.1",
+    "astro": "^7.1.6",
     "crossgate-pet-calc": "^1.0.2",
     "leancloud-storage": "4.15.2",
-    "valine": "1.5.3"
+    "valine": "1.5.3",
+    "vite-plugin-pwa": "^1.3.0",
+    "vue": "^3.5.40",
+    "vue-router": "^4.6.4",
+    "workbox-build": "^7.4.1",
+    "workbox-window": "^7.4.1"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
