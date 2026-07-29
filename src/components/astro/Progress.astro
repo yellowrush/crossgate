@@ -1,0 +1,70 @@
+---
+export interface Props {
+  earth?: number;
+  water?: number;
+  fire?: number;
+  wind?: number;
+}
+
+const { earth = 0, water = 0, fire = 0, wind = 0 } = Astro.props;
+const total = earth + water + fire + wind;
+
+let barColor = 'var(--accent)';
+let elementLabel = '';
+if (earth > 0) {
+  barColor = '#8B4513';
+  elementLabel = '地';
+} else if (water > 0) {
+  barColor = '#4169E1';
+  elementLabel = '水';
+} else if (fire > 0) {
+  barColor = '#DC143C';
+  elementLabel = '火';
+} else if (wind > 0) {
+  barColor = '#2E8B57';
+  elementLabel = '风';
+}
+---
+
+<div
+  class="progress-bar"
+  role="progressbar"
+  aria-valuenow={total}
+  aria-valuemin={0}
+  aria-valuemax={10}
+>
+  <div
+    class="progress-fill"
+    style={`width: ${(total / 10) * 100}%; background: ${barColor};`}
+  >
+  </div>
+  {elementLabel && <span class="progress-label">{elementLabel} {total}/10</span>}
+</div>
+
+<style>
+  .progress-bar {
+    display: inline-flex;
+    align-items: center;
+    height: 1.2rem;
+    width: 200px;
+    background: var(--body-complement);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .progress-fill {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-label {
+    position: absolute;
+    right: 0.5rem;
+    font-size: 0.75rem;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+  }
+</style>

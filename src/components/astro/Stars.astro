@@ -1,0 +1,46 @@
+---
+export interface Props {
+  number?: number;
+}
+
+const { number = 0 } = Astro.props;
+const full = Math.floor(number);
+const half = number - full >= 0.5 ? 1 : 0;
+const empty = 5 - full - half;
+---
+
+<span class="stars" aria-label={`${number} 星`}>
+  {Array.from({ length: full }).map(() => (
+    <span class="star star-full">&#9733;</span>
+  ))}
+  {half === 1 && <span class="star star-half">&#9733;</span>}
+  {Array.from({ length: empty }).map(() => (
+    <span class="star star-empty">&#9734;</span>
+  ))}
+</span>
+
+<style>
+  .stars {
+    display: inline-flex;
+    gap: 1px;
+    vertical-align: middle;
+  }
+
+  .star {
+    font-size: 1.1em;
+  }
+
+  .star-full {
+    color: #f0c040;
+  }
+
+  .star-half {
+    color: #f0c040;
+    opacity: 0.6;
+  }
+
+  .star-empty {
+    color: var(--text-muted);
+    opacity: 0.3;
+  }
+</style>
