@@ -1,0 +1,40 @@
+---
+---
+
+<a href="#" role="button" class="theme-switcher nav-item" id="theme-switcher" aria-label="切换主题">
+  <span id="theme-icon">🌙</span>
+</a>
+
+<script>
+  const btn = document.getElementById('theme-switcher');
+  const icon = document.getElementById('theme-icon');
+
+  function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    try {
+      localStorage.setItem('theme', theme);
+    } catch (e) {}
+    if (icon) {
+      icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+  }
+
+  if (btn && icon) {
+    icon.textContent =
+      document.documentElement.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  }
+</script>
+
+<style>
+  .theme-switcher {
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: none !important;
+  }
+</style>

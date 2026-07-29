@@ -1,0 +1,35 @@
+---
+export interface Props {
+  lastUpdated?: string;
+}
+
+const { lastUpdated } = Astro.props;
+---
+
+<footer class="page-edit">
+  {lastUpdated && <span class="last-updated">最后更新: {lastUpdated}</span>}
+  <a
+    href="https://github.com/yellowrush/crossgate"
+    class="edit-link"
+    target="_blank"
+    rel="noopener"
+  >
+    在 GitHub 上编辑
+  </a>
+</footer>
+
+<style>
+  .page-edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .edit-link {
+    color: var(--accent);
+    text-decoration: none;
+  }
+</style>

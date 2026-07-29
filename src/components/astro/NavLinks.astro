@@ -1,0 +1,113 @@
+---
+const navItems = [
+  {
+    text: '🗂️ 攻略',
+    items: [
+      { text: '⚔️ 练级路线', link: '/leveling' },
+      { text: '📜 游戏任务', link: '/tasks' },
+      { text: '🅾️ Q&A', link: '/questions' },
+      { text: '🦸‍♂️ 游戏账号', link: '/guides/register' },
+    ],
+  },
+  {
+    text: '💾 游戏数据',
+    items: [
+      { text: '🔮 宝石属性', link: '/gems' },
+      { text: '🐉 宠物大全', link: '/pets' },
+    ],
+  },
+  {
+    text: '⚒️ 游戏工具',
+    items: [
+      { text: '🧮 宠物算档器', link: '/tools/calculate' },
+      { text: '🛸 全书离线APP', link: '/guides/pwa' },
+    ],
+  },
+];
+---
+
+<nav class="nav-links">
+  {
+    navItems.map((item) =>
+      item.items ? (
+        <div class="nav-item dropdown">
+          <span class="dropdown-title">{item.text}</span>
+          <ul class="dropdown-items">
+            {item.items.map((sub) => (
+              <li><a href={sub.link}>{sub.text}</a></li>
+            ))}
+          </ul>
+        </div>
+      ) : (
+        <a href={item.link} class="nav-item">{item.text}</a>
+      ),
+    )
+  }
+  <slot />
+</nav>
+
+<style>
+  .nav-links {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+  }
+
+  .nav-item {
+    padding: 0.5rem 0.75rem;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  .nav-item:hover {
+    color: var(--accent);
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-title {
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: var(--text);
+  }
+
+  .dropdown-title:hover {
+    color: var(--accent);
+  }
+
+  .dropdown-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--body-bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    min-width: 160px;
+    z-index: 30;
+    list-style: none;
+  }
+
+  .dropdown:hover .dropdown-items {
+    display: block;
+  }
+
+  .dropdown-items li a {
+    display: block;
+    padding: 0.4rem 1rem;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .dropdown-items li a:hover {
+    color: var(--accent);
+    background: var(--body-complement);
+  }
+</style>

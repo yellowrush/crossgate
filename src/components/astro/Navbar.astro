@@ -1,4 +1,7 @@
 ---
+import NavLinks from './NavLinks.astro';
+import ThemeSwitcher from './ThemeSwitcher.astro';
+
 const logo =
   'https://user-images.githubusercontent.com/78347270/106699233-d519e800-6625-11eb-83fc-6466733512a4.png';
 ---
@@ -14,7 +17,8 @@ const logo =
     <span class="site-name">魔力全书</span>
   </a>
   <div class="links">
-    <slot name="nav-links" />
+    <NavLinks />
+    <ThemeSwitcher />
   </div>
 </header>
 
