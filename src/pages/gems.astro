@@ -1,0 +1,13 @@
+---
+import DocLayout from '../layouts/DocLayout.astro';
+import Gems from '../components/vue/Gems.vue';
+import BackTop from '../components/astro/BackTop.astro';
+---
+
+<DocLayout title="宝石">
+  <div class="theme-default-content">
+    <h3>🔮 宝石属性</h3>
+    <Gems client:load />
+    <BackTop />
+  </div>
+</DocLayout>

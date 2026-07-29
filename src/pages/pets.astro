@@ -1,0 +1,15 @@
+---
+import DocLayout from '../layouts/DocLayout.astro';
+import Pets from '../components/vue/Pets.vue';
+---
+
+<DocLayout title="宠物大全">
+  <div class="theme-default-content">
+    <div class="custom-block tip">
+      <p>作者偷懶中 😪</p>
+      <p>还有很多未添加宠物，最近工作比较忙啦</p>
+    </div>
+
+    <Pets client:load />
+  </div>
+</DocLayout>

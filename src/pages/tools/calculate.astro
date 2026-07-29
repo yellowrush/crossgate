@@ -1,0 +1,37 @@
+---
+import DocLayout from '../../layouts/DocLayout.astro';
+import PetCalculator from '../../components/vue/PetCalculator.vue';
+---
+
+<DocLayout title="宠物算档器">
+  <div class="theme-default-content">
+    <h3>💻 在线算档器</h3>
+
+    <div class="custom-block warning">
+      <p class="custom-block-title">⚠️ 注意事项</p>
+      <ul>
+        <li>在线算档器可直接使用，无需下载</li>
+        <li>目前还在测试阶段，还无法正常使用</li>
+      </ul>
+    </div>
+
+    <PetCalculator client:load />
+
+    <h3>🌒 离线版暗月宠物算档器</h3>
+
+    <div class="custom-block tip">
+      <p class="custom-block-title">💡 注意事项</p>
+      <ul>
+        <li>如需离线版本，可参考下方下载链接</li>
+        <li>关于魔物观测者，因为本人无法分辨算档器本身的安全问题，所以在此不予分享</li>
+      </ul>
+    </div>
+
+    <ul>
+      <li>下载地址 1: 暗月算档整理版 by 黑血天蝎 <a href="http://urlxf.qq.com/?6BRJVve" target="_blank" rel="noopener">旋风</a> <a href="http://pan.baidu.com/s/1jGKTh7w#path=/%E9%AD%94%E5%8A%9B%E5%AE%9D%E8%B4%9D/%E2%97%87%E2%97%87%E2%97%87%E5%AE%A0%E7%89%A9%E7%AE%97%E6%A1%A3%E6%A8%A1%E6%8B%9F%E2%97%87%E2%97%87%E2%97%87" target="_blank" rel="noopener">百度</a></li>
+      <li>下载地址 2: 暗月算档整理版 by 裂炎 <a href="http://urlxf.qq.com/?Yn6fmeq" target="_blank" rel="noopener">旋风</a> <a href="http://pan.baidu.com/s/1jGKTh7w#path=/%E9%AD%94%E5%8A%9B%E5%AE%9D%E8%B4%9D/%E2%97%87%E2%97%87%E2%97%87%E5%AE%A0%E7%89%A9%E7%AE%97%E6%A1%A3%E6%A8%A1%E6%8B%9F%E2%97%87%E2%97%87%E2%97%87" target="_blank" rel="noopener">百度</a></li>
+    </ul>
+
+    <blockquote>以上内容均参考自 <a href="http://www.520cg.com/" target="_blank" rel="noopener">魔力宝贝资料站 - 520cg.com</a></blockquote>
+  </div>
+</DocLayout>

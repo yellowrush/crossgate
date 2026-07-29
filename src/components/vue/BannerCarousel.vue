@@ -1,5 +1,5 @@
 <template>
-  <div class="banner-carousel">
+  <div class="banner-carousel" :style="`--banner-count: ${props.banners.length}`">
     <div
       class="banner-track"
       :style="trackStyle"
@@ -8,7 +8,7 @@
       @touchend="onTouchEnd"
     >
       <a
-        v-for="(banner, idx) in banners"
+        v-for="(banner, idx) in props.banners"
         :key="idx"
         class="banner-link"
         :href="banner.url || banner.link"
@@ -20,7 +20,7 @@
     </div>
     <div class="banner-dots">
       <span
-        v-for="(banner, idx) in banners"
+        v-for="(banner, idx) in props.banners"
         :key="idx"
         class="banner-dot"
         :class="{ active: idx === currentIndex }"
@@ -34,7 +34,7 @@
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
 const props = defineProps({
-  banners: { type: Array, required: true },
+  banners: { type: Array, default: () => [] },
 });
 
 const currentIndex = ref(0);
@@ -102,8 +102,8 @@ function onTouchEnd() {
   will-change: transform;
 }
 .banner-link {
-  flex: 0 0 calc(100% / v-bind(banners.length));
-  max-width: calc(100% / v-bind(banners.length));
+  flex: 0 0 calc(100% / var(--banner-count, 1));
+  max-width: calc(100% / var(--banner-count, 1));
   box-sizing: border-box;
   display: flex;
   align-items: center;
