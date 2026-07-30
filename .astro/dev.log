@@ -56,3 +56,51 @@
 {"message":"[200] / 4ms","label":null,"level":"info"}
 {"message":"[200] / 3ms","label":null,"level":"info"}
 {"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] /gems 11ms","label":null,"level":"info"}
+{"message":"[200] /pets 30ms","label":null,"level":"info"}
+{"message":"src/components/astro/Navbar.astro","label":"watch","level":"info"}
+{"message":"[200] /pets 97ms","label":null,"level":"info"}
+{"message":"NavLinks is not defined\n  Stack trace:\n    at eval (C:\\app\\crossgate\\src\\components\\astro\\Navbar.astro:25:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"src/components/astro/Navbar.astro","label":"watch","level":"info"}
+{"message":"[200] /pets 111ms","label":null,"level":"info"}
+{"message":"NavLinks is not defined\n  Stack trace:\n    at eval (C:\\app\\crossgate\\src\\components\\astro\\Navbar.astro:24:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"src/components/astro/Navbar.astro","label":"watch","level":"info"}
+{"message":"[200] /pets 93ms","label":null,"level":"info"}
+{"message":"/src/components/astro/Navbar.astro?astro&type=style&index=0&lang.css","label":"watch","level":"info"}
+{"message":"/src/layouts/DocLayout.astro?astro&type=style&index=0&lang.css","label":"watch","level":"info"}
+{"message":"[200] /pets 82ms","label":null,"level":"info"}
+{"message":"/src/components/astro/NavLinks.astro?astro&type=style&index=0&lang.css","label":"watch","level":"info"}
+{"message":"[200] /pets 90ms","label":null,"level":"info"}
+{"message":"[200] /pets 21ms","label":null,"level":"info"}
+{"message":"[200] /leveling 11ms","label":null,"level":"info"}
+{"message":"[200] /tasks 8ms","label":null,"level":"info"}
+{"message":"[200] /questions 6ms","label":null,"level":"info"}
+{"message":"[200] /guides/register 7ms","label":null,"level":"info"}
+{"message":"[200] / 7ms","label":null,"level":"info"}
+{"message":"/src/pages/index.astro?astro&type=style&index=0&lang.css","label":"watch","level":"info"}
+{"message":"[200] / 54ms","label":null,"level":"info"}
+{"message":"/src/pages/index.astro?astro&type=style&index=0&lang.css","label":"watch","level":"info"}
+{"message":"[200] / 49ms","label":null,"level":"info"}
+{"message":"[200] / 60ms","label":null,"level":"info"}
+{"message":"[200] / 52ms","label":null,"level":"info"}
+{"message":"/src/layouts/DocLayout.astro?astro&type=style&index=0&lang.css","label":"watch","level":"info"}
+{"message":"[200] / 52ms","label":null,"level":"info"}
+{"message":"/src/pages/index.astro?astro&type=style&index=0&lang.css","label":"watch","level":"info"}
+{"message":"[200] / 77ms","label":null,"level":"info"}
+{"message":"/src/pages/index.astro?astro&type=style&index=0&lang.css","label":"watch","level":"info"}
+{"message":"[200] / 63ms","label":null,"level":"info"}
+{"message":"/src/pages/index.astro?astro&type=style&index=0&lang.css","label":"watch","level":"info"}
+{"message":"[200] / 81ms","label":null,"level":"info"}
+{"message":"[200] / 41ms","label":null,"level":"info"}
+{"message":"[200] / 26ms","label":null,"level":"info"}
+{"message":"/src/layouts/DocLayout.astro?astro&type=style&index=0&lang.css","label":"watch","level":"info"}
+{"message":"[200] / 70ms","label":null,"level":"info"}
+{"message":"[200] / 65ms","label":null,"level":"info"}
+{"message":"[200] / 39ms","label":null,"level":"info"}
+{"message":"/src/layouts/DocLayout.astro?astro&type=style&index=0&lang.css","label":"watch","level":"info"}
+{"message":"[200] / 42ms","label":null,"level":"info"}
