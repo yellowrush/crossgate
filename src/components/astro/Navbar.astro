@@ -1,5 +1,4 @@
 ---
-import NavLinks from './NavLinks.astro';
 import ThemeSwitcher from './ThemeSwitcher.astro';
 
 const logo =
@@ -14,7 +13,6 @@ const logo =
   </button>
   <a href="/" class="home-link">
     <img src={logo} alt="魔力全书" class="logo" />
-    <span class="site-name">魔力全书</span>
   </a>
   <div class="links">
     <button class="search-btn" id="search-btn" aria-label="搜索" title="搜索 (Ctrl+K)">
@@ -23,7 +21,6 @@ const logo =
         <path d="m21 21-4.3-4.3"/>
       </svg>
     </button>
-    <NavLinks />
     <ThemeSwitcher />
   </div>
 </header>
@@ -95,12 +92,6 @@ const logo =
 
   .logo {
     height: 2.2rem;
-    margin-right: 0.8rem;
-  }
-
-  .site-name {
-    font-size: 1.2rem;
-    font-weight: 600;
   }
 
   .links {
