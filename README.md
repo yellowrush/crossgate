@@ -1,52 +1,50 @@
 # crossgate
 
-魔力全书网址： https://crossgate-book.github.io/
+魔力全书 - CrossGate 魔力宝贝中文资料站
 
-# 相关参考文档
+网址：https://crossgate-book.github.io/
 
-- https://nodejs.org/zh-cn/download/package-manager
+## 技术栈
 
+- [Astro 7](https://astro.build) - 静态站点生成器
+- [Vue 3](https://vuejs.org) - 交互式 UI 组件 (Islands)
+- [MDX](https://mdxjs.com) - Markdown + JSX 内容
+- [Pagefind](https://pagefind.app) - 全站离线搜索
+- [PWA](https://vite-pwa-org.netlify.app) - 渐进式 Web 应用
 
-```
-安装
-- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
-- nvm install 16 && nvm use 16
-- corepack enable
+## 开发
 
-验证
-- node -v
-- npm -v
-- yarn -v
-```
+```bash
+# 安装依赖
+npm install
 
+# 本地开发
+npx astro dev
 
-- https://v1.vuepress.vuejs.org/zh/
+# 构建
+npx astro build
 
-
-home/vuepress-dev 
-home/wwwroot/vuepress
-
-
-```
-安装
-- mkdir vuepress-starter && cd vuepress-starter
-- yarn init
-- yarn add -D vuepres
-
+# 预览构建结果
+npx astro preview
 ```
 
-```package.json
-{
-  "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
-  }
-}
-```
-```
-开发
-- yarn docs:dev
-发布
-- yarn docs:build --dest 发布路径 ../wwwroot/
+## 项目结构
 
 ```
+src/
+├── components/
+│   ├── astro/        # 静态 Astro 组件
+│   └── vue/          # 交互式 Vue 3 Islands
+├── data/             # 宠物/任务/宝石等数据
+├── layouts/          # 页面布局
+├── lib/              # 工具函数
+├── pages/            # 所有页面 (astro/md/mdx)
+│   ├── pets/         # 257 个宠物详情页
+│   └── tasks/        # 17 个任务详情页
+├── scripts/          # 主题切换
+└── styles/           # 全局样式 (亮色/暗色主题)
+```
+
+## 部署
+
+推送到 `develop` 分支自动触发 GitHub Actions 部署到 GitHub Pages。
