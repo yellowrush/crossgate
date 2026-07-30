@@ -92,6 +92,19 @@ td {
   margin-bottom: -0.4rem;
 }
 
+/* Pagefind search */
+:root {
+  --pagefind-ui-scale: 0.9;
+  --pagefind-ui-primary: var(--text);
+  --pagefind-ui-text: var(--text);
+  --pagefind-ui-background: var(--body-bg);
+  --pagefind-ui-border: var(--border);
+  --pagefind-ui-tag: var(--accent);
+  --pagefind-ui-border-radius: 4px;
+  --pagefind-ui-image-border-radius: 4px;
+  --pagefind-ui-font: inherit;
+}
+
 /* Theme default content */
 .theme-default-content {
   max-width: var(--content-width);

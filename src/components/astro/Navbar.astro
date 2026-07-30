@@ -17,6 +17,12 @@ const logo =
     <span class="site-name">魔力全书</span>
   </a>
   <div class="links">
+    <button class="search-btn" id="search-btn" aria-label="搜索" title="搜索 (Ctrl+K)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/>
+        <path d="m21 21-4.3-4.3"/>
+      </svg>
+    </button>
     <NavLinks />
     <ThemeSwitcher />
   </div>
@@ -36,6 +42,16 @@ const logo =
       mask.style.display = 'none';
     });
   }
+
+  document.getElementById('search-btn')?.addEventListener('click', () => {
+    window.pagefind?.search?.();
+  });
+  document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+      window.pagefind?.search?.();
+    }
+  });
 </script>
 
 <style>
@@ -93,6 +109,23 @@ const logo =
     justify-content: flex-end;
     align-items: center;
     gap: 0.5rem;
+  }
+
+  .search-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text);
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+    transition: border-color 0.2s;
+  }
+
+  .search-btn:hover {
+    border-color: var(--accent);
   }
 
   @media (max-width: 719px) {

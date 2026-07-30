@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import vue from '@astrojs/vue';
 import mdx from '@astrojs/mdx';
+import pagefind from 'astro-pagefind';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
@@ -9,6 +10,7 @@ export default defineConfig({
   integrations: [
     vue(),
     mdx(),
+    pagefind(),
   ],
   vite: {
     plugins: [
