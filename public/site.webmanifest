@@ -1,0 +1,13 @@
+{
+  "name": "魔力全书",
+  "short_name": "魔力全书",
+  "description": "魔力玩家的百科全书",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3eaf7c",
+  "icons": [
+    { "src": "/maskable_icon.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/apple-touch-icon-180x180.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
