@@ -1,47 +1,45 @@
 ---
 import DocLayout from '../layouts/DocLayout.astro';
-// @ts-expect-error Vue SFC
-import BannerCarousel from '../components/vue/BannerCarousel.vue';
-// @ts-expect-error Vue SFC
-import NewsList from '../components/vue/NewsList.vue';
 
-const banners = [
-  { img: 'https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/e325243000e68b42a1d14c86802e1b77.jpg', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_6583.html' },
-  { img: 'https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/4e9c9fb1cd424226240c8bb10f145efb.jpg', link: 'https://cg.originmood.com/events/celebrate.html' },
-  { img: 'https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/8cb116fc79a422101de8b83e56ef9b59.jpg', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15434.html' },
-  { img: 'https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/fa4d81601f74bea8c21cdef87a1bc45a.jpg', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_14114.html' },
-  { img: 'https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/a34562c49639d0eab6babb3f8acd0c9e.jpg', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_12584.html' },
-  { img: 'https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/2f202f5443b6b978773ba34773d5ad91.jpg', link: 'https://cg.originmood.com/events/rough-stone.html' },
-  { img: 'https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/b6f99b798607df556e3fdd8a54aae82f.jpg', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15634.html' },
-  { img: 'https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/c164fd2a9e7cc486191955f1e528062d.jpg', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15764.html' },
-  { img: 'https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/c87a739f037ad4a271eb2225860416df.jpg', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15784.html' },
-  { img: 'https://files.originmood.com/pic/7fd53469e896a57ba33b04e23ccfc033/picture/f9f6a32a7e13f79e426f0e8159ee8299.jpg', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_15704.html' },
+const updates = [
+  { date: '2026-07-30', text: '新增人物职业分类页面（战斗系/法术系/宠物系/采集系/服务系/生产系）', link: '/characters/combat' },
+  { date: '2026-07-30', text: '新增地图分类页面结构（精灵大陆/天空之城）', link: '/maps/elf' },
+  { date: '2026-07-30', text: '新增物品分类页面结构（武器防具/料理药水/饰品道具/生产制造/采集）', link: '/items/equipment' },
+  { date: '2026-07-30', text: '新增技能分类页面结构（专属技能/职业技能任务）', link: '/skills/exclusive' },
+  { date: '2026-07-30', text: '侧边栏重构为 Vue 3 手风琴组件，支持服务器切换', link: '/' },
+  { date: '2026-07-30', text: '修复 Pagefind 搜索无法使用的问题', link: '/' },
+  { date: '2026-07-30', text: '修复 PWA/favicon 404 问题', link: '/' },
+  { date: '2026-07-28', text: '完成宠物大全 257 只宠物数据', link: '/pets' },
+  { date: '2026-07-28', text: '完成 17 个任务页面迁移', link: '/tasks' },
+  { date: '2026-07-28', text: '完成宝石属性数据页面', link: '/gems' },
+  { date: '2026-07-25', text: '完成 308 页面从 VuePress 到 Astro 7 迁移', link: '/' },
 ];
 
-const newsList = [
-  { title: '11月20日維護公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16214.html', date: '2025-11-19' },
-  { title: 'PVP爭霸賽第17期正式開啟', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16204.html', date: '2025-11-17' },
-  { title: '帝國傳奇現世 穿越千年的寶藏', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16194.html', date: '2025-11-13' },
-  { title: '11月13日維護公告', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16184.html', date: '2025-11-12' },
-  { title: '任務爭霸賽第28季開啟', link: 'https://cg.originmood.com/NewsContent/zh_TW/mlbb_news_16174.html', date: '2025-11-10' },
-];
 ---
 
 <DocLayout title="魔力全书" description="魔力玩家的百科全书">
   <main class="home">
-    <section class="home-section">
-      <h2>?? 最新活動</h2>
-      <BannerCarousel :banners={banners} client:load />
+    <section class="hero">
+      <h1>📖 魔力全书</h1>
+      <p class="hero-desc">魔力宝贝攻略数据库 — 正在从蔚蓝幻境迁移中...</p>
+      <div class="hero-stats">
+        <span class="stat">📄 310+ 页面</span>
+        <span class="stat">🐉 257 宠物</span>
+        <span class="stat">📜 17+ 任务</span>
+        <span class="stat">🔍 全站搜索</span>
+      </div>
     </section>
 
     <section class="home-section">
-      <h2>📰 最新公告</h2>
-      <NewsList :news={newsList} client:load />
-    </section>
-
-    <section class="home-section">
-      <h2>🕒 服务器维护时间</h2>
-      <p>每周四 10:00-12:00</p>
+      <h2>🔄 近期更新</h2>
+      <div class="updates-list">
+        {updates.map((u) => (
+          <a href={u.link} class="update-item">
+            <span class="update-date">{u.date}</span>
+            <span class="update-text">{u.text}</span>
+          </a>
+        ))}
+      </div>
     </section>
 
   </main>
@@ -55,20 +53,93 @@ const newsList = [
     margin-right: auto;
   }
 
+  .hero {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem;
+    font-weight: 700;
+  }
+
+  .hero-desc {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin: 0 0 1.5rem;
+  }
+
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    background: var(--body-complement);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+
   .home-section {
     margin-bottom: 2rem;
   }
 
   .home-section h2 {
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 600;
     border-bottom: 1px solid var(--border);
     padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .updates-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .update-item {
+    display: flex;
+    gap: 1rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--text);
+    transition: background 0.15s;
+    align-items: baseline;
+  }
+
+  .update-item:hover {
+    background: var(--body-complement);
+  }
+
+  .update-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    font-family: 'Roboto Mono', monospace;
+    min-width: 5.5rem;
+  }
+
+  .update-text {
+    font-size: 0.92rem;
   }
 
   @media (max-width: 719px) {
     .home {
       margin-left: 0;
+    }
+
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+
+    .category-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 </style>

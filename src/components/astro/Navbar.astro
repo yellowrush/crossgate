@@ -53,13 +53,29 @@ const logo =
   }
 
   document.getElementById('search-btn')?.addEventListener('click', () => {
-    window.pagefind?.search?.();
+    toggleSearch();
   });
   document.addEventListener('keydown', (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
       e.preventDefault();
-      window.pagefind?.search?.();
+      toggleSearch();
     }
+  });
+
+  function toggleSearch() {
+    const wrapper = document.getElementById('pagefind-search-wrapper');
+    if (wrapper) {
+      wrapper.classList.toggle('open');
+      if (wrapper.classList.contains('open')) {
+        setTimeout(() => {
+          wrapper.querySelector('input')?.focus();
+        }, 200);
+      }
+    }
+  }
+
+  document.getElementById('search-close-btn')?.addEventListener('click', () => {
+    document.getElementById('pagefind-search-wrapper')?.classList.remove('open');
   });
 
   const srvBtn = document.getElementById('server-btn')!;

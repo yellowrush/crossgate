@@ -1,4 +1,6 @@
 ---
+import PagefindConfig from 'astro-pagefind/components/PagefindConfig.astro';
+
 export interface Props {
   title?: string;
   description?: string;
@@ -52,8 +54,47 @@ const {
     />
     <link rel="stylesheet" href="/src/styles/global.css" />
     <script is:inline src="/src/scripts/theme.js"></script>
+    <PagefindConfig />
+    <style>
+      #pagefind-search-wrapper {
+        display: none;
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 640px;
+        z-index: 999;
+        background: var(--body-bg);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      }
+      #pagefind-search-wrapper.open {
+        display: block;
+      }
+      .search-close {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: var(--text-muted);
+        z-index: 1;
+      }
+      .search-close:hover {
+        color: var(--text);
+      }
+    </style>
   </head>
   <body>
     <slot />
+    <div id="pagefind-search-wrapper">
+      <button class="search-close" id="search-close-btn">✕</button>
+      <pagefind-searchbox></pagefind-searchbox>
+    </div>
   </body>
 </html>
