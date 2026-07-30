@@ -12,7 +12,13 @@ export interface Props {
 }
 
 const { title, description, lang } = Astro.props;
-const sidebarItems = [];
+interface SidebarItem {
+  text: string;
+  link?: string;
+  children?: SidebarItem[];
+}
+
+const sidebarItems: SidebarItem[] = [];
 ---
 
 <BaseLayout title={title} description={description} lang={lang}>

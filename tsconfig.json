@@ -3,9 +3,10 @@
   "compilerOptions": {
     "jsx": "preserve",
     "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
     "paths": {
       "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*", "src/env.d.ts"]
+  "include": [".astro/types.d.ts", "src/**/*"]
 }

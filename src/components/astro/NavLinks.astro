@@ -1,5 +1,16 @@
 ---
-const navItems = [
+interface NavSubItem {
+  text: string;
+  link: string;
+}
+
+interface NavItem {
+  text: string;
+  link?: string;
+  items?: NavSubItem[];
+}
+
+const navItems: NavItem[] = [
   {
     text: '🗂️ 攻略',
     items: [

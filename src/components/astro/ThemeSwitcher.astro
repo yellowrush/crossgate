@@ -9,7 +9,7 @@
   const btn = document.getElementById('theme-switcher');
   const icon = document.getElementById('theme-icon');
 
-  function setTheme(theme) {
+  function setTheme(theme: string) {
     document.documentElement.setAttribute('data-theme', theme);
     try {
       localStorage.setItem('theme', theme);
