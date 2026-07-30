@@ -21,6 +21,18 @@ const logo =
         <path d="m21 21-4.3-4.3"/>
       </svg>
     </button>
+    <div class="server-dropdown" id="server-dropdown">
+      <button class="server-btn" id="server-btn">
+        <span id="server-label">🌏 初心服</span>
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4"/>
+        </svg>
+      </button>
+      <ul class="server-menu" id="server-menu">
+        <li data-value="origin" class="server-option active">🌏 初心服</li>
+        <li data-value="cn" class="server-option">🌏 大陆服</li>
+      </ul>
+    </div>
     <ThemeSwitcher />
   </div>
 </header>
@@ -48,6 +60,38 @@ const logo =
       e.preventDefault();
       window.pagefind?.search?.();
     }
+  });
+
+  const srvBtn = document.getElementById('server-btn')!;
+  const srvMenu = document.getElementById('server-menu')!;
+  const srvLabel = document.getElementById('server-label')!;
+  const srvOptions = document.querySelectorAll<HTMLElement>('.server-option');
+
+  function applyServer(val: string): void {
+    srvOptions.forEach((opt) => {
+      opt.classList.toggle('active', opt.dataset.value === val);
+    });
+    const active = document.querySelector<HTMLElement>('.server-option.active');
+    if (active) {
+      srvLabel.textContent = active.textContent;
+    }
+  }
+
+  const saved = localStorage.getItem('server') || 'origin';
+  applyServer(saved);
+
+  srvBtn.addEventListener('click', (e: MouseEvent) => {
+    e.stopPropagation();
+    srvMenu.classList.toggle('open');
+  });
+  document.addEventListener('click', () => srvMenu.classList.remove('open'));
+  srvOptions.forEach((opt) => {
+    opt.addEventListener('click', () => {
+      const val = opt.dataset.value!;
+      localStorage.setItem('server', val);
+      applyServer(val);
+      window.location.reload();
+    });
   });
 </script>
 
@@ -117,6 +161,66 @@ const logo =
 
   .search-btn:hover {
     border-color: var(--accent);
+  }
+
+  .server-dropdown {
+    position: relative;
+  }
+
+  .server-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text);
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.85rem;
+    transition: border-color 0.2s;
+    white-space: nowrap;
+  }
+
+  .server-btn:hover {
+    border-color: var(--accent);
+  }
+
+  .server-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 4px;
+    list-style: none;
+    padding: 0.25rem 0;
+    background: var(--body-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 30;
+    min-width: 120px;
+  }
+
+  .server-menu.open {
+    display: block;
+  }
+
+  .server-option {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  .server-option:hover {
+    background: var(--body-complement);
+  }
+
+  .server-option.active {
+    color: var(--accent);
+    font-weight: 600;
   }
 
   @media (max-width: 719px) {

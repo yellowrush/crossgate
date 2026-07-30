@@ -12,44 +12,13 @@ export interface Props {
 }
 
 const { title, description, lang } = Astro.props;
-interface SidebarItem {
-  text: string;
-  link?: string;
-  children?: SidebarItem[];
-}
-
-const sidebarItems: SidebarItem[] = [
-  {
-    text: '🗂️ 攻略',
-    children: [
-      { text: '⚔️ 练级路线', link: '/leveling' },
-      { text: '📜 游戏任务', link: '/tasks' },
-      { text: '🅾️ Q&A', link: '/questions' },
-      { text: '🦸‍♂️ 游戏账号', link: '/guides/register' },
-    ],
-  },
-  {
-    text: '💾 游戏数据',
-    children: [
-      { text: '🔮 宝石属性', link: '/gems' },
-      { text: '🐉 宠物大全', link: '/pets' },
-    ],
-  },
-  {
-    text: '⚒️ 游戏工具',
-    children: [
-      { text: '🧮 宠物算档器', link: '/tools/calculate' },
-      { text: '🛸 全书离线APP', link: '/guides/pwa' },
-    ],
-  },
-];
 ---
 
 <BaseLayout title={title} description={description} lang={lang}>
   <div class="theme-container">
     <Navbar />
     <div class="sidebar-mask" id="sidebar-mask"></div>
-    <Sidebar items={sidebarItems} />
+    <Sidebar />
     <main class="page">
       <slot />
       <Comment client:load />

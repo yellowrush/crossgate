@@ -1,38 +1,9 @@
 ---
-export interface SidebarItem {
-  text: string;
-  link?: string;
-  children?: SidebarItem[];
-}
-
-export interface Props {
-  items?: SidebarItem[];
-}
-
-const { items = [] } = Astro.props;
+import AppSidebar from '../vue/AppSidebar.vue';
 ---
 
 <aside class="sidebar">
-  {items.length > 0 && (
-    <ul class="sidebar-links">
-      {items.map((item) => (
-        <li>
-          {item.link ? (
-            <a href={item.link}>{item.text}</a>
-          ) : (
-            <span class="sidebar-heading">{item.text}</span>
-          )}
-          {item.children && item.children.length > 0 && (
-            <ul class="sidebar-sub-links">
-              {item.children.map((child) => (
-                <li><a href={child.link}>{child.text}</a></li>
-              ))}
-            </ul>
-          )}
-        </li>
-      ))}
-    </ul>
-  )}
+  <AppSidebar client:load />
 </aside>
 
 <style>
@@ -45,46 +16,8 @@ const { items = [] } = Astro.props;
     background: var(--body-bg);
     border-right: 1px solid var(--border);
     overflow-y: auto;
-    padding: 1.5rem 0;
     z-index: 10;
     transition: transform 0.3s;
-  }
-
-  .sidebar-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .sidebar-links li a {
-    display: block;
-    padding: 0.5rem 1.5rem;
-    color: var(--text);
-    text-decoration: none;
-    font-size: 0.95rem;
-  }
-
-  .sidebar-links li a:hover {
-    color: var(--accent);
-  }
-
-  .sidebar-heading {
-    display: block;
-    padding: 0.5rem 1.5rem;
-    font-weight: 600;
-    font-size: 1rem;
-    color: var(--text);
-  }
-
-  .sidebar-sub-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .sidebar-sub-links a {
-    padding-left: 2.5rem !important;
-    font-size: 0.9rem !important;
   }
 
   @media (max-width: 719px) {
