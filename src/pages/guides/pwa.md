@@ -14,7 +14,8 @@ lang: zh-CN
 > - 📴 离线模式，当你无法访问网络的时候魔力全书也可以提供访问
 > - 🤳 访问速度提升，即使你在网络环境非常差的情况下，依然可以快速的访问到内容
 
-::: details 🍏 苹果手机
+<div class="custom-block details">
+<p class="custom-block-title">🍏 苹果手机</p>
 
 1. 苹果手机内置的safari浏览器打开【魔力全书官网】，点击下面中间的分享按钮
 
@@ -35,10 +36,10 @@ lang: zh-CN
 
 ⚠️ 如果APP内右下角出现【收到作者的更新包】则表示，我更新了网站内容，你只需要点击那个按钮即可更新APP的信息
 
-::: 
 
 
-::: details 🐧 安卓手机 
+<div class="custom-block details">
+<p class="custom-block-title">🐧 安卓手机</p>
 
 > （目前测试的只有华为手机，其他手机请联系作者安装）
 
@@ -59,4 +60,5 @@ lang: zh-CN
 
 ⚠️ 如果APP内右下角出现【收到作者的更新包】则表示，我更新了网站内容，你只需要点击那个按钮即可更新APP的信息
 
-::: 
+</div>
+</div>

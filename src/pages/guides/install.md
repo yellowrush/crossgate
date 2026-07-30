@@ -7,11 +7,12 @@ lang: zh-CN
 
 # 🎮 游戏安装
 
-::: tip 🚥 温馨提示
+<div class="custom-block tip">
+<p class="custom-block-title">🚥 温馨提示</p>
 
 安装内容为windows10系统展示，其他系统可行性未知
 
-:::
+</div>
 
 
 ### 📝安装流程
@@ -32,10 +33,11 @@ lang: zh-CN
 
 #### 3. 双击进入cg_origin, 点击【CGSetup 1.0.0】开始安装游戏
 
-::: warning 🚨路径警告
+<div class="custom-block warning">
+<p class="custom-block-title">🚨路径警告</p>
 如果安装路劲含有非法字符，如简体中文字等启动游戏之后将出现注意提示框无法登入游戏，
 所以请更改为英文路径或者是繁体中文
-:::
+</div>
 
 ![5](https://user-images.githubusercontent.com/78347270/115132965-a49bf480-a03f-11eb-8094-82ba650b663b.png)
 

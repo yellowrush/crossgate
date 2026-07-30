@@ -7,12 +7,13 @@ lang: zh-CN
 
 # 📑 游戏账号
 
-::: tip 🚥 温馨提示
+<div class="custom-block tip">
+<p class="custom-block-title">🚥 温馨提示</p>
 
 - 目前大陆86区号的手机号已经无法注册账号。
 - 如果你在2021/4/1日前注册的账户仍然可以继续使用。
 
-:::
+</div>
 
 
 ## 🧑 注册账号
@@ -43,8 +44,9 @@ lang: zh-CN
 
 #### 3. 如果第一次登录会提示新建游戏账号，请按照提示新建【游戏账号】
 
-::: warning ⚠️ 温馨提示
+<div class="custom-block warning">
+<p class="custom-block-title">⚠️ 温馨提示</p>
 - 该账号为你游戏登录的账号，游戏登录的账号，游戏登录的账号！重要的事情说三遍
-:::
+</div>
 
 #### 4. 新建成功之后即可进入游戏

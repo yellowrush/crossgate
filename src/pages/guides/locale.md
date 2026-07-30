@@ -13,7 +13,8 @@ lang: zh-CN
 
 ### 解决方案（win10 系统）
 
-::: details ⚙️ 更改系统语言为繁体中文
+<div class="custom-block details">
+<p class="custom-block-title">⚙️ 更改系统语言为繁体中文</p>
 
 1. 打开控制面板内的【时间与语言】
 ![11111](https://user-images.githubusercontent.com/78347270/115210053-2ae83180-a139-11eb-84c1-60387209986d.png)
@@ -34,16 +35,18 @@ lang: zh-CN
 ⚠️ 注意请勿勾选Beta的UTF-8选项，否则可能会直接出现乱码
 ![8](https://user-images.githubusercontent.com/78347270/115211605-ac8c8f00-a13a-11eb-9892-e66bc94b69e5.png)
 
-::: danger 🚨 系统警告，请谨慎阅读以下内容
+<div class="custom-block danger">
+<p class="custom-block-title">🚨 系统警告，请谨慎阅读以下内容</p>
 - 该方式会导致部分简体中文文档出现乱码情况
 - 部分只支持简体中文的程序将无法打开，如易玩通娱乐平台
 
 #### 以上情况均可以重新设定回简体中文来恢复，以乱码形式打开的文档请勿做保存处理，以免丢失重要数据。
 
-:::
+</div>
 
 
-::: details 👨🏻‍💻 Locale.Emulator 软件转码
+<div class="custom-block details">
+<p class="custom-block-title">👨🏻‍💻 Locale.Emulator 软件转码</p>
 
 1. 前往杏组的官网下载 Locale.Emulator [https://pooi.moe/Locale-Emulator/](https://pooi.moe/Locale-Emulator/)
 
@@ -67,4 +70,5 @@ lang: zh-CN
 
 5. 返回【CGoriginmood】在其中找到config文件，修改[EXE_START]下【filename=SGHK.lnk】之后正常打开游戏即可
 
-:::
+</div>
+</div>

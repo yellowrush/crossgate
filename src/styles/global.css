@@ -77,6 +77,21 @@ td {
   border-color: #cc0000;
 }
 
+.custom-block.error {
+  background: #fff0f0;
+  border-color: #cc0000;
+}
+
+.custom-block.details {
+  background: var(--body-complement);
+  border-color: var(--border);
+}
+
+.custom-block-title {
+  font-weight: 600;
+  margin-bottom: -0.4rem;
+}
+
 /* Theme default content */
 .theme-default-content {
   max-width: var(--content-width);

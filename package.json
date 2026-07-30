@@ -21,6 +21,7 @@
     "astro": "^7.1.6",
     "crossgate-pet-calc": "^1.0.2",
     "leancloud-storage": "4.15.2",
+    "remark-directive": "^4.0.0",
     "valine": "1.5.3",
     "vite-plugin-pwa": "^1.3.0",
     "vue": "^3.5.40",
