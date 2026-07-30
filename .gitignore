@@ -15,4 +15,4 @@ deploy.sh
 # Astro
 dist/
 .cache/
-
+.astro/
